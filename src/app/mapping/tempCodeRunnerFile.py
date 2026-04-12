@@ -1,1 +1,0 @@
-uv pip install nilearn nibabel numpy

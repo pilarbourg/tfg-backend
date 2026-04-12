@@ -1,0 +1,767 @@
+{
+  "lh_bankssts": {
+    "id": "lh_bankssts",
+    "hemisphere": "lh",
+    "region_name": "bankssts",
+    "file": "lh_bankssts.obj",
+    "parkinsons_relevant": false,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "lh_caudalanteriorcingulate": {
+    "id": "lh_caudalanteriorcingulate",
+    "hemisphere": "lh",
+    "region_name": "caudalanteriorcingulate",
+    "file": "lh_caudalanteriorcingulate.obj",
+    "parkinsons_relevant": false,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "lh_caudalmiddlefrontal": {
+    "id": "lh_caudalmiddlefrontal",
+    "hemisphere": "lh",
+    "region_name": "caudalmiddlefrontal",
+    "file": "lh_caudalmiddlefrontal.obj",
+    "parkinsons_relevant": false,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "lh_cuneus": {
+    "id": "lh_cuneus",
+    "hemisphere": "lh",
+    "region_name": "cuneus",
+    "file": "lh_cuneus.obj",
+    "parkinsons_relevant": false,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "lh_entorhinal": {
+    "id": "lh_entorhinal",
+    "hemisphere": "lh",
+    "region_name": "entorhinal",
+    "file": "lh_entorhinal.obj",
+    "parkinsons_relevant": false,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "lh_fusiform": {
+    "id": "lh_fusiform",
+    "hemisphere": "lh",
+    "region_name": "fusiform",
+    "file": "lh_fusiform.obj",
+    "parkinsons_relevant": false,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "lh_inferiorparietal": {
+    "id": "lh_inferiorparietal",
+    "hemisphere": "lh",
+    "region_name": "inferiorparietal",
+    "file": "lh_inferiorparietal.obj",
+    "parkinsons_relevant": true,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "lh_inferiortemporal": {
+    "id": "lh_inferiortemporal",
+    "hemisphere": "lh",
+    "region_name": "inferiortemporal",
+    "file": "lh_inferiortemporal.obj",
+    "parkinsons_relevant": false,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "lh_isthmuscingulate": {
+    "id": "lh_isthmuscingulate",
+    "hemisphere": "lh",
+    "region_name": "isthmuscingulate",
+    "file": "lh_isthmuscingulate.obj",
+    "parkinsons_relevant": true,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "lh_lateraloccipital": {
+    "id": "lh_lateraloccipital",
+    "hemisphere": "lh",
+    "region_name": "lateraloccipital",
+    "file": "lh_lateraloccipital.obj",
+    "parkinsons_relevant": false,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "lh_lateralorbitofrontal": {
+    "id": "lh_lateralorbitofrontal",
+    "hemisphere": "lh",
+    "region_name": "lateralorbitofrontal",
+    "file": "lh_lateralorbitofrontal.obj",
+    "parkinsons_relevant": false,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "lh_lingual": {
+    "id": "lh_lingual",
+    "hemisphere": "lh",
+    "region_name": "lingual",
+    "file": "lh_lingual.obj",
+    "parkinsons_relevant": false,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "lh_medialorbitofrontal": {
+    "id": "lh_medialorbitofrontal",
+    "hemisphere": "lh",
+    "region_name": "medialorbitofrontal",
+    "file": "lh_medialorbitofrontal.obj",
+    "parkinsons_relevant": false,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "lh_middletemporal": {
+    "id": "lh_middletemporal",
+    "hemisphere": "lh",
+    "region_name": "middletemporal",
+    "file": "lh_middletemporal.obj",
+    "parkinsons_relevant": true,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "lh_parahippocampal": {
+    "id": "lh_parahippocampal",
+    "hemisphere": "lh",
+    "region_name": "parahippocampal",
+    "file": "lh_parahippocampal.obj",
+    "parkinsons_relevant": false,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "lh_paracentral": {
+    "id": "lh_paracentral",
+    "hemisphere": "lh",
+    "region_name": "paracentral",
+    "file": "lh_paracentral.obj",
+    "parkinsons_relevant": false,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "lh_parsopercularis": {
+    "id": "lh_parsopercularis",
+    "hemisphere": "lh",
+    "region_name": "parsopercularis",
+    "file": "lh_parsopercularis.obj",
+    "parkinsons_relevant": false,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "lh_parsorbitalis": {
+    "id": "lh_parsorbitalis",
+    "hemisphere": "lh",
+    "region_name": "parsorbitalis",
+    "file": "lh_parsorbitalis.obj",
+    "parkinsons_relevant": false,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "lh_parstriangularis": {
+    "id": "lh_parstriangularis",
+    "hemisphere": "lh",
+    "region_name": "parstriangularis",
+    "file": "lh_parstriangularis.obj",
+    "parkinsons_relevant": false,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "lh_pericalcarine": {
+    "id": "lh_pericalcarine",
+    "hemisphere": "lh",
+    "region_name": "pericalcarine",
+    "file": "lh_pericalcarine.obj",
+    "parkinsons_relevant": false,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "lh_postcentral": {
+    "id": "lh_postcentral",
+    "hemisphere": "lh",
+    "region_name": "postcentral",
+    "file": "lh_postcentral.obj",
+    "parkinsons_relevant": true,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "lh_posteriorcingulate": {
+    "id": "lh_posteriorcingulate",
+    "hemisphere": "lh",
+    "region_name": "posteriorcingulate",
+    "file": "lh_posteriorcingulate.obj",
+    "parkinsons_relevant": true,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "lh_precentral": {
+    "id": "lh_precentral",
+    "hemisphere": "lh",
+    "region_name": "precentral",
+    "file": "lh_precentral.obj",
+    "parkinsons_relevant": true,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "lh_precuneus": {
+    "id": "lh_precuneus",
+    "hemisphere": "lh",
+    "region_name": "precuneus",
+    "file": "lh_precuneus.obj",
+    "parkinsons_relevant": false,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "lh_rostralanteriorcingulate": {
+    "id": "lh_rostralanteriorcingulate",
+    "hemisphere": "lh",
+    "region_name": "rostralanteriorcingulate",
+    "file": "lh_rostralanteriorcingulate.obj",
+    "parkinsons_relevant": false,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "lh_rostralmiddlefrontal": {
+    "id": "lh_rostralmiddlefrontal",
+    "hemisphere": "lh",
+    "region_name": "rostralmiddlefrontal",
+    "file": "lh_rostralmiddlefrontal.obj",
+    "parkinsons_relevant": true,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "lh_superiorfrontal": {
+    "id": "lh_superiorfrontal",
+    "hemisphere": "lh",
+    "region_name": "superiorfrontal",
+    "file": "lh_superiorfrontal.obj",
+    "parkinsons_relevant": true,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "lh_superiorparietal": {
+    "id": "lh_superiorparietal",
+    "hemisphere": "lh",
+    "region_name": "superiorparietal",
+    "file": "lh_superiorparietal.obj",
+    "parkinsons_relevant": false,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "lh_superiortemporal": {
+    "id": "lh_superiortemporal",
+    "hemisphere": "lh",
+    "region_name": "superiortemporal",
+    "file": "lh_superiortemporal.obj",
+    "parkinsons_relevant": true,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "lh_supramarginal": {
+    "id": "lh_supramarginal",
+    "hemisphere": "lh",
+    "region_name": "supramarginal",
+    "file": "lh_supramarginal.obj",
+    "parkinsons_relevant": true,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "lh_frontalpole": {
+    "id": "lh_frontalpole",
+    "hemisphere": "lh",
+    "region_name": "frontalpole",
+    "file": "lh_frontalpole.obj",
+    "parkinsons_relevant": false,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "lh_temporalpole": {
+    "id": "lh_temporalpole",
+    "hemisphere": "lh",
+    "region_name": "temporalpole",
+    "file": "lh_temporalpole.obj",
+    "parkinsons_relevant": false,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "lh_transversetemporal": {
+    "id": "lh_transversetemporal",
+    "hemisphere": "lh",
+    "region_name": "transversetemporal",
+    "file": "lh_transversetemporal.obj",
+    "parkinsons_relevant": false,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "lh_insula": {
+    "id": "lh_insula",
+    "hemisphere": "lh",
+    "region_name": "insula",
+    "file": "lh_insula.obj",
+    "parkinsons_relevant": true,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "rh_bankssts": {
+    "id": "rh_bankssts",
+    "hemisphere": "rh",
+    "region_name": "bankssts",
+    "file": "rh_bankssts.obj",
+    "parkinsons_relevant": false,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "rh_caudalanteriorcingulate": {
+    "id": "rh_caudalanteriorcingulate",
+    "hemisphere": "rh",
+    "region_name": "caudalanteriorcingulate",
+    "file": "rh_caudalanteriorcingulate.obj",
+    "parkinsons_relevant": false,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "rh_caudalmiddlefrontal": {
+    "id": "rh_caudalmiddlefrontal",
+    "hemisphere": "rh",
+    "region_name": "caudalmiddlefrontal",
+    "file": "rh_caudalmiddlefrontal.obj",
+    "parkinsons_relevant": false,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "rh_cuneus": {
+    "id": "rh_cuneus",
+    "hemisphere": "rh",
+    "region_name": "cuneus",
+    "file": "rh_cuneus.obj",
+    "parkinsons_relevant": false,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "rh_entorhinal": {
+    "id": "rh_entorhinal",
+    "hemisphere": "rh",
+    "region_name": "entorhinal",
+    "file": "rh_entorhinal.obj",
+    "parkinsons_relevant": false,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "rh_fusiform": {
+    "id": "rh_fusiform",
+    "hemisphere": "rh",
+    "region_name": "fusiform",
+    "file": "rh_fusiform.obj",
+    "parkinsons_relevant": false,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "rh_inferiorparietal": {
+    "id": "rh_inferiorparietal",
+    "hemisphere": "rh",
+    "region_name": "inferiorparietal",
+    "file": "rh_inferiorparietal.obj",
+    "parkinsons_relevant": true,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "rh_inferiortemporal": {
+    "id": "rh_inferiortemporal",
+    "hemisphere": "rh",
+    "region_name": "inferiortemporal",
+    "file": "rh_inferiortemporal.obj",
+    "parkinsons_relevant": false,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "rh_isthmuscingulate": {
+    "id": "rh_isthmuscingulate",
+    "hemisphere": "rh",
+    "region_name": "isthmuscingulate",
+    "file": "rh_isthmuscingulate.obj",
+    "parkinsons_relevant": true,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "rh_lateraloccipital": {
+    "id": "rh_lateraloccipital",
+    "hemisphere": "rh",
+    "region_name": "lateraloccipital",
+    "file": "rh_lateraloccipital.obj",
+    "parkinsons_relevant": false,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "rh_lateralorbitofrontal": {
+    "id": "rh_lateralorbitofrontal",
+    "hemisphere": "rh",
+    "region_name": "lateralorbitofrontal",
+    "file": "rh_lateralorbitofrontal.obj",
+    "parkinsons_relevant": false,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "rh_lingual": {
+    "id": "rh_lingual",
+    "hemisphere": "rh",
+    "region_name": "lingual",
+    "file": "rh_lingual.obj",
+    "parkinsons_relevant": false,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "rh_medialorbitofrontal": {
+    "id": "rh_medialorbitofrontal",
+    "hemisphere": "rh",
+    "region_name": "medialorbitofrontal",
+    "file": "rh_medialorbitofrontal.obj",
+    "parkinsons_relevant": false,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "rh_middletemporal": {
+    "id": "rh_middletemporal",
+    "hemisphere": "rh",
+    "region_name": "middletemporal",
+    "file": "rh_middletemporal.obj",
+    "parkinsons_relevant": true,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "rh_parahippocampal": {
+    "id": "rh_parahippocampal",
+    "hemisphere": "rh",
+    "region_name": "parahippocampal",
+    "file": "rh_parahippocampal.obj",
+    "parkinsons_relevant": false,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "rh_paracentral": {
+    "id": "rh_paracentral",
+    "hemisphere": "rh",
+    "region_name": "paracentral",
+    "file": "rh_paracentral.obj",
+    "parkinsons_relevant": false,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "rh_parsopercularis": {
+    "id": "rh_parsopercularis",
+    "hemisphere": "rh",
+    "region_name": "parsopercularis",
+    "file": "rh_parsopercularis.obj",
+    "parkinsons_relevant": false,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "rh_parsorbitalis": {
+    "id": "rh_parsorbitalis",
+    "hemisphere": "rh",
+    "region_name": "parsorbitalis",
+    "file": "rh_parsorbitalis.obj",
+    "parkinsons_relevant": false,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "rh_parstriangularis": {
+    "id": "rh_parstriangularis",
+    "hemisphere": "rh",
+    "region_name": "parstriangularis",
+    "file": "rh_parstriangularis.obj",
+    "parkinsons_relevant": false,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "rh_pericalcarine": {
+    "id": "rh_pericalcarine",
+    "hemisphere": "rh",
+    "region_name": "pericalcarine",
+    "file": "rh_pericalcarine.obj",
+    "parkinsons_relevant": false,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "rh_postcentral": {
+    "id": "rh_postcentral",
+    "hemisphere": "rh",
+    "region_name": "postcentral",
+    "file": "rh_postcentral.obj",
+    "parkinsons_relevant": true,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "rh_posteriorcingulate": {
+    "id": "rh_posteriorcingulate",
+    "hemisphere": "rh",
+    "region_name": "posteriorcingulate",
+    "file": "rh_posteriorcingulate.obj",
+    "parkinsons_relevant": true,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "rh_precentral": {
+    "id": "rh_precentral",
+    "hemisphere": "rh",
+    "region_name": "precentral",
+    "file": "rh_precentral.obj",
+    "parkinsons_relevant": true,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "rh_precuneus": {
+    "id": "rh_precuneus",
+    "hemisphere": "rh",
+    "region_name": "precuneus",
+    "file": "rh_precuneus.obj",
+    "parkinsons_relevant": false,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "rh_rostralanteriorcingulate": {
+    "id": "rh_rostralanteriorcingulate",
+    "hemisphere": "rh",
+    "region_name": "rostralanteriorcingulate",
+    "file": "rh_rostralanteriorcingulate.obj",
+    "parkinsons_relevant": false,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "rh_rostralmiddlefrontal": {
+    "id": "rh_rostralmiddlefrontal",
+    "hemisphere": "rh",
+    "region_name": "rostralmiddlefrontal",
+    "file": "rh_rostralmiddlefrontal.obj",
+    "parkinsons_relevant": true,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "rh_superiorfrontal": {
+    "id": "rh_superiorfrontal",
+    "hemisphere": "rh",
+    "region_name": "superiorfrontal",
+    "file": "rh_superiorfrontal.obj",
+    "parkinsons_relevant": true,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "rh_superiorparietal": {
+    "id": "rh_superiorparietal",
+    "hemisphere": "rh",
+    "region_name": "superiorparietal",
+    "file": "rh_superiorparietal.obj",
+    "parkinsons_relevant": false,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "rh_superiortemporal": {
+    "id": "rh_superiortemporal",
+    "hemisphere": "rh",
+    "region_name": "superiortemporal",
+    "file": "rh_superiortemporal.obj",
+    "parkinsons_relevant": true,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "rh_supramarginal": {
+    "id": "rh_supramarginal",
+    "hemisphere": "rh",
+    "region_name": "supramarginal",
+    "file": "rh_supramarginal.obj",
+    "parkinsons_relevant": true,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "rh_frontalpole": {
+    "id": "rh_frontalpole",
+    "hemisphere": "rh",
+    "region_name": "frontalpole",
+    "file": "rh_frontalpole.obj",
+    "parkinsons_relevant": false,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "rh_temporalpole": {
+    "id": "rh_temporalpole",
+    "hemisphere": "rh",
+    "region_name": "temporalpole",
+    "file": "rh_temporalpole.obj",
+    "parkinsons_relevant": false,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "rh_transversetemporal": {
+    "id": "rh_transversetemporal",
+    "hemisphere": "rh",
+    "region_name": "transversetemporal",
+    "file": "rh_transversetemporal.obj",
+    "parkinsons_relevant": false,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "rh_insula": {
+    "id": "rh_insula",
+    "hemisphere": "rh",
+    "region_name": "insula",
+    "file": "rh_insula.obj",
+    "parkinsons_relevant": true,
+    "source": "cortical",
+    "metabolites": []
+  },
+  "lh_thalamus": {
+    "id": "lh_thalamus",
+    "hemisphere": "lh",
+    "region_name": "thalamus",
+    "file": "lh_thalamus.obj",
+    "parkinsons_relevant": true,
+    "source": "subcortical",
+    "metabolites": []
+  },
+  "lh_caudate": {
+    "id": "lh_caudate",
+    "hemisphere": "lh",
+    "region_name": "caudate",
+    "file": "lh_caudate.obj",
+    "parkinsons_relevant": true,
+    "source": "subcortical",
+    "metabolites": []
+  },
+  "lh_putamen": {
+    "id": "lh_putamen",
+    "hemisphere": "lh",
+    "region_name": "putamen",
+    "file": "lh_putamen.obj",
+    "parkinsons_relevant": true,
+    "source": "subcortical",
+    "metabolites": []
+  },
+  "lh_pallidum": {
+    "id": "lh_pallidum",
+    "hemisphere": "lh",
+    "region_name": "pallidum",
+    "file": "lh_pallidum.obj",
+    "parkinsons_relevant": true,
+    "source": "subcortical",
+    "metabolites": []
+  },
+  "lh_hippocampus": {
+    "id": "lh_hippocampus",
+    "hemisphere": "lh",
+    "region_name": "hippocampus",
+    "file": "lh_hippocampus.obj",
+    "parkinsons_relevant": true,
+    "source": "subcortical",
+    "metabolites": []
+  },
+  "lh_amygdala": {
+    "id": "lh_amygdala",
+    "hemisphere": "lh",
+    "region_name": "amygdala",
+    "file": "lh_amygdala.obj",
+    "parkinsons_relevant": true,
+    "source": "subcortical",
+    "metabolites": []
+  },
+  "lh_accumbens": {
+    "id": "lh_accumbens",
+    "hemisphere": "lh",
+    "region_name": "accumbens",
+    "file": "lh_accumbens.obj",
+    "parkinsons_relevant": true,
+    "source": "subcortical",
+    "metabolites": []
+  },
+  "lh_ventraldc": {
+    "id": "lh_ventraldc",
+    "hemisphere": "lh",
+    "region_name": "ventraldc",
+    "file": "lh_ventraldc.obj",
+    "parkinsons_relevant": true,
+    "source": "subcortical",
+    "metabolites": []
+  },
+  "rh_thalamus": {
+    "id": "rh_thalamus",
+    "hemisphere": "rh",
+    "region_name": "thalamus",
+    "file": "rh_thalamus.obj",
+    "parkinsons_relevant": true,
+    "source": "subcortical",
+    "metabolites": []
+  },
+  "rh_caudate": {
+    "id": "rh_caudate",
+    "hemisphere": "rh",
+    "region_name": "caudate",
+    "file": "rh_caudate.obj",
+    "parkinsons_relevant": true,
+    "source": "subcortical",
+    "metabolites": []
+  },
+  "rh_putamen": {
+    "id": "rh_putamen",
+    "hemisphere": "rh",
+    "region_name": "putamen",
+    "file": "rh_putamen.obj",
+    "parkinsons_relevant": true,
+    "source": "subcortical",
+    "metabolites": []
+  },
+  "rh_pallidum": {
+    "id": "rh_pallidum",
+    "hemisphere": "rh",
+    "region_name": "pallidum",
+    "file": "rh_pallidum.obj",
+    "parkinsons_relevant": true,
+    "source": "subcortical",
+    "metabolites": []
+  },
+  "rh_hippocampus": {
+    "id": "rh_hippocampus",
+    "hemisphere": "rh",
+    "region_name": "hippocampus",
+    "file": "rh_hippocampus.obj",
+    "parkinsons_relevant": true,
+    "source": "subcortical",
+    "metabolites": []
+  },
+  "rh_amygdala": {
+    "id": "rh_amygdala",
+    "hemisphere": "rh",
+    "region_name": "amygdala",
+    "file": "rh_amygdala.obj",
+    "parkinsons_relevant": true,
+    "source": "subcortical",
+    "metabolites": []
+  },
+  "rh_accumbens": {
+    "id": "rh_accumbens",
+    "hemisphere": "rh",
+    "region_name": "accumbens",
+    "file": "rh_accumbens.obj",
+    "parkinsons_relevant": true,
+    "source": "subcortical",
+    "metabolites": []
+  },
+  "rh_ventraldc": {
+    "id": "rh_ventraldc",
+    "hemisphere": "rh",
+    "region_name": "ventraldc",
+    "file": "rh_ventraldc.obj",
+    "parkinsons_relevant": true,
+    "source": "subcortical",
+    "metabolites": []
+  },
+  "mid_brainstem": {
+    "id": "mid_brainstem",
+    "hemisphere": "mid",
+    "region_name": "brainstem",
+    "file": "mid_brainstem.obj",
+    "parkinsons_relevant": true,
+    "source": "subcortical",
+    "metabolites": []
+  }
+}
