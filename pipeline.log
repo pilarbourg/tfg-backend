@@ -2462,3 +2462,803 @@ completed. 14/15 papers have full text, 15 have abstracts
 2026-04-12 00:17:46,419 - INFO - 
 completed. 14/15 papers have full text, 15 have abstracts
 2026-04-12 00:17:46,419 - INFO - Database connection closed.
+2026-04-14 22:15:53,815 - INFO - No device provided, using mps
+2026-04-14 22:15:54,045 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-14 22:15:54,057 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/modules.json "HTTP/1.1 200 OK"
+2026-04-14 22:15:54,181 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-14 22:15:54,182 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-04-14 22:15:54,191 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-04-14 22:15:54,194 - INFO - Loading SentenceTransformer model from pritamdeka/S-PubMedBert-MS-MARCO.
+2026-04-14 22:15:54,316 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-14 22:15:54,327 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-04-14 22:15:54,449 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-04-14 22:15:54,474 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/README.md "HTTP/1.1 200 OK"
+2026-04-14 22:15:54,600 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-14 22:15:54,611 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/modules.json "HTTP/1.1 200 OK"
+2026-04-14 22:15:54,732 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-14 22:15:54,747 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-04-14 22:15:54,970 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-04-14 22:15:55,105 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-14 22:15:55,120 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-04-14 22:15:55,287 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-04-14 22:15:55,412 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO "HTTP/1.1 200 OK"
+2026-04-14 22:15:55,550 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/commits/main "HTTP/1.1 200 OK"
+2026-04-14 22:15:55,550 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-04-14 22:15:55,671 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-04-14 22:15:55,680 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/discussions?p=0 "HTTP/1.1 200 OK"
+2026-04-14 22:15:55,796 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-04-14 22:15:55,913 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/commits/refs%2Fpr%2F10 "HTTP/1.1 200 OK"
+2026-04-14 22:15:55,917 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-04-14 22:15:56,050 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/refs%2Fpr%2F10/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-04-14 22:15:56,153 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-14 22:15:56,184 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/refs%2Fpr%2F10/model.safetensors "HTTP/1.1 302 Found"
+2026-04-14 22:15:56,192 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-14 22:15:56,313 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-14 22:15:56,326 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-04-14 22:15:56,467 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-14 22:15:56,479 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-04-14 22:15:56,598 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-14 22:15:56,609 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-14 22:15:56,742 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-14 22:15:56,869 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-14 22:15:57,050 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-14 22:15:57,062 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-04-14 22:15:57,187 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO "HTTP/1.1 200 OK"
+2026-04-14 22:15:58,117 - INFO - [1/15] Profiling novel metabolic biomarkers for Parkinson's disease
+2026-04-14 22:15:58,125 - INFO - Abstract already in DB, skipping
+2026-04-14 22:15:58,126 - INFO - Full text already in DB, skipping
+2026-04-14 22:15:58,126 - INFO - [2/15] Identification of metabolites reproducibly associated with P
+2026-04-14 22:15:58,126 - INFO - Abstract already in DB, skipping
+2026-04-14 22:15:58,126 - INFO - Full text already in DB, skipping
+2026-04-14 22:15:58,126 - INFO - [3/15] Untargeted serum metabolomics reveals novel metabolite assoc
+2026-04-14 22:15:58,127 - INFO - Abstract already in DB, skipping
+2026-04-14 22:15:58,127 - INFO - Full text already in DB, skipping
+2026-04-14 22:15:58,127 - INFO - [4/15] Metabolomics Unveils Disrupted Pathways in Parkinson's Disea
+2026-04-14 22:15:58,127 - INFO - Abstract already in DB, skipping
+2026-04-14 22:15:58,127 - INFO - Full text already in DB, skipping
+2026-04-14 22:15:58,127 - INFO - [5/15] Unraveling the Relation of Parkinson's Disease and Metabolit
+2026-04-14 22:15:58,127 - INFO - Abstract already in DB, skipping
+2026-04-14 22:15:58,128 - INFO - Full text already in DB, skipping
+2026-04-14 22:15:58,128 - INFO - [6/15] Plasma and urinary metabolomic signatures differentiate gene
+2026-04-14 22:15:58,128 - INFO - Abstract already in DB, skipping
+2026-04-14 22:15:58,128 - INFO - Full text already in DB, skipping
+2026-04-14 22:15:58,128 - INFO - [7/15] Identification of gut metabolites associated with Parkinson'
+2026-04-14 22:15:58,128 - INFO - Abstract already in DB, skipping
+2026-04-14 22:15:58,128 - INFO - Full text already in DB, skipping
+2026-04-14 22:15:58,128 - INFO - [8/15] Association of a five-metabolite and early-symptom profile w
+2026-04-14 22:15:58,128 - INFO - Abstract already in DB, skipping
+2026-04-14 22:15:58,128 - INFO - Full text already in DB, skipping
+2026-04-14 22:15:58,128 - INFO - [9/15] metabolic profiling of Parkinson's disease and mild cognitiv
+2026-04-14 22:15:58,129 - INFO - Abstract already in DB, skipping
+2026-04-14 22:15:58,129 - INFO - Full text already in DB, skipping
+2026-04-14 22:15:58,129 - INFO - [10/15] Amyloids of α-Synuclein Promote Chemical Transformations of 
+2026-04-14 22:15:58,129 - INFO - Storing abstract...
+2026-04-14 22:16:00,219 - INFO - Trying PMC (PMC10454467)...
+2026-04-14 22:16:04,773 - INFO - [11/15] Cerebrospinal fluid and plasma metabolites in Parkinson's di
+2026-04-14 22:16:04,775 - INFO - Abstract already in DB, skipping
+2026-04-14 22:16:04,776 - INFO - Full text already in DB, skipping
+2026-04-14 22:16:04,776 - INFO - [12/15] A metabolic profile of polyamines in parkinson disease: A pr
+2026-04-14 22:16:04,777 - INFO - Abstract already in DB, skipping
+2026-04-14 22:16:04,777 - INFO - Full text already in DB, skipping
+2026-04-14 22:16:04,777 - INFO - [13/15] Serum caffeine and metabolites are reliable biomarkers of ea
+2026-04-14 22:16:04,778 - INFO - Abstract already in DB, skipping
+2026-04-14 22:16:04,778 - INFO - Full text already in DB, skipping
+2026-04-14 22:16:04,778 - INFO - [14/15] Longitudinal Analysis of Multiple Neurotransmitter Metabolit
+2026-04-14 22:16:04,779 - INFO - Abstract already in DB, skipping
+2026-04-14 22:16:04,779 - INFO - Full text already in DB, skipping
+2026-04-14 22:16:04,779 - INFO - [15/15] Comprehensive metabolic profiling of Parkinson's disease by 
+2026-04-14 22:16:04,780 - INFO - Abstract already in DB, skipping
+2026-04-14 22:16:04,781 - INFO - Full text already in DB, skipping
+2026-04-14 22:16:04,788 - INFO - 
+completed. 14/15 papers have full text, 15 have abstracts
+2026-04-14 22:16:04,788 - INFO - Database connection closed.
+2026-04-16 20:11:56,250 - INFO - No device provided, using mps
+2026-04-16 20:11:56,586 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 20:11:56,587 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-04-16 20:11:56,630 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/modules.json "HTTP/1.1 200 OK"
+2026-04-16 20:11:56,816 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 20:11:56,860 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-04-16 20:11:56,863 - INFO - Loading SentenceTransformer model from pritamdeka/S-PubMedBert-MS-MARCO.
+2026-04-16 20:11:57,012 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 20:11:57,050 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-04-16 20:11:57,205 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 20:11:57,241 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/README.md "HTTP/1.1 200 OK"
+2026-04-16 20:11:57,401 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 20:11:57,441 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/modules.json "HTTP/1.1 200 OK"
+2026-04-16 20:11:57,594 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 20:11:57,704 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-04-16 20:11:57,855 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-04-16 20:11:58,024 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 20:11:58,062 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-04-16 20:11:58,269 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-04-16 20:11:58,425 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO "HTTP/1.1 200 OK"
+2026-04-16 20:11:58,603 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/commits/main "HTTP/1.1 200 OK"
+2026-04-16 20:11:58,650 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-04-16 20:11:58,783 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/discussions?p=0 "HTTP/1.1 200 OK"
+2026-04-16 20:11:58,806 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-04-16 20:11:58,955 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-04-16 20:11:58,956 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/commits/refs%2Fpr%2F10 "HTTP/1.1 200 OK"
+2026-04-16 20:11:59,116 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/refs%2Fpr%2F10/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-04-16 20:11:59,119 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-04-16 20:11:59,292 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/refs%2Fpr%2F10/model.safetensors "HTTP/1.1 302 Found"
+2026-04-16 20:11:59,335 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 20:11:59,370 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-16 20:11:59,522 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 20:11:59,562 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-04-16 20:11:59,720 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 20:11:59,762 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-04-16 20:11:59,915 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 20:11:59,972 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-16 20:12:00,126 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-16 20:12:00,306 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-16 20:12:00,539 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 20:12:00,587 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-04-16 20:12:00,748 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO "HTTP/1.1 200 OK"
+2026-04-16 20:12:01,573 - INFO - [1/15] Profiling novel metabolic biomarkers for Parkinson's disease
+2026-04-16 20:12:01,581 - INFO - Abstract already in DB, skipping
+2026-04-16 20:12:01,581 - INFO - Full text already in DB or no .md file, skipping
+2026-04-16 20:12:01,582 - INFO - [2/15] Identification of metabolites reproducibly associated with P
+2026-04-16 20:12:01,582 - INFO - Abstract already in DB, skipping
+2026-04-16 20:12:01,582 - INFO - Full text already in DB or no .md file, skipping
+2026-04-16 20:12:01,582 - INFO - [3/15] Untargeted serum metabolomics reveals novel metabolite assoc
+2026-04-16 20:12:01,583 - INFO - Abstract already in DB, skipping
+2026-04-16 20:12:01,583 - INFO - Full text already in DB or no .md file, skipping
+2026-04-16 20:12:01,583 - INFO - [4/15] Metabolomics Unveils Disrupted Pathways in Parkinson's Disea
+2026-04-16 20:12:01,583 - INFO - Abstract already in DB, skipping
+2026-04-16 20:12:01,583 - INFO - Full text already in DB or no .md file, skipping
+2026-04-16 20:12:01,583 - INFO - [5/15] Unraveling the Relation of Parkinson's Disease and Metabolit
+2026-04-16 20:12:01,583 - INFO - Abstract already in DB, skipping
+2026-04-16 20:12:01,584 - INFO - Full text already in DB or no .md file, skipping
+2026-04-16 20:12:01,584 - INFO - [6/15] Plasma and urinary metabolomic signatures differentiate gene
+2026-04-16 20:12:01,584 - INFO - Abstract already in DB, skipping
+2026-04-16 20:12:01,584 - INFO - Full text already in DB or no .md file, skipping
+2026-04-16 20:12:01,584 - INFO - [7/15] Identification of gut metabolites associated with Parkinson'
+2026-04-16 20:12:01,584 - INFO - Abstract already in DB, skipping
+2026-04-16 20:12:01,584 - INFO - Full text already in DB or no .md file, skipping
+2026-04-16 20:12:01,584 - INFO - [8/15] Association of a five-metabolite and early-symptom profile w
+2026-04-16 20:12:01,584 - INFO - Abstract already in DB, skipping
+2026-04-16 20:12:01,585 - INFO - Full text already in DB or no .md file, skipping
+2026-04-16 20:12:01,585 - INFO - [9/15] metabolic profiling of Parkinson's disease and mild cognitiv
+2026-04-16 20:12:01,585 - INFO - Abstract already in DB, skipping
+2026-04-16 20:12:01,585 - INFO - Full text already in DB or no .md file, skipping
+2026-04-16 20:12:01,585 - INFO - [10/15] Amyloids of α-Synuclein Promote Chemical Transformations of 
+2026-04-16 20:12:01,585 - INFO - Abstract already in DB, skipping
+2026-04-16 20:12:01,586 - INFO - Full text already in DB or no .md file, skipping
+2026-04-16 20:12:01,586 - INFO - [11/15] Cerebrospinal fluid and plasma metabolites in Parkinson's di
+2026-04-16 20:12:01,586 - INFO - Abstract already in DB, skipping
+2026-04-16 20:12:01,586 - INFO - Full text already in DB or no .md file, skipping
+2026-04-16 20:12:01,586 - INFO - [12/15] A metabolic profile of polyamines in parkinson disease: A pr
+2026-04-16 20:12:01,586 - INFO - Abstract already in DB, skipping
+2026-04-16 20:12:01,586 - INFO - Full text already in DB or no .md file, skipping
+2026-04-16 20:12:01,586 - INFO - [13/15] Serum caffeine and metabolites are reliable biomarkers of ea
+2026-04-16 20:12:01,586 - INFO - Abstract already in DB, skipping
+2026-04-16 20:12:01,587 - INFO - Full text already in DB or no .md file, skipping
+2026-04-16 20:12:01,587 - INFO - [14/15] Longitudinal Analysis of Multiple Neurotransmitter Metabolit
+2026-04-16 20:12:01,587 - INFO - Abstract already in DB, skipping
+2026-04-16 20:12:01,587 - INFO - Full text already in DB or no .md file, skipping
+2026-04-16 20:12:01,587 - INFO - [15/15] Comprehensive metabolic profiling of Parkinson's disease by 
+2026-04-16 20:12:01,587 - INFO - Abstract already in DB, skipping
+2026-04-16 20:12:01,587 - INFO - Full text already in DB or no .md file, skipping
+2026-04-16 20:12:01,587 - INFO - Database connection closed.
+2026-04-16 20:14:41,876 - INFO - No device provided, using mps
+2026-04-16 20:14:42,197 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 20:14:42,199 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-04-16 20:14:42,238 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/modules.json "HTTP/1.1 200 OK"
+2026-04-16 20:14:42,397 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 20:14:42,440 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-04-16 20:14:42,442 - INFO - Loading SentenceTransformer model from pritamdeka/S-PubMedBert-MS-MARCO.
+2026-04-16 20:14:42,596 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 20:14:42,637 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-04-16 20:14:42,796 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 20:14:42,839 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/README.md "HTTP/1.1 200 OK"
+2026-04-16 20:14:42,988 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 20:14:43,049 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/modules.json "HTTP/1.1 200 OK"
+2026-04-16 20:14:43,202 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 20:14:43,259 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-04-16 20:14:43,413 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-04-16 20:14:43,585 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 20:14:43,619 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-04-16 20:14:43,815 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-04-16 20:14:43,975 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO "HTTP/1.1 200 OK"
+2026-04-16 20:14:44,152 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/commits/main "HTTP/1.1 200 OK"
+2026-04-16 20:14:44,170 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-04-16 20:14:44,326 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-04-16 20:14:44,327 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/discussions?p=0 "HTTP/1.1 200 OK"
+2026-04-16 20:14:44,486 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-04-16 20:14:44,522 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/commits/refs%2Fpr%2F10 "HTTP/1.1 200 OK"
+2026-04-16 20:14:44,630 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-04-16 20:14:44,672 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/refs%2Fpr%2F10/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-04-16 20:14:44,790 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 20:14:44,827 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-16 20:14:44,856 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/refs%2Fpr%2F10/model.safetensors "HTTP/1.1 302 Found"
+2026-04-16 20:14:44,999 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 20:14:45,041 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-04-16 20:14:45,192 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 20:14:45,251 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-04-16 20:14:45,420 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 20:14:45,459 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-16 20:14:45,649 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-16 20:14:45,805 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-16 20:14:46,013 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-16 20:14:46,049 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-04-16 20:14:46,213 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO "HTTP/1.1 200 OK"
+2026-04-16 20:14:47,102 - INFO - [1/15] Profiling novel metabolic biomarkers for Parkinson's disease
+2026-04-16 20:14:47,104 - INFO - Abstract already in DB, skipping
+2026-04-16 20:14:47,105 - INFO - Storing full text from results/PMC5753769.md...
+2026-04-16 20:14:50,225 - INFO - ✅ Stored 10.1002/mds.27173
+2026-04-16 20:14:50,225 - INFO - [2/15] Identification of metabolites reproducibly associated with P
+2026-04-16 20:14:50,226 - INFO - Abstract already in DB, skipping
+2026-04-16 20:14:50,227 - INFO - Storing full text from results/PMC11217404.md...
+2026-04-16 20:14:55,101 - INFO - ✅ Stored 10.1038/s41531-024-00732-z
+2026-04-16 20:14:55,102 - INFO - [3/15] Untargeted serum metabolomics reveals novel metabolite assoc
+2026-04-16 20:14:55,102 - INFO - Abstract already in DB, skipping
+2026-04-16 20:14:55,103 - INFO - Storing full text from results/PMC10731845.md...
+2026-04-16 20:15:05,076 - INFO - ✅ Stored 10.1186/s13024-023-00694-5
+2026-04-16 20:15:05,077 - INFO - [4/15] Metabolomics Unveils Disrupted Pathways in Parkinson's Disea
+2026-04-16 20:15:05,077 - INFO - Abstract already in DB, skipping
+2026-04-16 20:15:05,078 - INFO - Storing full text from results/PMC11378289.md...
+2026-04-16 20:15:14,980 - INFO - ✅ Stored 10.1021/acschemneuro.4c00355
+2026-04-16 20:15:14,980 - INFO - [5/15] Unraveling the Relation of Parkinson's Disease and Metabolit
+2026-04-16 20:15:14,981 - INFO - Abstract already in DB, skipping
+2026-04-16 20:15:14,982 - INFO - Storing full text from results/PMC12082280.md...
+2026-04-16 20:15:19,605 - INFO - ✅ Stored 10.1111/cns.70424
+2026-04-16 20:15:19,605 - INFO - [6/15] Plasma and urinary metabolomic signatures differentiate gene
+2026-04-16 20:15:19,606 - INFO - Abstract already in DB, skipping
+2026-04-16 20:15:19,606 - INFO - Full text already in DB or no .md file, skipping
+2026-04-16 20:15:19,606 - INFO - [7/15] Identification of gut metabolites associated with Parkinson'
+2026-04-16 20:15:19,606 - INFO - Abstract already in DB, skipping
+2026-04-16 20:15:19,607 - INFO - Storing full text from results/PMC9360421.md...
+2026-04-16 20:15:24,319 - INFO - ✅ Stored 10.3389/fnagi.2022.927625
+2026-04-16 20:15:24,320 - INFO - [8/15] Association of a five-metabolite and early-symptom profile w
+2026-04-16 20:15:24,320 - INFO - Abstract already in DB, skipping
+2026-04-16 20:15:24,321 - INFO - Storing full text from results/PMC12894904.md...
+2026-04-16 20:15:32,778 - INFO - ✅ Stored 10.1038/s41598-026-36756-z
+2026-04-16 20:15:32,778 - INFO - [9/15] metabolic profiling of Parkinson's disease and mild cognitiv
+2026-04-16 20:15:32,779 - INFO - Abstract already in DB, skipping
+2026-04-16 20:15:32,779 - INFO - Storing full text from results/PMC5485028.md...
+2026-04-16 20:15:35,719 - INFO - ✅ Stored 10.1002/mds.26992
+2026-04-16 20:15:35,719 - INFO - [10/15] Amyloids of α-Synuclein Promote Chemical Transformations of 
+2026-04-16 20:15:35,720 - INFO - Abstract already in DB, skipping
+2026-04-16 20:15:35,721 - INFO - Storing full text from results/PMC10454467.md...
+2026-04-16 20:15:37,541 - INFO - ✅ Stored 10.3390/ijms241612849
+2026-04-16 20:15:37,541 - INFO - [11/15] Cerebrospinal fluid and plasma metabolites in Parkinson's di
+2026-04-16 20:15:37,542 - INFO - Abstract already in DB, skipping
+2026-04-16 20:15:37,543 - INFO - Storing full text from results/PMC13009158.md...
+2026-04-16 20:15:41,733 - INFO - ✅ Stored 10.1038/s41598-025-30521-4
+2026-04-16 20:15:41,733 - INFO - [12/15] A metabolic profile of polyamines in parkinson disease: A pr
+2026-04-16 20:15:41,734 - INFO - Abstract already in DB, skipping
+2026-04-16 20:15:41,735 - INFO - Storing full text from results/PMC6772170.md...
+2026-04-16 20:15:55,085 - INFO - ✅ Stored 10.1002/ana.25516
+2026-04-16 20:15:55,085 - INFO - [13/15] Serum caffeine and metabolites are reliable biomarkers of ea
+2026-04-16 20:15:55,086 - INFO - Abstract already in DB, skipping
+2026-04-16 20:15:55,086 - INFO - Storing full text from results/PMC5791797.md...
+2026-04-16 20:15:59,461 - INFO - ✅ Stored 10.1212/WNL.0000000000004888
+2026-04-16 20:15:59,461 - INFO - [14/15] Longitudinal Analysis of Multiple Neurotransmitter Metabolit
+2026-04-16 20:15:59,462 - INFO - Abstract already in DB, skipping
+2026-04-16 20:15:59,462 - INFO - Storing full text from results/PMC8453505.md...
+2026-04-16 20:16:02,966 - INFO - ✅ Stored 10.1002/mds.28608
+2026-04-16 20:16:02,966 - INFO - [15/15] Comprehensive metabolic profiling of Parkinson's disease by 
+2026-04-16 20:16:02,967 - INFO - Abstract already in DB, skipping
+2026-04-16 20:16:02,968 - INFO - Storing full text from results/PMC7825156.md...
+2026-04-16 20:16:10,431 - INFO - ✅ Stored 10.1186/s13024-021-00425-8
+2026-04-16 20:16:10,432 - INFO - Database connection closed.
+2026-05-14 20:14:54,971 - INFO - Found 199 existing papers in index
+2026-05-14 20:14:54,972 - INFO - Searching PubMed...
+2026-05-14 20:14:55,416 - INFO - Found 5 PMIDs, 5 are new
+2026-05-14 20:14:55,417 - INFO - [1/5] Processing PMID 42124488
+2026-05-14 20:15:05,998 - ERROR - Error fetching PMCID for 42124488: HTTPSConnectionPool(host='eutils.ncbi.nlm.nih.gov', port=443): Read timed out. (read timeout=10)
+2026-05-14 20:15:06,000 - INFO - Abstract only (no PMC)
+2026-05-14 20:15:06,503 - INFO - [2/5] Processing PMID 42113315
+2026-05-14 20:15:16,982 - ERROR - Error fetching PMCID for 42113315: HTTPSConnectionPool(host='eutils.ncbi.nlm.nih.gov', port=443): Read timed out. (read timeout=10)
+2026-05-14 20:15:16,982 - INFO - Abstract only (no PMC)
+2026-05-14 20:15:17,486 - INFO - [3/5] Processing PMID 42109892
+2026-05-14 20:15:27,780 - ERROR - Error fetching PMCID for 42109892: HTTPSConnectionPool(host='eutils.ncbi.nlm.nih.gov', port=443): Read timed out. (read timeout=10)
+2026-05-14 20:15:27,781 - INFO - Abstract only (no PMC)
+2026-05-14 20:15:28,285 - INFO - [4/5] Processing PMID 42099164
+2026-05-14 20:15:32,063 - INFO - Abstract only (no PMC)
+2026-05-14 20:15:32,569 - INFO - [5/5] Processing PMID 42096632
+2026-05-14 20:15:35,267 - INFO - Abstract only (no PMC)
+2026-05-14 20:15:35,782 - INFO - Done. 204 total papers in index (5 new)
+2026-05-14 20:18:09,993 - INFO - Found 204 existing papers in index
+2026-05-14 20:18:09,998 - INFO - Searching PubMed...
+2026-05-14 20:18:10,425 - INFO - Found 5 PMIDs, 0 are new
+2026-05-14 20:18:10,435 - INFO - Done. 204 total papers in index (0 new)
+2026-05-14 20:24:00,763 - INFO - Found 204 existing papers in index
+2026-05-14 20:24:00,773 - INFO - Searching PubMed...
+2026-05-14 20:24:01,029 - INFO - Found 5 new PMIDs to process
+2026-05-14 20:24:01,029 - INFO - [1/5] Processing PMID 42094987
+2026-05-14 20:24:09,298 - INFO - Abstract only (no PMC)
+2026-05-14 20:24:09,802 - INFO - [2/5] Processing PMID 42091637
+2026-05-14 20:24:19,128 - INFO - Abstract only (no PMC)
+2026-05-14 20:24:19,634 - INFO - [3/5] Processing PMID 42087344
+2026-05-14 20:24:32,600 - INFO - Abstract only (no PMC)
+2026-05-14 20:24:33,101 - INFO - [4/5] Processing PMID 42083341
+2026-05-14 20:24:39,065 - INFO - Abstract only (no PMC)
+2026-05-14 20:24:39,566 - INFO - [5/5] Processing PMID 42082531
+2026-05-14 20:24:47,699 - INFO - Abstract only (no PMC)
+2026-05-14 20:24:48,215 - INFO - Done. 209 total papers in index (5 new)
+2026-05-14 20:25:36,799 - INFO - Found 209 existing papers in index
+2026-05-14 20:25:36,800 - INFO - Searching PubMed...
+2026-05-14 20:25:37,226 - INFO - Found 5 new PMIDs to process
+2026-05-14 20:25:37,226 - INFO - [1/5] Processing PMID 42079267
+2026-05-14 20:25:51,084 - ERROR - Error fetching PMCID for 42079267: Invalid control character at: line 1 column 86 (char 85)
+2026-05-14 20:25:51,086 - INFO - Abstract only (no PMC)
+2026-05-14 20:25:51,592 - INFO - [2/5] Processing PMID 42075749
+2026-05-14 20:26:07,129 - ERROR - Error fetching PMCID for 42075749: Response ended prematurely
+2026-05-14 20:26:07,129 - INFO - Abstract only (no PMC)
+2026-05-14 20:26:07,635 - INFO - [3/5] Processing PMID 42075021
+2026-05-14 20:26:22,522 - ERROR - Error fetching PMCID for 42075021: Invalid control character at: line 1 column 86 (char 85)
+2026-05-14 20:26:22,524 - INFO - Abstract only (no PMC)
+2026-05-14 20:26:23,029 - INFO - [4/5] Processing PMID 42074869
+2026-05-14 20:26:30,835 - INFO - PMC full-text available: PMC13117294
+2026-05-14 20:26:31,340 - INFO - [5/5] Processing PMID 42073390
+2026-05-14 20:26:39,419 - INFO - PMC full-text available: PMC13117457
+2026-05-14 20:26:39,933 - INFO - Done. 214 total papers in index (5 new)
+2026-05-14 20:30:00,055 - ERROR - Error downloading paper for PMC13117294: Timeout 30000ms exceeded while waiting for event "download"
+=========================== logs ===========================
+waiting for event "download"
+============================================================
+2026-05-14 20:32:30,163 - ERROR - Error downloading paper for PMC13117294: Timeout 60000ms exceeded while waiting for event "download"
+=========================== logs ===========================
+waiting for event "download"
+============================================================
+2026-05-14 20:34:34,358 - ERROR - Failed to download PDF for PMC13117294: status 200, content-type text/html; charset=utf-8
+2026-05-14 20:36:14,043 - ERROR - Error downloading paper for PMC5485028: Timeout 60000ms exceeded while waiting for event "download"
+=========================== logs ===========================
+waiting for event "download"
+============================================================
+2026-05-14 20:38:35,167 - INFO - Final URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC5485028/pdf/
+2026-05-14 20:38:35,461 - INFO - Saved to downloads/PMC5485028.pdf
+2026-05-14 20:39:22,869 - INFO - Final URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC5485028/pdf/
+2026-05-14 20:39:23,174 - INFO - Saved to downloads/PMC5485028.pdf
+2026-05-14 20:39:45,971 - INFO - Saved to downloads/PMC5485028.pdf
+2026-05-14 20:41:15,947 - INFO - Saved to downloads/PMC5485028.pdf
+2026-05-14 20:42:14,161 - ERROR - Error downloading paper for PMC5485028: Timeout 60000ms exceeded while waiting for event "download"
+=========================== logs ===========================
+waiting for event "download"
+============================================================
+2026-05-14 20:43:12,480 - INFO - PMC5485028 already downloaded, skipping.
+2026-05-14 20:43:24,603 - ERROR - No PDF URL found for PMC5485028 — may not be open access.
+2026-05-14 20:44:07,704 - ERROR - No PDF URL found for PMC5485028 — may not be open access.
+2026-05-14 20:44:20,083 - INFO - OA API response: <OA><responseDate>2026-05-14 14:44:20</responseDate><request id="PMC5485028">https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC5485028</request><records returned-count="1" total-count="1"><record id="PMC5485028" citation="Mov Disord. 2017 Jun 10; 32(6):927-932" license="CC BY" retracted="no"><link format="tgz" updated="2024-07-16 19:25:14" href="ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/01/41/PMC5485028.tar.gz" /></record></records></OA>
+
+2026-05-14 20:44:20,087 - ERROR - No PDF URL found for PMC5485028 — may not be open access.
+2026-05-14 20:45:50,529 - INFO - Downloading PMC5485028 as tgz from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/01/41/PMC5485028.tar.gz
+2026-05-14 20:45:51,212 - ERROR - Failed to download PMC5485028: status 404
+2026-05-14 20:46:50,829 - INFO - Downloading PMC5485028 as tgz from ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/01/41/PMC5485028.tar.gz
+2026-05-14 20:46:52,132 - ERROR - FTP download failed for ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/01/41/PMC5485028.tar.gz: 550 /pub/pmc/oa_package/01/41/PMC5485028.tar.gz: No such file or directory
+2026-05-14 20:48:56,363 - INFO - Downloading PMC5485028 from https://www.onlinelibrary.wiley.com/doi/pdfdirect/10.1002/mds.26992
+2026-05-14 20:48:56,453 - ERROR - Failed to download PMC5485028: status 403, content-type text/html; charset=UTF-8
+2026-05-14 20:51:42,530 - INFO - Downloading PMC5485028 as tgz from PMC OA API
+2026-05-14 20:51:42,544 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_package/01/41/PMC5485028.tar.gz
+2026-05-14 20:51:43,397 - INFO - Extracted PDF from tarball, saved to downloads/PMC5485028.pdf
+2026-05-14 20:53:01,246 - INFO - Downloading PMC13117294 as tgz from PMC OA API
+2026-05-14 20:53:01,253 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_package/6f/c5/PMC13117294.tar.gz
+2026-05-14 20:53:02,461 - INFO - Extracted PDF from tarball, saved to downloads/PMC13117294.pdf
+2026-05-14 20:54:42,210 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-05-14 20:54:42,273 - INFO - Going to convert document batch...
+2026-05-14 20:54:42,274 - INFO - Initializing pipeline for StandardPdfPipeline with options hash 80a8a1322ca5ef46817c7adbf875fff6
+2026-05-14 20:54:42,279 - INFO - Loading plugin 'docling_defaults'
+2026-05-14 20:54:42,282 - INFO - Registered picture descriptions: ['picture_description_vlm_engine', 'vlm', 'api']
+2026-05-14 20:54:42,286 - INFO - Loading plugin 'docling_defaults'
+2026-05-14 20:54:42,297 - INFO - Registered ocr engines: ['auto', 'easyocr', 'kserve_v2_ocr', 'ocrmac', 'rapidocr', 'tesserocr', 'tesseract']
+2026-05-14 20:54:43,375 - INFO - Auto OCR model selected ocrmac.
+2026-05-14 20:54:43,380 - INFO - Loading plugin 'docling_defaults'
+2026-05-14 20:54:43,384 - INFO - Registered layout engines: ['layout_object_detection', 'docling_layout_default', 'docling_experimental_table_crops_layout']
+2026-05-14 20:54:43,395 - INFO - Accelerator device: 'mps'
+2026-05-14 20:54:43,586 - INFO - HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-layout-heron/revision/main "HTTP/1.1 200 OK"
+2026-05-14 20:54:44,698 - INFO - Loading plugin 'docling_defaults'
+2026-05-14 20:54:44,701 - INFO - Registered table structure engines: ['docling_tableformer', 'docling_tableformer_v2']
+2026-05-14 20:54:44,832 - INFO - HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-models/revision/v2.3.0 "HTTP/1.1 200 OK"
+2026-05-14 20:54:48,248 - INFO - Accelerator device: 'mps'
+2026-05-14 20:54:48,925 - INFO - Processing document PMC13117294.pdf
+2026-05-14 20:54:57,127 - INFO - Finished converting document PMC13117294.pdf in 14.92 sec.
+2026-05-14 20:54:57,181 - INFO - Deleted temporary PDF: downloads/PMC13117294.pdf
+2026-05-14 20:57:20,277 - INFO - No device provided, using mps
+2026-05-14 20:57:20,460 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 20:57:20,461 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-14 20:57:20,472 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/modules.json "HTTP/1.1 200 OK"
+2026-05-14 20:57:20,599 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 20:57:20,616 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-14 20:57:20,618 - INFO - Loading SentenceTransformer model from pritamdeka/S-PubMedBert-MS-MARCO.
+2026-05-14 20:57:20,745 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 20:57:20,758 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-14 20:57:20,882 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 20:57:20,893 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/README.md "HTTP/1.1 200 OK"
+2026-05-14 20:57:21,013 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 20:57:21,025 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/modules.json "HTTP/1.1 200 OK"
+2026-05-14 20:57:21,152 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 20:57:21,164 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-05-14 20:57:21,292 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 20:57:21,414 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 20:57:21,426 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-05-14 20:57:21,587 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-05-14 20:57:21,717 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO "HTTP/1.1 200 OK"
+2026-05-14 20:57:21,852 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/commits/main "HTTP/1.1 200 OK"
+2026-05-14 20:57:21,865 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 20:57:21,988 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 20:57:21,989 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/discussions?p=0 "HTTP/1.1 200 OK"
+2026-05-14 20:57:22,120 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 20:57:22,128 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/commits/refs%2Fpr%2F10 "HTTP/1.1 200 OK"
+2026-05-14 20:57:22,250 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 20:57:22,252 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/refs%2Fpr%2F10/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-05-14 20:57:22,379 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 20:57:22,380 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/refs%2Fpr%2F10/model.safetensors "HTTP/1.1 302 Found"
+2026-05-14 20:57:22,392 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-14 20:57:22,525 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 20:57:22,536 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-05-14 20:57:22,662 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 20:57:22,672 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-05-14 20:57:22,797 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 20:57:22,808 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-14 20:57:22,944 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-14 20:57:23,073 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-14 20:57:23,246 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 20:57:23,256 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-05-14 20:57:23,382 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO "HTTP/1.1 200 OK"
+2026-05-14 20:58:52,674 - INFO - No device provided, using mps
+2026-05-14 20:58:52,856 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 20:58:52,857 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-14 20:58:52,866 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/modules.json "HTTP/1.1 200 OK"
+2026-05-14 20:58:52,989 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 20:58:53,000 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-14 20:58:53,002 - INFO - Loading SentenceTransformer model from pritamdeka/S-PubMedBert-MS-MARCO.
+2026-05-14 20:58:53,127 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 20:58:53,138 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-14 20:58:53,270 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 20:58:53,281 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/README.md "HTTP/1.1 200 OK"
+2026-05-14 20:58:53,404 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 20:58:53,414 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/modules.json "HTTP/1.1 200 OK"
+2026-05-14 20:58:53,538 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 20:58:53,547 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-05-14 20:58:53,671 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 20:58:53,795 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 20:58:53,805 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-05-14 20:58:53,970 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-05-14 20:58:54,097 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO "HTTP/1.1 200 OK"
+2026-05-14 20:58:54,244 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 20:58:54,286 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/commits/main "HTTP/1.1 200 OK"
+2026-05-14 20:58:54,381 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 20:58:54,421 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/discussions?p=0 "HTTP/1.1 200 OK"
+2026-05-14 20:58:54,507 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 20:58:54,586 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/commits/refs%2Fpr%2F10 "HTTP/1.1 200 OK"
+2026-05-14 20:58:54,639 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 20:58:54,718 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/refs%2Fpr%2F10/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-05-14 20:58:54,767 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 20:58:54,812 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-14 20:58:54,838 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/refs%2Fpr%2F10/model.safetensors "HTTP/1.1 302 Found"
+2026-05-14 20:58:54,938 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 20:58:54,953 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-05-14 20:58:55,077 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 20:58:55,088 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-05-14 20:58:55,248 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 20:58:55,257 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-14 20:58:55,388 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-14 20:58:55,540 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-14 20:58:55,711 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 20:58:55,721 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-05-14 20:58:55,847 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO "HTTP/1.1 200 OK"
+2026-05-14 20:59:57,372 - INFO - No device provided, using mps
+2026-05-14 20:59:57,529 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 20:59:57,529 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-14 20:59:57,539 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/modules.json "HTTP/1.1 200 OK"
+2026-05-14 20:59:57,673 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 20:59:57,685 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-14 20:59:57,687 - INFO - Loading SentenceTransformer model from pritamdeka/S-PubMedBert-MS-MARCO.
+2026-05-14 20:59:57,810 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 20:59:57,820 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-14 20:59:57,946 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 20:59:57,959 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/README.md "HTTP/1.1 200 OK"
+2026-05-14 20:59:58,081 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 20:59:58,093 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/modules.json "HTTP/1.1 200 OK"
+2026-05-14 20:59:58,219 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 20:59:58,229 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-05-14 20:59:58,360 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 20:59:58,483 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 20:59:58,494 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-05-14 20:59:58,666 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-05-14 20:59:58,792 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO "HTTP/1.1 200 OK"
+2026-05-14 20:59:58,946 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 20:59:58,971 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/commits/main "HTTP/1.1 200 OK"
+2026-05-14 20:59:59,076 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 20:59:59,105 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/discussions?p=0 "HTTP/1.1 200 OK"
+2026-05-14 20:59:59,204 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 20:59:59,264 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/commits/refs%2Fpr%2F10 "HTTP/1.1 200 OK"
+2026-05-14 20:59:59,329 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 20:59:59,394 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/refs%2Fpr%2F10/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-05-14 20:59:59,459 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 20:59:59,470 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-14 20:59:59,519 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/refs%2Fpr%2F10/model.safetensors "HTTP/1.1 302 Found"
+2026-05-14 20:59:59,590 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 20:59:59,639 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-05-14 20:59:59,760 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 20:59:59,771 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-05-14 20:59:59,893 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 20:59:59,903 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-14 21:00:00,028 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-14 21:00:00,153 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-14 21:00:00,326 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:00:00,337 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-05-14 21:00:00,465 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO "HTTP/1.1 200 OK"
+2026-05-14 21:00:19,295 - INFO - No device provided, using mps
+2026-05-14 21:00:19,511 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:00:19,512 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-14 21:00:19,523 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/modules.json "HTTP/1.1 200 OK"
+2026-05-14 21:00:19,650 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:00:19,667 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-14 21:00:19,669 - INFO - Loading SentenceTransformer model from pritamdeka/S-PubMedBert-MS-MARCO.
+2026-05-14 21:00:19,823 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:00:19,832 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-14 21:00:19,957 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:00:19,970 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/README.md "HTTP/1.1 200 OK"
+2026-05-14 21:00:20,095 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:00:20,106 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/modules.json "HTTP/1.1 200 OK"
+2026-05-14 21:00:20,226 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:00:20,240 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-05-14 21:00:20,367 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 21:00:20,491 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:00:20,500 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-05-14 21:00:20,671 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-05-14 21:00:20,813 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO "HTTP/1.1 200 OK"
+2026-05-14 21:00:20,959 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 21:00:20,973 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/commits/main "HTTP/1.1 200 OK"
+2026-05-14 21:00:21,083 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 21:00:21,114 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/discussions?p=0 "HTTP/1.1 200 OK"
+2026-05-14 21:00:21,213 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 21:00:21,260 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/commits/refs%2Fpr%2F10 "HTTP/1.1 200 OK"
+2026-05-14 21:00:21,343 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 21:00:21,393 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/refs%2Fpr%2F10/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-05-14 21:00:21,470 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:00:21,486 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-14 21:00:21,562 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/refs%2Fpr%2F10/model.safetensors "HTTP/1.1 302 Found"
+2026-05-14 21:00:21,620 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:00:21,632 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-05-14 21:00:21,759 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:00:21,771 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-05-14 21:00:21,894 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:00:21,905 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-14 21:00:22,035 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-14 21:00:22,168 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-14 21:00:22,345 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:00:22,356 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-05-14 21:00:22,487 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO "HTTP/1.1 200 OK"
+2026-05-14 21:00:58,457 - INFO - No device provided, using mps
+2026-05-14 21:00:58,613 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:00:58,624 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/modules.json "HTTP/1.1 200 OK"
+2026-05-14 21:00:58,750 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:00:58,761 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-14 21:00:58,763 - INFO - Loading SentenceTransformer model from pritamdeka/S-PubMedBert-MS-MARCO.
+2026-05-14 21:00:58,883 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:00:58,894 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-14 21:00:59,018 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:00:59,029 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/README.md "HTTP/1.1 200 OK"
+2026-05-14 21:00:59,155 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:00:59,165 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/modules.json "HTTP/1.1 200 OK"
+2026-05-14 21:00:59,292 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:00:59,294 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-14 21:00:59,304 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-05-14 21:00:59,430 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 21:00:59,552 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:00:59,563 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-05-14 21:00:59,726 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-05-14 21:00:59,867 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO "HTTP/1.1 200 OK"
+2026-05-14 21:01:00,013 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/commits/main "HTTP/1.1 200 OK"
+2026-05-14 21:01:00,030 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 21:01:00,146 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/discussions?p=0 "HTTP/1.1 200 OK"
+2026-05-14 21:01:00,157 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 21:01:00,307 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/commits/refs%2Fpr%2F10 "HTTP/1.1 200 OK"
+2026-05-14 21:01:00,308 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 21:01:00,434 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/refs%2Fpr%2F10/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-05-14 21:01:00,441 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 21:01:00,562 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/refs%2Fpr%2F10/model.safetensors "HTTP/1.1 302 Found"
+2026-05-14 21:01:00,569 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:01:00,579 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-14 21:01:00,701 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:01:00,712 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-05-14 21:01:00,870 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:01:00,880 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-05-14 21:01:01,020 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:01:01,032 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-14 21:01:01,159 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-14 21:01:01,287 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-14 21:01:01,456 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:01:01,466 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-05-14 21:01:01,595 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO "HTTP/1.1 200 OK"
+2026-05-14 21:01:33,556 - INFO - No device provided, using mps
+2026-05-14 21:01:33,718 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:01:33,727 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/modules.json "HTTP/1.1 200 OK"
+2026-05-14 21:01:33,854 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:01:33,856 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-14 21:01:33,867 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-14 21:01:33,870 - INFO - Loading SentenceTransformer model from pritamdeka/S-PubMedBert-MS-MARCO.
+2026-05-14 21:01:33,991 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:01:34,001 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-14 21:01:34,125 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:01:34,135 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/README.md "HTTP/1.1 200 OK"
+2026-05-14 21:01:34,262 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:01:34,272 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/modules.json "HTTP/1.1 200 OK"
+2026-05-14 21:01:34,395 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:01:34,406 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-05-14 21:01:34,527 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 21:01:34,652 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:01:34,663 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-05-14 21:01:34,832 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-05-14 21:01:34,957 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO "HTTP/1.1 200 OK"
+2026-05-14 21:01:35,100 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/commits/main "HTTP/1.1 200 OK"
+2026-05-14 21:01:35,167 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 21:01:35,239 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/discussions?p=0 "HTTP/1.1 200 OK"
+2026-05-14 21:01:35,291 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 21:01:35,387 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/commits/refs%2Fpr%2F10 "HTTP/1.1 200 OK"
+2026-05-14 21:01:35,414 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 21:01:35,518 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/refs%2Fpr%2F10/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-05-14 21:01:35,572 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 21:01:35,643 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/refs%2Fpr%2F10/model.safetensors "HTTP/1.1 302 Found"
+2026-05-14 21:01:35,695 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:01:35,704 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-14 21:01:35,823 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:01:35,847 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-05-14 21:01:35,973 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:01:35,983 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-05-14 21:01:36,109 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:01:36,121 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-14 21:01:36,249 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-14 21:01:36,380 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-14 21:01:36,552 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:01:36,561 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-05-14 21:01:36,689 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO "HTTP/1.1 200 OK"
+2026-05-14 21:01:37,938 - INFO - Abstract already ingested or unavailable, skipping.
+2026-05-14 21:01:37,957 - INFO - Storing full text from results/PMC13117294.md...
+2026-05-14 21:01:40,210 - INFO - Successfully stored PMC13117294.
+2026-05-14 21:08:55,675 - INFO - No device provided, using mps
+2026-05-14 21:08:55,872 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:08:55,872 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-14 21:08:55,882 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/modules.json "HTTP/1.1 200 OK"
+2026-05-14 21:08:56,004 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:08:56,014 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-14 21:08:56,016 - INFO - Loading SentenceTransformer model from pritamdeka/S-PubMedBert-MS-MARCO.
+2026-05-14 21:08:56,138 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:08:56,149 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-14 21:08:56,275 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:08:56,285 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/README.md "HTTP/1.1 200 OK"
+2026-05-14 21:08:56,406 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:08:56,415 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/modules.json "HTTP/1.1 200 OK"
+2026-05-14 21:08:56,542 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:08:56,552 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-05-14 21:08:56,675 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 21:08:56,800 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:08:56,810 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-05-14 21:08:57,000 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-05-14 21:08:57,128 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO "HTTP/1.1 200 OK"
+2026-05-14 21:08:57,265 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 21:08:57,268 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/commits/main "HTTP/1.1 200 OK"
+2026-05-14 21:08:57,391 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 21:08:57,407 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/discussions?p=0 "HTTP/1.1 200 OK"
+2026-05-14 21:08:57,521 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 21:08:57,587 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/commits/refs%2Fpr%2F10 "HTTP/1.1 200 OK"
+2026-05-14 21:08:57,662 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 21:08:57,713 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/refs%2Fpr%2F10/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-05-14 21:08:57,784 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:08:57,795 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-14 21:08:57,848 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/refs%2Fpr%2F10/model.safetensors "HTTP/1.1 302 Found"
+2026-05-14 21:08:57,921 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:08:57,932 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-05-14 21:08:58,066 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:08:58,077 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-05-14 21:08:58,207 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:08:58,216 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-14 21:08:58,350 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-14 21:08:58,475 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-14 21:08:58,657 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:08:58,668 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-05-14 21:08:58,802 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO "HTTP/1.1 200 OK"
+2026-05-14 21:09:24,753 - INFO - No device provided, using mps
+2026-05-14 21:09:24,970 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:09:24,971 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-14 21:09:24,982 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/modules.json "HTTP/1.1 200 OK"
+2026-05-14 21:09:25,105 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:09:25,117 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-14 21:09:25,118 - INFO - Loading SentenceTransformer model from pritamdeka/S-PubMedBert-MS-MARCO.
+2026-05-14 21:09:25,243 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:09:25,264 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-14 21:09:25,397 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:09:25,407 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/README.md "HTTP/1.1 200 OK"
+2026-05-14 21:09:25,545 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:09:25,557 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/modules.json "HTTP/1.1 200 OK"
+2026-05-14 21:09:25,685 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:09:25,696 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-05-14 21:09:25,816 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 21:09:25,944 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:09:25,954 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-05-14 21:09:26,120 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-05-14 21:09:26,244 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO "HTTP/1.1 200 OK"
+2026-05-14 21:09:26,362 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 21:09:26,432 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/commits/main "HTTP/1.1 200 OK"
+2026-05-14 21:09:26,491 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 21:09:26,574 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/discussions?p=0 "HTTP/1.1 200 OK"
+2026-05-14 21:09:26,618 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 21:09:26,711 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/commits/refs%2Fpr%2F10 "HTTP/1.1 200 OK"
+2026-05-14 21:09:26,771 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 21:09:26,837 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/refs%2Fpr%2F10/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-05-14 21:09:26,903 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:09:26,915 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-14 21:09:26,969 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/refs%2Fpr%2F10/model.safetensors "HTTP/1.1 302 Found"
+2026-05-14 21:09:27,045 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:09:27,055 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-05-14 21:09:27,174 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:09:27,186 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-05-14 21:09:27,340 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:09:27,352 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-14 21:09:27,481 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-14 21:09:27,616 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-14 21:09:27,787 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:09:27,800 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-05-14 21:09:27,926 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO "HTTP/1.1 200 OK"
+2026-05-14 21:10:14,594 - INFO - No device provided, using mps
+2026-05-14 21:10:14,783 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:10:14,784 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-05-14 21:10:14,801 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/modules.json "HTTP/1.1 200 OK"
+2026-05-14 21:10:14,928 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:10:14,939 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-14 21:10:14,941 - INFO - Loading SentenceTransformer model from pritamdeka/S-PubMedBert-MS-MARCO.
+2026-05-14 21:10:15,064 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:10:15,076 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-05-14 21:10:15,200 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:10:15,210 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/README.md "HTTP/1.1 200 OK"
+2026-05-14 21:10:15,338 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:10:15,348 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/modules.json "HTTP/1.1 200 OK"
+2026-05-14 21:10:15,473 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:10:15,483 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-05-14 21:10:15,613 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 21:10:15,749 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:10:15,759 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-05-14 21:10:15,929 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-05-14 21:10:16,064 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO "HTTP/1.1 200 OK"
+2026-05-14 21:10:16,201 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/commits/main "HTTP/1.1 200 OK"
+2026-05-14 21:10:16,203 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 21:10:16,328 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 21:10:16,339 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/discussions?p=0 "HTTP/1.1 200 OK"
+2026-05-14 21:10:16,456 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 21:10:16,480 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/commits/refs%2Fpr%2F10 "HTTP/1.1 200 OK"
+2026-05-14 21:10:16,586 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-05-14 21:10:16,634 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/refs%2Fpr%2F10/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-05-14 21:10:16,706 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:10:16,717 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-14 21:10:16,764 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/refs%2Fpr%2F10/model.safetensors "HTTP/1.1 302 Found"
+2026-05-14 21:10:16,853 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:10:16,864 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-05-14 21:10:16,997 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:10:17,008 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-05-14 21:10:17,134 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:10:17,145 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-05-14 21:10:17,281 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-05-14 21:10:17,417 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-05-14 21:10:17,588 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-05-14 21:10:17,598 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-05-14 21:10:17,726 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO "HTTP/1.1 200 OK"
+2026-05-14 21:10:18,561 - INFO - PMC13117294 already processed, skipping.
+2026-05-14 21:10:18,928 - INFO - Downloading PMC13117457 as tgz from PMC OA API
+2026-05-14 21:10:18,929 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_package/4d/21/PMC13117457.tar.gz
+2026-05-14 21:10:20,962 - INFO - Extracted PDF from tarball, saved to downloads/PMC13117457.pdf
+2026-05-14 21:10:20,967 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-05-14 21:10:21,023 - INFO - Going to convert document batch...
+2026-05-14 21:10:21,024 - INFO - Initializing pipeline for StandardPdfPipeline with options hash 80a8a1322ca5ef46817c7adbf875fff6
+2026-05-14 21:10:21,030 - INFO - Loading plugin 'docling_defaults'
+2026-05-14 21:10:21,033 - INFO - Registered picture descriptions: ['picture_description_vlm_engine', 'vlm', 'api']
+2026-05-14 21:10:21,038 - INFO - Loading plugin 'docling_defaults'
+2026-05-14 21:10:21,048 - INFO - Registered ocr engines: ['auto', 'easyocr', 'kserve_v2_ocr', 'ocrmac', 'rapidocr', 'tesserocr', 'tesseract']
+2026-05-14 21:10:21,733 - INFO - Auto OCR model selected ocrmac.
+2026-05-14 21:10:21,738 - INFO - Loading plugin 'docling_defaults'
+2026-05-14 21:10:21,741 - INFO - Registered layout engines: ['layout_object_detection', 'docling_layout_default', 'docling_experimental_table_crops_layout']
+2026-05-14 21:10:21,752 - INFO - Accelerator device: 'mps'
+2026-05-14 21:10:21,878 - INFO - HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-layout-heron/revision/main "HTTP/1.1 200 OK"
+2026-05-14 21:10:22,559 - INFO - Loading plugin 'docling_defaults'
+2026-05-14 21:10:22,561 - INFO - Registered table structure engines: ['docling_tableformer', 'docling_tableformer_v2']
+2026-05-14 21:10:22,696 - INFO - HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-models/revision/v2.3.0 "HTTP/1.1 200 OK"
+2026-05-14 21:10:22,953 - INFO - Accelerator device: 'mps'
+2026-05-14 21:10:23,676 - INFO - Processing document PMC13117457.pdf
+2026-05-14 21:10:53,882 - INFO - Finished converting document PMC13117457.pdf in 32.92 sec.
+2026-05-14 21:10:54,008 - INFO - Deleted temporary PDF: downloads/PMC13117457.pdf
+2026-05-14 21:10:54,026 - INFO - Storing abstract for 10.3390/life16040580...
+2026-05-14 21:10:54,194 - INFO - Storing full text from results/PMC13117457.md...
+2026-05-14 21:11:07,890 - INFO - Successfully stored 10.3390/life16040580.
+2026-05-14 21:11:07,891 - INFO - Successfully ran ETL pipeline.

@@ -14,34 +14,64 @@ logging.basicConfig(
     ]
 )
 
-def validate_doi(doi):
+query = "(Parkinson's Disease OR Parkinsons Disease) AND (metabolite OR metabolomics)"
+
+def validate_doi(doi: str | None) -> bool:
     return bool(doi and doi.startswith("10."))
 
+def extract_ids_paginated(batch_size: int, offset: int) -> list[str]:
+    """
+    Fetches a single paginated batch of PMIDs from PubMed.
 
-# Searches PubMed and returns list of PMIDs (query can be changed though...)
-def extract_ids(max_results=10):
+    Parameters
+    ----------
+    batch_size : int
+        Number of results to fetch in this batch.
+    offset : int
+        Starting position in the result set.
+
+    Returns
+    -------
+    list[str]
+        List of PMIDs in this batch.
+    """
     url = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi"
     params = {
         "db": "pubmed",
-        "term": (
-            "(Parkinson's Disease OR Parkinsons Disease) " # MAYBE FIX QUERY TO BE SHORTER
-            "AND (substantia nigra OR striatum OR basal ganglia) "
-            "AND (metabolite OR metabolomics OR biomarker)"
-        ),
-        "retmax": max_results,
+        "term": query,
+        "retmax": batch_size,
+        "retstart": offset,
         "retmode": "json",
+        #"datetype": "edat",
+        #"maxdate": "2024/12/31",
     }
-    res = requests.get(url, params=params, timeout=10)
-    res.raise_for_status()
-    return res.json().get("esearchresult", {}).get("idlist", [])
+    try:
+        res = requests.get(url, params=params, timeout=20)
+        res.raise_for_status()
+        return res.json().get("esearchresult", {}).get("idlist", [])
+    except Exception as e:
+        logging.error(f"Error fetching batch at offset {offset}: {e}")
+        return []
 
+def fetch_paper_metadata(pmid: str) -> dict | None:
+    """
+    Fetches title, year, DOI, and abstract for a given PMID.
 
-# Gets title, year, DOI, and abstract from PubMed according to PMID
-def fetch_paper_metadata(pmid):
+    Parameters
+    ----------
+    pmid : str
+        PubMed identifier for the paper.
+
+    Returns
+    -------
+    dict or None
+        Dictionary containing paper metadata, or None if the request fails.
+    """
+        
     url = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi"
     params = {"db": "pubmed", "id": pmid, "retmode": "xml"}
     try:
-        res = requests.get(url, params=params, timeout=10)
+        res = requests.get(url, params=params, timeout=20)
         res.raise_for_status()
         soup = BeautifulSoup(res.content, "xml")
 
@@ -69,26 +99,37 @@ def fetch_paper_metadata(pmid):
             "title": title,
             "year": year,
             "abstract": abstract,
-            "full_text": None,
-            "full_text_source": None,
+            "pmcid" : None,
+            "has_full_text" : False
         }
 
     except requests.exceptions.RequestException as e:
         logging.error(f"Network error fetching pmid {pmid}: {e}")
         return None
 
+def get_pmcid_from_pmid(pmid: str) -> str | None:
+    """
+    Fetches PMCID from PMID
 
-# Gets PMCID from PMID to be able to use pubmed central
-def get_pmcid_from_pmid(pmid):
+    Parameters
+    ----------
+    pmid : str
+        PubMed identifier for the paper.
+
+    Returns
+    -------
+    pmcid or None
+        PubMed Central identifier for the paper, or None if the request fails.
+    """
     url = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi"
     params = {
         "dbfrom": "pubmed",
         "db": "pmc",
         "id": pmid,
-        "retmode": "json",
+        "retmode": "json"
     }
     try:
-        res = requests.get(url, params=params, timeout=10)
+        res = requests.get(url, params=params, timeout=20)
         res.raise_for_status()
         data = res.json()
 
@@ -106,11 +147,19 @@ def get_pmcid_from_pmid(pmid):
     except Exception as e:
         logging.error(f"Error fetching PMCID for {pmid}: {e}")
         return None
+    
+def build_pmid_library(max_results: int = 200) -> None:
+    """
+    Builds the PMID library of PubMed article IDs and their corresponding metadata.
+    Paginates through PubMed results until max_results new papers are found.
 
-if __name__ == "__main__":
+    Parameters
+    ----------
+    max_results : int
+        Number of new papers to add to the index.
+    """
     os.makedirs("data", exist_ok=True)
 
-    # Load existing index if it exists
     out_path = "data/metadata_index.json"
     if os.path.exists(out_path):
         with open(out_path, "r") as f:
@@ -122,11 +171,23 @@ if __name__ == "__main__":
         existing_pmids = set()
 
     logging.info("Searching PubMed...")
-    ids = extract_ids(max_results=200)
-    
-    # Filter out already-processed PMIDs
-    new_ids = [pmid for pmid in ids if pmid not in existing_pmids]
-    logging.info(f"Found {len(ids)} PMIDs, {len(new_ids)} are new")
+    new_ids = []
+    offset = 0
+    batch_size = 20
+
+    while len(new_ids) < max_results:
+        batch = extract_ids_paginated(batch_size, offset)
+        if not batch:
+            logging.info("No more results from PubMed.")
+            break
+        for pmid in batch:
+            if pmid not in existing_pmids and pmid not in new_ids:
+                new_ids.append(pmid)
+                if len(new_ids) >= max_results:
+                    break
+        offset += batch_size
+
+    logging.info(f"Found {len(new_ids)} new PMIDs to process")
 
     for i, pmid in enumerate(new_ids):
         logging.info(f"[{i+1}/{len(new_ids)}] Processing PMID {pmid}")
@@ -140,15 +201,18 @@ if __name__ == "__main__":
 
         if pmcid:
             logging.info(f"PMC full-text available: PMC{pmcid}")
+            entry["has_full_text"] = True
         elif entry["abstract"]:
             logging.info(f"Abstract only (no PMC)")
         else:
             logging.warning(f"No abstract or PMC")
 
         metadata_index.append(entry)
-        time.sleep(0.4)
+        existing_pmids.add(pmid)
+        time.sleep(0.5)  # NCBI rate limit (3 requests/s)
 
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(metadata_index, f, indent=4, ensure_ascii=False)
 
     logging.info(f"Done. {len(metadata_index)} total papers in index ({len(new_ids)} new)")
+

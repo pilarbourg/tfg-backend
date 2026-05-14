@@ -5,7 +5,15 @@ import os
 
 load_dotenv()
 
-def get_db_connection():
+def get_db_connection() -> psycopg2.extensions.connection:
+    """
+    Creates and returns a PostgreSQL database connection with pgvector registered.
+
+    Returns
+    -------
+    connection
+        Active psycopg2 database connection.
+    """
     conn = psycopg2.connect(
         dbname=os.getenv("DB_NAME"),
         user=os.getenv("DB_USER"),

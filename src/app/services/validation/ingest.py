@@ -1,4 +1,4 @@
-from app.services.etl.ingest import fetch_paper_metadata, get_pmcid_from_pmid
+from app.core.etl.obtain_ids import fetch_paper_metadata, get_pmcid_from_pmid
 import json, time
 
 VALIDATION_PMIDS = [

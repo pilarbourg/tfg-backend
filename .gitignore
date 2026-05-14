@@ -4,6 +4,7 @@ __pycache__/
 data/raw_papers/
 data/processed/
 data/metadata_index.json
+data/metadata_validation.json
 *.index
 .env
 .DS_Store
