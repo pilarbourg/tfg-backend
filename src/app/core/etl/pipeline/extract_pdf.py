@@ -14,7 +14,7 @@ logging.basicConfig(
     ]
 )
 
-UNPAYWALL_EMAIL = "pilarbourg@icloud.com"
+UNPAYWALL_EMAIL = os.getenv("UNPAYWALL_EMAIL")
 
 
 def get_download_info(pmcid: str) -> tuple[str, str] | tuple[None, None]:
