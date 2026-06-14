@@ -16,12 +16,19 @@ logging.basicConfig(
 )
 
 EMBEDDING_MODEL = SentenceTransformer('pritamdeka/S-PubMedBert-MS-MARCO')
-TEXT_SPLITTER = RecursiveCharacterTextSplitter(
-    chunk_size=1000,
-    chunk_overlap=100,
+
+#TEXT_SPLITTER = RecursiveCharacterTextSplitter(
+#    chunk_size=512,
+#    chunk_overlap=96,
+#    separators=["\n\n", "\n", ".", " ", ""]
+#)
+
+TEXT_SPLITTER = RecursiveCharacterTextSplitter.from_huggingface_tokenizer(
+    tokenizer=EMBEDDING_MODEL.tokenizer,
+    chunk_size=512,
+    chunk_overlap=96,
     separators=["\n\n", "\n", ".", " ", ""]
 )
-
 
 def _already_ingested(source_id: str, conn: connection) -> bool:
     """
@@ -44,10 +51,11 @@ def _already_ingested(source_id: str, conn: connection) -> bool:
             "SELECT 1 FROM research_papers WHERE source_url = %s LIMIT 1",
             (source_id,)
         )
+        
         return cur.fetchone() is not None
 
 
-def _store_chunks(title: str, text: str, source_id: str, conn: connection) -> None:
+def _store_chunks(title: str, text: str, source_id: str, pmid: str, pmcid: str | None, conn: connection) -> None:
     """
     Splits text into chunks, generates embeddings, and stores them in pgvector.
 
@@ -64,25 +72,39 @@ def _store_chunks(title: str, text: str, source_id: str, conn: connection) -> No
     """
     if not text:
         return
+    
+    text = text.replace("\x00", "") 
 
     chunks = TEXT_SPLITTER.split_text(text)
     embeddings = EMBEDDING_MODEL.encode(chunks).tolist()
+
     data_to_insert = [
-        (title, source_id, chunks[i], embeddings[i])
+        (title, source_id, pmid, pmcid, chunks[i], embeddings[i])
         for i in range(len(chunks))
     ]
 
-    with conn.cursor() as cur:
-        execute_values(
-            cur,
-            "INSERT INTO research_papers (title, source_url, content, embedding) VALUES %s",
-            data_to_insert
-        )
-    conn.commit()
+    try:
+        with conn.cursor() as cur:
+            execute_values(
+                cur,
+                """
+                INSERT INTO research_papers
+                (title, source_url, pmid, pmcid, content, embedding)
+                VALUES %s
+                """,
+                data_to_insert
+            )
+        conn.commit()
+
+    except Exception as e:
+        conn.rollback()
+        logging.error(f"DB insert failed: {e}")
 
 
 def ingest_paper(
     title: str,
+    pmid: str,
+    pmcid: str,
     source_id: str,
     abstract: str | None,
     md_path: str | None,
@@ -108,7 +130,7 @@ def ingest_paper(
 
     if abstract and not _already_ingested(abs_id, conn):
         logging.info(f"Storing abstract for {source_id}...")
-        _store_chunks(title=title + " (Abstract)", text=abstract, source_id=abs_id, conn=conn)
+        _store_chunks(title=title + " (Abstract)", pmid=pmid, pmcid=pmcid, text=abstract, source_id=abs_id, conn=conn)
     else:
         logging.info(f"Abstract already ingested or unavailable, skipping.")
 
@@ -116,7 +138,7 @@ def ingest_paper(
         logging.info(f"Storing full text from {md_path}...")
         with open(md_path, "r", encoding="utf-8") as f:
             full_text = f.read()
-        _store_chunks(title=title, text=full_text, source_id=source_id, conn=conn)
+        _store_chunks(title=title, pmid=pmid, pmcid=pmcid, text=full_text, source_id=source_id, conn=conn)
         logging.info(f"Successfully stored {source_id}.")
     else:
         logging.info(f"Full text already ingested or unavailable, skipping.")

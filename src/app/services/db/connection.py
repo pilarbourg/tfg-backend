@@ -7,7 +7,7 @@ load_dotenv()
 
 def get_db_connection() -> psycopg2.extensions.connection:
     """
-    Creates and returns a PostgreSQL database connection with pgvector registered.
+    Creates and returns a PostgreSQL database connection with pgvector registered. Uses Neon (online db).
 
     Returns
     -------
@@ -18,7 +18,8 @@ def get_db_connection() -> psycopg2.extensions.connection:
         dbname=os.getenv("DB_NAME"),
         user=os.getenv("DB_USER"),
         password=os.getenv("DB_PASSWORD"),
-        host=os.getenv("DB_HOST", "localhost")
+        host=os.getenv("DB_HOST"),
+        sslmode=os.getenv("DB_SSLMODE", "require")
     )
 
     cur = conn.cursor()

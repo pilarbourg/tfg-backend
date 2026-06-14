@@ -14,7 +14,7 @@ logging.basicConfig(
     ]
 )
 
-query = "(Parkinson's Disease OR Parkinsons Disease) AND (metabolite OR metabolomics)"
+query = "(Parkinson's Disease OR Parkinson) AND (metabolite OR metabolomics)"
 
 def validate_doi(doi: str | None) -> bool:
     return bool(doi and doi.startswith("10."))
@@ -42,8 +42,7 @@ def extract_ids_paginated(batch_size: int, offset: int) -> list[str]:
         "retmax": batch_size,
         "retstart": offset,
         "retmode": "json",
-        #"datetype": "edat",
-        #"maxdate": "2024/12/31",
+        "sort": "relevance",
     }
     try:
         res = requests.get(url, params=params, timeout=20)
@@ -106,27 +105,47 @@ def fetch_paper_metadata(pmid: str) -> dict | None:
     except requests.exceptions.RequestException as e:
         logging.error(f"Network error fetching pmid {pmid}: {e}")
         return None
-
+    
 def get_pmcid_from_pmid(pmid: str) -> str | None:
+    url = "https://www.ncbi.nlm.nih.gov/pmc/utils/idconv/v1.0/"
+    params = {
+        "ids": pmid,
+        "format": "json",
+        "tool": "tfg_pipeline",
+        "email": "pilarbourg@icloud.com"
+    }
+    try:
+        res = requests.get(url, params=params, timeout=20)
+        res.raise_for_status()
+        records = res.json().get("records", [])
+        if records and "pmcid" in records[0]:
+            return records[0]["pmcid"].replace("PMC", "")
+        return None
+    except Exception as e:
+        logging.error(f"Error fetching PMCID for {pmid}: {e}")
+        return None
+    
+def get_pmid_from_pmcid(pmcid: str) -> str | None:
     """
-    Fetches PMCID from PMID
+    Gets PMID from PMCID using the NCBI elink API.
 
     Parameters
     ----------
-    pmid : str
-        PubMed identifier for the paper.
+    pmcid : str
+        PubMed Central identifier for the paper.
 
     Returns
     -------
-    pmcid or None
-        PubMed Central identifier for the paper, or None if the request fails.
+    str or None
+        PubMed identifier for the paper, or None if the request fails.
     """
     url = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi"
     params = {
-        "dbfrom": "pubmed",
-        "db": "pmc",
-        "id": pmid,
-        "retmode": "json"
+        "dbfrom": "pmc",
+        "db": "pubmed",
+        "id": pmcid,
+        "retmode": "json",
+        "sort": "relevance",
     }
     try:
         res = requests.get(url, params=params, timeout=20)
@@ -138,14 +157,14 @@ def get_pmcid_from_pmid(pmid: str) -> str | None:
             return None
 
         for linksetdb in linksets[0].get("linksetdbs", []):
-            if linksetdb.get("linkname") == "pubmed_pmc":
+            if linksetdb.get("linkname") == "pmc_pubmed":
                 links = linksetdb.get("links", [])
                 return links[0] if links else None
 
         return None
 
     except Exception as e:
-        logging.error(f"Error fetching PMCID for {pmid}: {e}")
+        logging.error(f"Error fetching PMID for PMC{pmcid}: {e}")
         return None
     
 def build_pmid_library(max_results: int = 200) -> None:
@@ -191,14 +210,12 @@ def build_pmid_library(max_results: int = 200) -> None:
 
     for i, pmid in enumerate(new_ids):
         logging.info(f"[{i+1}/{len(new_ids)}] Processing PMID {pmid}")
-
         entry = fetch_paper_metadata(pmid)
         if not entry:
             continue
-
+        time.sleep(5.0)
         pmcid = get_pmcid_from_pmid(pmid)
         entry["pmcid"] = pmcid
-
         if pmcid:
             logging.info(f"PMC full-text available: PMC{pmcid}")
             entry["has_full_text"] = True
@@ -206,13 +223,27 @@ def build_pmid_library(max_results: int = 200) -> None:
             logging.info(f"Abstract only (no PMC)")
         else:
             logging.warning(f"No abstract or PMC")
-
         metadata_index.append(entry)
         existing_pmids.add(pmid)
-        time.sleep(0.5)  # NCBI rate limit (3 requests/s)
+        time.sleep(1.0)
+
+    logging.info("Retrying PMCID lookup for papers without full text...")
+    updated = 0
+    for entry in metadata_index:
+        if entry.get("pmcid") is None:
+            pmcid = get_pmcid_from_pmid(entry["pmid"])
+            if pmcid:
+                entry["pmcid"] = pmcid
+                entry["has_full_text"] = True
+                logging.info(f"Found PMCID for {entry['pmid']}: PMC{pmcid}")
+                updated += 1
+            time.sleep(5.0)
+    logging.info(f"Updated {updated} papers with newly found PMCIDs")
 
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(metadata_index, f, indent=4, ensure_ascii=False)
 
     logging.info(f"Done. {len(metadata_index)} total papers in index ({len(new_ids)} new)")
 
+if __name__ == "__main__":
+    build_pmid_library(max_results=0)

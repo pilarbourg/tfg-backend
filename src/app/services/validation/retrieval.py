@@ -10,7 +10,7 @@ sys.path.insert(0, os.path.join(project_root, "src", "app", "services"))
 from dotenv import load_dotenv
 load_dotenv()
 
-from src.app.services.rag.retrieval import perform_search_with_rerank_hybrid
+from src.app.core.rag.retrieval import perform_search_with_rerank_hybrid
 
 # Format: (metabolite_name, expected_doi, is_ambiguous)
 # is_ambiguous=True means the metabolite appears in multiple papers -> top-10 only

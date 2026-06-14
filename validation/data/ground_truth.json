@@ -1,0 +1,34 @@
+{
+  "dataset": "Parkinsons_Disease_Metabolomics_RAG_Validation",
+  "source_article": "Wang et al. (2026). Cerebrospinal fluid and plasma metabolites in Parkinson's disease: a Mendelian randomization study. Scientific Reports, 16:9588.",
+  "qa_pairs": [
+    {
+      "id": 1,
+      "category": "Biomarker / Statistical Outcome",
+      "question": "Which specific cerebrospinal fluid (CSF) metabolites were identified as being positively associated with Parkinson's disease (PD) risk in the primary Mendelian Randomization analysis?",
+      "ground_truth_answer": "The primary Mendelian Randomization analysis identified dimethylglycine, gluconate, oxalate (ethanedioate), and an unknown metabolite (X-12015) as being positively associated with Parkinson's disease risk in the cerebrospinal fluid.",
+      "supporting_evidence": "From the Results section: 'Among them, levels of dimethylglycine (OR [95% CI]=1.06[1.01-1.12], P=0.023), gluconate (OR [95% CI]=1.12[1.01-1.25], P=0.034) oxalate (ethanedioate) (OR [95% 6CI]=1.07[1.00-1.1:], P=0.043), and the unknown metabolite X-12,015 (OR [95% CII=1.06[1.00-1.11] P=0.044) were positively associated with the PD risk.'"
+    },
+    {
+      "id": 2,
+      "category": "Study Design / Statistical Outcome",
+      "question": "What threshold was adopted for the selection of single-nucleotide polymorphisms (SNPs) to identify genetic instrumental variables for plasma metabolites, and why was a relaxed threshold chosen?",
+      "ground_truth_answer": "A relatively relaxed genome-wide significance threshold of P < 5.00E-5 was adopted. This relaxed threshold was chosen because standard genome-wide significance thresholds can be overly stringent for fluid metabolites, and the higher threshold aims to enhance detection sensitivity while maintaining a representative number of genetic instruments.",
+      "supporting_evidence": "From the Instrument selection section: 'First, considering that genome-wide significance thresholds may be too stringent for CSF and plasma metabolites, we adopted a relatively relaxed threshold (P < 5.00E-5) to identify instrumental variables (IVs) for plasma metabolites 18,19. This threshold aligns with those used in similar metabolomics studies, aiming to enhance detection sensitivity while maintaining the number and representativeness of genetic instruments.'"
+    },
+    {
+      "id": 3,
+      "category": "Novel Biomarker / Robust Biomarkers",
+      "question": "Which plasma metabolite emerged as the most significant protective factor against Parkinson's disease risk, showing robust consistency across multiple MR models?",
+      "ground_truth_answer": "O-sulfo-L-tyrosine emerged as the most significant protective metabolite in plasma, showing robust negative associations with Parkinson's disease risk across four different Mendelian Randomization models.",
+      "supporting_evidence": "From the Abstract and Results sections: 'Notably, O-sulfo-L-tyrosine emerged as the most significant protective metabolite in plasma, showing robust associations across four MR models.' and 'Notably, O-sulfo-l-tyrosine levels exhibited a strong negative association with PD risk across all four MR methods. In the IVW method, it was significantly associated with reduced PD risk (OR [95% CI]=0.87 [0.77-0.99], P=0.032).'"
+    },
+    {
+      "id": 4,
+      "category": "Reverse Causality / Statistical Outcome",
+      "question": "What did the reverse Mendelian Randomization analysis indicate regarding the relationship between Parkinson's disease risk and cerebrospinal fluid (CSF) gluconate levels?",
+      "ground_truth_answer": "The reverse Mendelian Randomization analysis indicated that an increased risk of Parkinson's disease was causally associated with a decrease in cerebrospinal fluid (CSF) gluconate levels (OR [95% CI] = 0.95 [0.91-0.99], p = 0.0276), demonstrating the impact of reverse causality.",
+      "supporting_evidence": "From the Reverse MR analysis section: 'To explore the possibility of reverse causality, we performed a reverse MR analysis to determine whether an increased PD risk could influence the levels of certain metabolites (Fig. 5). In the CSF metabolites, PD risk was associated with a decrease in gluconate levels (OR [95% CI]=0.95[0.91-0.99], p=0.0276).'"
+    }
+  ]
+}

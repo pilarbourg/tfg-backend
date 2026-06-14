@@ -8,3 +8,4 @@ data/metadata_validation.json
 *.index
 .env
 .DS_Store
+*.egg-info/

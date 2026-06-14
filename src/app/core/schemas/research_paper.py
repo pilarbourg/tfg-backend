@@ -3,9 +3,11 @@ from dataclasses import dataclass
 @dataclass
 class ResearchPaper:
     pmid: str
-    pmcid: str | None
-    doi: str | None
     title: str
     year: str
-    abstract: str | None
     has_full_text: bool
+    pmcid: str | None = None
+    doi: str | None = None
+    abstract: str | None = None
+    full_text: str | None = None
+    full_text_source: str | None = None

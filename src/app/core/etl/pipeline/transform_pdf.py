@@ -26,9 +26,27 @@ CONVERTER = DocumentConverter(
     }
 )
 
-def process_pdf(pmcid : str) -> str | None:
+
+def _is_junk_line(stripped: str) -> bool:
     """
-    Processes the PubMed article in PDF format to ensure tabular data and chemical nomenclature are maintained, especially in the case of complex metabolic data.
+    Returns true for single stray characters or lines containing no letters
+    """
+    if not stripped:
+        return False
+    
+    if len(stripped) == 1:
+        return True
+    
+    if not re.search(r'[A-Za-z]', stripped):
+        return True
+    
+    return False
+
+
+def process_pdf(pmcid: str) -> str | None:
+    """
+    Processes the PubMed article in PDF format to ensure tabular data and
+    chemical nomenclature are maintained, especially for complex metabolic data.
 
     Parameters
     ----------
@@ -56,36 +74,38 @@ def process_pdf(pmcid : str) -> str | None:
         markdown = doc.export_to_markdown()
 
         cleaned = re.sub(r'<!-- image -->', '', markdown)
-        cleaned = re.split(r'\n#+\s*\d*\.?\s*Introduction', cleaned, flags=re.IGNORECASE, maxsplit=1)
-        cleaned = '## Introduction\n' + cleaned[1] if len(cleaned) > 1 else cleaned[0]
-        cleaned = re.split(r'\n#+\s*(References|Bibliography|Works Cited)', cleaned, flags=re.IGNORECASE)[0]
+
+        parts = re.split(
+            r'\n#+\s*\d*\.?\s*Introduction',
+            cleaned, flags=re.IGNORECASE, maxsplit=1
+        )
+        if len(parts) > 1:
+            cleaned = '## Introduction\n' + parts[1]
+
+        cleaned = re.split(
+            r'\n#+\s*(References|Bibliography|Works Cited)',
+            cleaned, flags=re.IGNORECASE
+        )[0]
+
         cleaned = re.sub(r'Figure\s+\d+\..*?(?=\n\n|\Z)', '', cleaned, flags=re.DOTALL)
         cleaned = re.sub(r',\s*x FOR PEER REVIEW', '', cleaned)
         cleaned = re.sub(r'\b\d+\s+of\s+\d+\b', '', cleaned)
         cleaned = re.sub(r'\n{3,}', '\n\n', cleaned)
 
         paragraphs = cleaned.split('\n\n')
+        seen_set = set()
         seen = []
         for p in paragraphs:
             stripped = p.strip()
-            if stripped and stripped not in seen:
+            if stripped and stripped not in seen_set:
+                seen_set.add(stripped)
                 seen.append(stripped)
         deduped = '\n\n'.join(seen)
 
         lines = deduped.split('\n')
-        clean_lines = []
-        for line in lines:
-            stripped = line.strip()
-            if (stripped.startswith('#') or
-                    stripped.startswith('|') or
-                    stripped == '' or
-                    len(stripped) > 30 or
-                    stripped.endswith('.')):
-                clean_lines.append(line)
+        clean_lines = [line for line in lines if not _is_junk_line(line.strip())]
         deduped = '\n'.join(clean_lines)
         deduped = re.sub(r'\n{3,}', '\n\n', deduped)
-        deduped = re.sub(r'\n\s*[-\d\.,·:]+\s*\n', '\n', deduped)
-        deduped = re.sub(r'\n[A-Z]\s*\n', '\n', deduped)
 
         tables_md = []
         for i, table in enumerate(doc.tables):
@@ -96,8 +116,7 @@ def process_pdf(pmcid : str) -> str | None:
                 for _, row in df.iterrows():
                     first_col = str(row.iloc[0])
                     if '\n' in first_col:
-                        parts = first_col.split('\n')
-                        for part in parts:
+                        for part in first_col.split('\n'):
                             new_row = row.copy()
                             new_row.iloc[0] = part.strip()
                             expanded_rows.append(new_row)
@@ -115,10 +134,11 @@ def process_pdf(pmcid : str) -> str | None:
 
         with open(output_path, "w", encoding="utf-8") as f:
             f.write(final_output)
-    
+
         os.remove(pdf_path)
         logging.info(f"Deleted temporary PDF: {pdf_path}")
         return output_path
 
     except Exception as e:
         logging.error(f"Failed PMC{pmcid}: {e}")
+        return None
