@@ -14,6 +14,8 @@ logging.basicConfig(
     ]
 )
 
+UNPAYWALL_EMAIL = os.getenv("UNPAYWALL_EMAIL")
+
 query = "(Parkinson's Disease OR Parkinson) AND (metabolite OR metabolomics)"
 
 def validate_doi(doi: str | None) -> bool:
@@ -112,7 +114,7 @@ def get_pmcid_from_pmid(pmid: str) -> str | None:
         "ids": pmid,
         "format": "json",
         "tool": "tfg_pipeline",
-        "email": "pilarbourg@icloud.com"
+        "email": UNPAYWALL_EMAIL
     }
     try:
         res = requests.get(url, params=params, timeout=20)
