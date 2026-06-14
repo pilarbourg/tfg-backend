@@ -13,7 +13,7 @@ from app.core.etl.pipeline.load_pdf import ingest_paper
 from app.core.schemas.research_paper import ResearchPaper
 
 # Reuse the same query and helpers from obtain_ids.py
-from app.core.etl.pipeline.obtain_ids import (
+from app.core.etl.obtain_ids import (
     fetch_paper_metadata,
     get_pmcid_from_pmid,
     query as PUBMED_QUERY,
