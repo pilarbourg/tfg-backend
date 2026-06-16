@@ -30,23 +30,27 @@ def run_etl_pipeline(paper: ResearchPaper, conn: connection) -> None:
       logging.info(f"PMC{paper.pmcid} already processed, skipping.")
       return
 
-    if not download_pmc_pdf(paper.pmcid, paper.doi):
-      logging.error(f"Download failed for PMC{paper.pmcid}, skipping.")
-      return
-    
-    md_path = process_pdf(paper.pmcid)
+    md_path = None
+    if paper.pmcid:
+        if download_pmc_pdf(paper.pmcid, paper.doi):
+            md_path = process_pdf(paper.pmcid)
+        else:
+            logging.warning(f"Download failed for PMC{paper.pmcid}, storing abstract only.")
+    else:
+        logging.info(f"No PMCID for {paper.pmid}, storing abstract only.")
 
-    if md_path is None:
-      return 
+    if not paper.abstract and md_path is None:
+        logging.error(f"No content available for {paper.pmid}, skipping entirely.")
+        return
 
     ingest_paper(
-      title=paper.title,
-      pmid=paper.pmid,
-      pmcid=paper.pmcid,
-      source_id=paper.doi or paper.pmid,
-      abstract=paper.abstract,
-      md_path=md_path,
-      conn=conn
+        title=paper.title,
+        pmid=paper.pmid,
+        pmcid=paper.pmcid,
+        source_id=paper.doi or paper.pmid,
+        abstract=paper.abstract,
+        md_path=md_path,
+        conn=conn
     )
 
     logging.info("Successfully ran ETL pipeline.")
@@ -64,9 +68,8 @@ def run_pipeline() -> None:
         metadata = json.load(f)
 
       for entry in metadata:
-          if entry.get("has_full_text", False):
-              paper = ResearchPaper(**entry)
-              run_etl_pipeline(paper, conn)
+            paper = ResearchPaper(**entry)
+            run_etl_pipeline(paper, conn)
     finally:
         conn.close()
 

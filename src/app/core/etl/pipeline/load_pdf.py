@@ -16,6 +16,7 @@ logging.basicConfig(
 )
 
 EMBEDDING_MODEL = SentenceTransformer('pritamdeka/S-PubMedBert-MS-MARCO')
+EMBEDDING_MODEL.max_seq_length = 512
 
 #TEXT_SPLITTER = RecursiveCharacterTextSplitter(
 #    chunk_size=512,

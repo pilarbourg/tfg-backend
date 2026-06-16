@@ -248,4 +248,4 @@ def build_pmid_library(max_results: int = 200) -> None:
     logging.info(f"Done. {len(metadata_index)} total papers in index ({len(new_ids)} new)")
 
 if __name__ == "__main__":
-    build_pmid_library(max_results=0)
+    build_pmid_library(max_results=20)

@@ -90,22 +90,22 @@ def process_paper_end_to_end(pmid: str, conn) -> None:
     entry["pmcid"] = pmcid
     entry["has_full_text"] = pmcid is not None
 
-    if not entry["has_full_text"]:
-        logging.info(f"PMID {pmid}: no PMC full text, skipping")
-        return
-
     paper = ResearchPaper(**entry)
 
-    if os.path.exists(f"results/PMC{paper.pmcid}.md"):
-        logging.info(f"PMC{paper.pmcid} already processed, skipping.")
-        return
+    md_path = None
+    if paper.pmcid:
+        if os.path.exists(f"results/PMC{paper.pmcid}.md"):
+            logging.info(f"PMC{paper.pmcid} already processed (markdown cached), using cached version.")
+            md_path = f"results/PMC{paper.pmcid}.md"
+        elif download_pmc_pdf(paper.pmcid, paper.doi):
+            md_path = process_pdf(paper.pmcid)
+        else:
+            logging.warning(f"Download failed for PMC{paper.pmcid}, storing abstract only.")
+    else:
+        logging.info(f"No PMCID for {pmid}, storing abstract only.")
 
-    if not download_pmc_pdf(paper.pmcid, paper.doi):
-        logging.error(f"Download failed for PMC{paper.pmcid}, skipping.")
-        return
-
-    md_path = process_pdf(paper.pmcid)
-    if md_path is None:
+    if not paper.abstract and md_path is None:
+        logging.error(f"No content available for {pmid}, skipping entirely.")
         return
 
     ingest_paper(
@@ -117,10 +117,6 @@ def process_paper_end_to_end(pmid: str, conn) -> None:
         md_path=md_path,
         conn=conn,
     )
-
-    pdf_path = f"downloads/PMC{paper.pmcid}.pdf"
-    if os.path.exists(pdf_path):
-        os.remove(pdf_path)
 
 
 def main():
