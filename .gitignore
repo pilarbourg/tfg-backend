@@ -9,3 +9,4 @@ data/metadata_validation.json
 .env
 .DS_Store
 *.egg-info/
+ragas_env/

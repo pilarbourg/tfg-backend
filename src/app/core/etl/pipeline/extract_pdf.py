@@ -61,7 +61,7 @@ def _https_candidates(url: str) -> list[str]:
         "https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/",
         1,
     )
-    # De-duplicate while preserving order (in case the replace was a no-op).
+
     candidates = []
     for c in (plain, deprecated):
         if c not in candidates:

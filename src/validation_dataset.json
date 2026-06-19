@@ -1,0 +1,19 @@
+{
+  "questions": [
+    {
+      "sample_query": "What can unconditional logistic regression be used for in the context of PD metabolomics?",
+      "expected_output": "Unconditional logistic regression for each metabolite with PD as the outcome provides odds ratio estimates.",
+      "expected_source_pmid": "38115046"
+    },
+    {
+      "sample_query": "What mass error threshold should be applied when using xMSannotator to calculate accurate mass m/z for adducts formed under positive/negative ESI mode?",
+      "expected_output": "With xMSannotator, accurate mass m/z for adducts formed under positive/negative ESI mode were matched to HMDB, KEGG, and LipidMaps with a mass error threshold of 10 ppm.",
+      "expected_source_pmid": "38115046"
+    },
+    {
+      "sample_query": "What two methods of performance quality control can be applied when analyzing sample extracts in triplicate using HILIC with ESI?",
+      "expected_output": "Two methods of performance quality control may be applied. First, a NIST 1950 QC sample was analyzed at the beginning and end of the entire analytical run [13]. A second QC sample (Q-Std), which is commercially purchased plasma pooled from an unknown number of men and women, was analyzed at the beginning, middle, and end of each batch of 40 samples for normalization and batch effect evaluation (n=180 Q-Std samples total included).",
+      "expected_source_pmid": "38115046"
+    }
+  ]
+}

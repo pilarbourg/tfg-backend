@@ -2,21 +2,16 @@ from app.core.etl.obtain_ids import fetch_paper_metadata, get_pmcid_from_pmid
 import json, time
 
 VALIDATION_PMIDS = [
-    "28880465",
-    "38951523",
     "38115046",
     "39177430",
     "40376890",
-    "40204143",
     "35959296",
     "41565969",
-    "28394042",
     "37629028",
     "41872227",
     "31155745",
     "29298852",
-    "33942926",
-    "33485385"
+    "33942926"
 ]
 
 metadata = []

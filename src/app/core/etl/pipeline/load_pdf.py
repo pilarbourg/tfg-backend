@@ -18,17 +18,11 @@ logging.basicConfig(
 EMBEDDING_MODEL = SentenceTransformer('pritamdeka/S-PubMedBert-MS-MARCO')
 EMBEDDING_MODEL.max_seq_length = 512
 
-#TEXT_SPLITTER = RecursiveCharacterTextSplitter(
-#    chunk_size=512,
-#    chunk_overlap=96,
-#    separators=["\n\n", "\n", ".", " ", ""]
-#)
-
 TEXT_SPLITTER = RecursiveCharacterTextSplitter.from_huggingface_tokenizer(
     tokenizer=EMBEDDING_MODEL.tokenizer,
     chunk_size=512,
     chunk_overlap=96,
-    separators=["\n\n", "\n", ".", " ", ""]
+    separators=["\n\n", "\n|", "\n", ". ", " ", ""]
 )
 
 def _already_ingested(source_id: str, conn: connection) -> bool:
@@ -49,7 +43,7 @@ def _already_ingested(source_id: str, conn: connection) -> bool:
     """
     with conn.cursor() as cur:
         cur.execute(
-            "SELECT 1 FROM research_papers WHERE source_url = %s LIMIT 1",
+            "SELECT 1 FROM validation_papers WHERE source_url = %s LIMIT 1",
             (source_id,)
         )
         
@@ -89,7 +83,7 @@ def _store_chunks(title: str, text: str, source_id: str, pmid: str, pmcid: str |
             execute_values(
                 cur,
                 """
-                INSERT INTO research_papers
+                INSERT INTO validation_papers
                 (title, source_url, pmid, pmcid, content, embedding)
                 VALUES %s
                 """,
