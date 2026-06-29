@@ -14,6 +14,66 @@
       "sample_query": "What two methods of performance quality control can be applied when analyzing sample extracts in triplicate using HILIC with ESI?",
       "expected_output": "Two methods of performance quality control may be applied. First, a NIST 1950 QC sample was analyzed at the beginning and end of the entire analytical run [13]. A second QC sample (Q-Std), which is commercially purchased plasma pooled from an unknown number of men and women, was analyzed at the beginning, middle, and end of each batch of 40 samples for normalization and batch effect evaluation (n=180 Q-Std samples total included).",
       "expected_source_pmid": "38115046"
+    },
+    {
+      "sample_query": "What are the key disrupted metabolic pathways in PD metabolomics?",
+      "expected_output": "Key disrupted metabolic pathways include caffeine metabolism, arachidonic acid metabolism, and primary bile acid biosynthesis.",
+      "expected_source_pmid": "39177430"
+    },
+    {
+      "sample_query": "How often are patients misdiagnosed with PD?",
+      "expected_output": "Patient misdiagnosis still occurs at least up to one-quarter of the time, especially when only clinical assessment is available.",
+      "expected_source_pmid": "39177430"
+    },
+    {
+      "sample_query": "How do blood caffeine levels change in advanced PD patients?",
+      "expected_output": "Recent studies found that moderate to advanced PD patients had lower blood caffeine levels compared with controls",
+      "expected_source_pmid": "39177430"
+    },
+    {
+      "sample_query": "What are elevated levels of differential metabolites in the plasma of PD patients associated with?",
+      "expected_output": "Correlation analysis revealed that elevated levels of differential metabolites in the plasma of PD patients were associated with increased intestinal permeability and inflammation.",
+      "expected_source_pmid": "40376890"
+    },
+    {
+      "sample_query": "Why may PD patients have elevated metabolites in plasma, but not in feces?",
+      "expected_output": "Metabolites that were significantly elevated in the plasma of PD patients but not in their feces may reflect increased intestinal permeability due to compromised intestinal barrier damage in these patients.",
+      "expected_source_pmid": "40376890"
+    },
+    {
+      "sample_query": "What metabolites are significantly positively correlated with PD duration?",
+      "expected_output": "3,4‐Dihydroxyphenylglycol O‐sulfate, Propyl gallate, NP‐019988, and Ethyl N‐(1,4‐thiazinan‐4‐ylcarbothioyl) carbamate were significantly positively correlated with disease duration.",
+      "expected_source_pmid": "40376890"
+    },
+    {
+      "sample_query": "Does Prevotellaceae have a lower abundance level or higher abundance level in patients with PD?",
+      "expected_output": "The results of a meta-analysis showed significantly lower abundance levels of Prevotellaceae in patients with PD.",
+      "expected_source_pmid": "35959296"
+    },
+    {
+      "sample_query": "What are the butyrate targeting PD hub genes?",
+      "expected_output": "Butyrate targeting PD hub genes are SOD1, HMOX1, TNF, INS, IL6, BDNF, TH, SNCA, PPARGC1A, and GFAP",
+      "expected_source_pmid": "35959296"
+    },
+    {
+      "sample_query": "What hub genes were impacted by all validated metabolites?",
+      "expected_output": "Hub genes impacted by all validated metabolites include alpha-synuclein (SNCA), tyrosine 3-monooxygenase (TH), brain-derived neurotrophic factor (BDNF), superoxide dismutase 1 (SOD1), heme oxygenase-1 (HMOX1), tumor necrosis factor (TNF), and glial fibrillary acidic protein (GFAP).",
+      "expected_source_pmid": "35959296"
+    },
+    {
+      "sample_query": "What increases has the GBD reported in PD cases?",
+      "expected_output": "The Global Burden of Disease, Injury and Risk Factors Study (GBD) reported an increase in PD cases from 2.5 million in 1990 to 6.1 million in 2016, with a further rise to 8.5 million by 2019.",
+      "expected_source_pmid": "41565969"
+    },
+    {
+      "sample_query": "Are the majority of PD cases familial or idiopathic?",
+      "expected_output": "Idiopathic PD, with no clear genetic cause, represents the majority of cases.",
+      "expected_source_pmid": "41565969"
+    },
+    {
+      "sample_query": "Do most PD studies focus on quantitative methodologies?",
+      "expected_output": "Most studies rely on untargeted analyses or relative quantifications rather than absolute quantitative methodologies.",
+      "expected_source_pmid": "41565969"
     }
   ]
 }

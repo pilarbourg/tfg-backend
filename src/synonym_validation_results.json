@@ -1,0 +1,167 @@
+[
+  {
+    "metabolite": "Caffeine",
+    "target_doi": "10.1212/WNL.0000000000004888",
+    "naming_type": "common",
+    "keyword_rank": 2,
+    "keyword_hit": true,
+    "vector_rank": 1,
+    "vector_hit": true,
+    "keyword_total_results": 20,
+    "vector_total_results": 50
+  },
+  {
+    "metabolite": "1,3,7-trimethylpurine-2,6-dione",
+    "target_doi": "10.1212/WNL.0000000000004888",
+    "naming_type": "iupac",
+    "keyword_rank": null,
+    "keyword_hit": false,
+    "vector_rank": 1,
+    "vector_hit": true,
+    "keyword_total_results": 0,
+    "vector_total_results": 50
+  },
+  {
+    "metabolite": "Dexitac",
+    "target_doi": "10.1212/WNL.0000000000004888",
+    "naming_type": "alternative",
+    "keyword_rank": null,
+    "keyword_hit": false,
+    "vector_rank": 1,
+    "vector_hit": true,
+    "keyword_total_results": 0,
+    "vector_total_results": 50
+  },
+  {
+    "metabolite": "Spermine",
+    "target_doi": "10.1002/ana.25516",
+    "naming_type": "common",
+    "keyword_rank": 1,
+    "keyword_hit": true,
+    "vector_rank": 1,
+    "vector_hit": true,
+    "keyword_total_results": 13,
+    "vector_total_results": 50
+  },
+  {
+    "metabolite": "N,N'-bis(3-aminopropyl)butane-1,4-diamine",
+    "target_doi": "10.1002/ana.25516",
+    "naming_type": "iupac",
+    "keyword_rank": null,
+    "keyword_hit": false,
+    "vector_rank": 1,
+    "vector_hit": true,
+    "keyword_total_results": 0,
+    "vector_total_results": 50
+  },
+  {
+    "metabolite": "Musculamine",
+    "target_doi": "10.1002/ana.25516",
+    "naming_type": "alternative",
+    "keyword_rank": null,
+    "keyword_hit": false,
+    "vector_rank": 2,
+    "vector_hit": true,
+    "keyword_total_results": 0,
+    "vector_total_results": 50
+  },
+  {
+    "metabolite": "Homovanillic acid",
+    "target_doi": "10.1002/mds.28608",
+    "naming_type": "common",
+    "keyword_rank": 1,
+    "keyword_hit": true,
+    "vector_rank": 1,
+    "vector_hit": true,
+    "keyword_total_results": 4,
+    "vector_total_results": 50
+  },
+  {
+    "metabolite": "2-(4-hydroxy-3-methoxyphenyl)acetic acid",
+    "target_doi": "10.1002/mds.28608",
+    "naming_type": "iupac",
+    "keyword_rank": null,
+    "keyword_hit": false,
+    "vector_rank": null,
+    "vector_hit": false,
+    "keyword_total_results": 0,
+    "vector_total_results": 50
+  },
+  {
+    "metabolite": "Vanilacetic acid",
+    "target_doi": "10.1002/mds.28608",
+    "naming_type": "alternative",
+    "keyword_rank": null,
+    "keyword_hit": false,
+    "vector_rank": null,
+    "vector_hit": false,
+    "keyword_total_results": 0,
+    "vector_total_results": 50
+  },
+  {
+    "metabolite": "Hypoxanthine",
+    "target_doi": "10.3390/ijms241612849",
+    "naming_type": "common",
+    "keyword_rank": 1,
+    "keyword_hit": true,
+    "vector_rank": null,
+    "vector_hit": false,
+    "keyword_total_results": 16,
+    "vector_total_results": 50
+  },
+  {
+    "metabolite": "1,7-dihydropurin-6-one",
+    "target_doi": "10.3390/ijms241612849",
+    "naming_type": "iupac",
+    "keyword_rank": null,
+    "keyword_hit": false,
+    "vector_rank": null,
+    "vector_hit": false,
+    "keyword_total_results": 0,
+    "vector_total_results": 50
+  },
+  {
+    "metabolite": "Sarcine",
+    "target_doi": "10.3390/ijms241612849",
+    "naming_type": "alternative",
+    "keyword_rank": null,
+    "keyword_hit": false,
+    "vector_rank": 7,
+    "vector_hit": true,
+    "keyword_total_results": 0,
+    "vector_total_results": 50
+  },
+  {
+    "metabolite": "Tryptophan",
+    "target_doi": "10.1038/s41598-025-30521-4",
+    "naming_type": "common",
+    "keyword_rank": 1,
+    "keyword_hit": true,
+    "vector_rank": 3,
+    "vector_hit": true,
+    "keyword_total_results": 20,
+    "vector_total_results": 50
+  },
+  {
+    "metabolite": "(2S)-2-amino-3-(1H-indol-3-yl)propanoic acid",
+    "target_doi": "10.1038/s41598-025-30521-4",
+    "naming_type": "iupac",
+    "keyword_rank": null,
+    "keyword_hit": false,
+    "vector_rank": 9,
+    "vector_hit": true,
+    "keyword_total_results": 0,
+    "vector_total_results": 50
+  },
+  {
+    "metabolite": "L-tryptophan",
+    "target_doi": "10.1038/s41598-025-30521-4",
+    "naming_type": "alternative",
+    "keyword_rank": null,
+    "keyword_hit": false,
+    "vector_rank": 8,
+    "vector_hit": true,
+    "keyword_total_results": 2,
+    "vector_total_results": 50
+  }
+]

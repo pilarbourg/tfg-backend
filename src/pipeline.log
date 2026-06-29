@@ -1404,3 +1404,778 @@
 2026-06-17 22:17:10,823 - INFO - PMC6772170 already processed, skipping.
 2026-06-17 22:17:10,823 - INFO - PMC5791797 already processed, skipping.
 2026-06-17 22:17:10,823 - INFO - PMC8453505 already processed, skipping.
+2026-06-28 23:30:31,122 - INFO - NumExpr defaulting to 10 threads.
+2026-06-28 23:30:38,562 - INFO - No device provided, using mps
+2026-06-28 23:30:38,728 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-28 23:30:38,729 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-06-28 23:30:38,739 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/modules.json "HTTP/1.1 200 OK"
+2026-06-28 23:30:38,862 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-28 23:30:38,874 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-06-28 23:30:38,876 - INFO - Loading SentenceTransformer model from pritamdeka/S-PubMedBert-MS-MARCO.
+2026-06-28 23:30:38,995 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-28 23:30:39,019 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-06-28 23:30:39,142 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-06-28 23:30:39,153 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/README.md "HTTP/1.1 200 OK"
+2026-06-28 23:30:39,279 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-28 23:30:39,290 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/modules.json "HTTP/1.1 200 OK"
+2026-06-28 23:30:39,416 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-28 23:30:39,425 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-06-28 23:30:39,596 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-06-28 23:30:39,721 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-28 23:30:39,730 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-06-28 23:30:39,900 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-06-28 23:30:40,058 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO "HTTP/1.1 200 OK"
+2026-06-28 23:30:40,219 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/commits/main "HTTP/1.1 200 OK"
+2026-06-28 23:30:40,310 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-06-28 23:30:40,348 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/discussions?p=0 "HTTP/1.1 200 OK"
+2026-06-28 23:30:40,434 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-06-28 23:30:40,485 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/commits/refs%2Fpr%2F10 "HTTP/1.1 200 OK"
+2026-06-28 23:30:40,566 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-06-28 23:30:40,606 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/refs%2Fpr%2F10/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-06-28 23:30:40,689 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-06-28 23:30:40,731 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/refs%2Fpr%2F10/model.safetensors "HTTP/1.1 302 Found"
+2026-06-28 23:30:40,823 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-28 23:30:40,834 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-06-28 23:30:40,958 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-28 23:30:40,969 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-06-28 23:30:41,093 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-28 23:30:41,104 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-06-28 23:30:41,227 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-28 23:30:41,244 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-06-28 23:30:41,368 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-06-28 23:30:41,495 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-06-28 23:30:41,665 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-28 23:30:41,674 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-06-28 23:30:41,802 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO "HTTP/1.1 200 OK"
+2026-06-28 23:30:43,404 - INFO - Downloading PMC13077062 as pdf from PMC OA API
+2026-06-28 23:30:43,405 - INFO - Downloading PDF from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/b4/6a/41598_2026_Article_41274.PMC13077062.pdf
+2026-06-28 23:30:43,960 - WARNING - PDF fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/b4/6a/41598_2026_Article_41274.PMC13077062.pdf
+2026-06-28 23:30:43,960 - INFO - Downloading PDF from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_pdf/b4/6a/41598_2026_Article_41274.PMC13077062.pdf
+2026-06-28 23:30:44,882 - INFO - Saved to downloads/PMC13077062.pdf
+2026-06-28 23:30:44,888 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-28 23:30:44,968 - INFO - Going to convert document batch...
+2026-06-28 23:30:44,969 - INFO - Initializing pipeline for StandardPdfPipeline with options hash 80a8a1322ca5ef46817c7adbf875fff6
+2026-06-28 23:30:44,977 - INFO - Loading plugin 'docling_defaults'
+2026-06-28 23:30:44,979 - INFO - Registered picture descriptions: ['picture_description_vlm_engine', 'vlm', 'api']
+2026-06-28 23:30:44,985 - INFO - Loading plugin 'docling_defaults'
+2026-06-28 23:30:44,994 - INFO - Registered ocr engines: ['auto', 'easyocr', 'kserve_v2_ocr', 'ocrmac', 'rapidocr', 'tesserocr', 'tesseract']
+2026-06-28 23:30:46,280 - INFO - Auto OCR model selected ocrmac.
+2026-06-28 23:30:46,286 - INFO - Loading plugin 'docling_defaults'
+2026-06-28 23:30:46,289 - INFO - Registered layout engines: ['layout_object_detection', 'docling_layout_default', 'docling_experimental_table_crops_layout']
+2026-06-28 23:30:46,300 - INFO - Accelerator device: 'mps'
+2026-06-28 23:30:46,427 - INFO - HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-layout-heron/revision/main "HTTP/1.1 200 OK"
+2026-06-28 23:30:47,179 - INFO - Loading plugin 'docling_defaults'
+2026-06-28 23:30:47,181 - INFO - Registered table structure engines: ['docling_tableformer', 'docling_tableformer_v2']
+2026-06-28 23:30:47,323 - INFO - HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-models/revision/v2.3.0 "HTTP/1.1 200 OK"
+2026-06-28 23:30:48,105 - INFO - Accelerator device: 'mps'
+2026-06-28 23:30:48,825 - INFO - Processing document PMC13077062.pdf
+2026-06-28 23:31:08,941 - INFO - Finished converting document PMC13077062.pdf in 24.03 sec.
+2026-06-28 23:31:09,053 - INFO - Deleted temporary PDF: downloads/PMC13077062.pdf
+2026-06-28 23:31:09,092 - INFO - Storing abstract for 10.1038/s41598-026-41274-z...
+2026-06-28 23:31:09,607 - INFO - Storing full text from results/PMC13077062.md...
+2026-06-28 23:31:15,907 - INFO - Successfully stored 10.1038/s41598-026-41274-z.
+2026-06-28 23:31:15,909 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:41:00,589 - INFO - NumExpr defaulting to 10 threads.
+2026-06-28 23:41:08,024 - INFO - No device provided, using mps
+2026-06-28 23:41:08,201 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-28 23:41:08,202 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-06-28 23:41:08,212 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/modules.json "HTTP/1.1 200 OK"
+2026-06-28 23:41:08,336 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-28 23:41:08,348 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-06-28 23:41:08,350 - INFO - Loading SentenceTransformer model from pritamdeka/S-PubMedBert-MS-MARCO.
+2026-06-28 23:41:08,473 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-28 23:41:08,483 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-06-28 23:41:08,603 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-06-28 23:41:08,612 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/README.md "HTTP/1.1 200 OK"
+2026-06-28 23:41:08,731 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-28 23:41:08,740 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/modules.json "HTTP/1.1 200 OK"
+2026-06-28 23:41:08,862 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-28 23:41:08,871 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-06-28 23:41:08,992 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-06-28 23:41:09,119 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-28 23:41:09,129 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-06-28 23:41:09,294 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-06-28 23:41:09,445 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO "HTTP/1.1 200 OK"
+2026-06-28 23:41:09,586 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/commits/main "HTTP/1.1 200 OK"
+2026-06-28 23:41:09,670 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-06-28 23:41:09,726 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/discussions?p=0 "HTTP/1.1 200 OK"
+2026-06-28 23:41:09,795 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-06-28 23:41:09,864 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/commits/refs%2Fpr%2F10 "HTTP/1.1 200 OK"
+2026-06-28 23:41:09,919 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-06-28 23:41:09,992 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/refs%2Fpr%2F10/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-06-28 23:41:10,049 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-06-28 23:41:10,124 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/refs%2Fpr%2F10/model.safetensors "HTTP/1.1 302 Found"
+2026-06-28 23:41:10,170 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-28 23:41:10,180 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-06-28 23:41:10,307 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-28 23:41:10,322 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-06-28 23:41:10,451 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-28 23:41:10,460 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-06-28 23:41:10,581 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-28 23:41:10,589 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-06-28 23:41:10,717 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-06-28 23:41:10,842 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-06-28 23:41:10,998 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-28 23:41:11,007 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-06-28 23:41:11,136 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO "HTTP/1.1 200 OK"
+2026-06-28 23:42:25,399 - INFO - NumExpr defaulting to 10 threads.
+2026-06-28 23:42:32,853 - INFO - No device provided, using mps
+2026-06-28 23:42:33,059 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-28 23:42:33,070 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/modules.json "HTTP/1.1 200 OK"
+2026-06-28 23:42:33,200 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-28 23:42:33,201 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-06-28 23:42:33,211 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-06-28 23:42:33,213 - INFO - Loading SentenceTransformer model from pritamdeka/S-PubMedBert-MS-MARCO.
+2026-06-28 23:42:33,340 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-28 23:42:33,350 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-06-28 23:42:33,473 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-06-28 23:42:33,483 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/README.md "HTTP/1.1 200 OK"
+2026-06-28 23:42:33,606 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-28 23:42:33,616 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/modules.json "HTTP/1.1 200 OK"
+2026-06-28 23:42:33,745 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-28 23:42:33,758 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-06-28 23:42:33,878 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-06-28 23:42:33,999 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-28 23:42:34,009 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-06-28 23:42:34,171 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-06-28 23:42:34,325 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO "HTTP/1.1 200 OK"
+2026-06-28 23:42:34,473 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/commits/main "HTTP/1.1 200 OK"
+2026-06-28 23:42:34,561 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-06-28 23:42:34,612 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/discussions?p=0 "HTTP/1.1 200 OK"
+2026-06-28 23:42:34,685 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-06-28 23:42:34,747 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/commits/refs%2Fpr%2F10 "HTTP/1.1 200 OK"
+2026-06-28 23:42:34,813 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-06-28 23:42:34,906 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/refs%2Fpr%2F10/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-06-28 23:42:34,946 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-06-28 23:42:35,029 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/refs%2Fpr%2F10/model.safetensors "HTTP/1.1 302 Found"
+2026-06-28 23:42:35,067 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-28 23:42:35,079 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-06-28 23:42:35,202 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-28 23:42:35,211 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-06-28 23:42:35,335 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-28 23:42:35,345 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-06-28 23:42:35,478 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-28 23:42:35,488 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-06-28 23:42:35,625 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-06-28 23:42:35,756 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-06-28 23:42:35,928 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-28 23:42:35,937 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-06-28 23:42:36,064 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO "HTTP/1.1 200 OK"
+2026-06-28 23:42:37,140 - INFO - PMC13077062 already processed, skipping.
+2026-06-28 23:42:37,141 - INFO - No PMCID for 41782527, storing abstract only.
+2026-06-28 23:42:37,173 - INFO - Storing abstract for 10.17116/jnevro202612602123...
+2026-06-28 23:42:37,952 - INFO - Full text already ingested or unavailable, skipping.
+2026-06-28 23:42:37,952 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:42:37,952 - INFO - No PMCID for 41780778, storing abstract only.
+2026-06-28 23:42:38,010 - INFO - Storing abstract for 10.1016/j.ijbiomac.2026.151150...
+2026-06-28 23:42:38,276 - INFO - Full text already ingested or unavailable, skipping.
+2026-06-28 23:42:38,276 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:42:38,276 - INFO - No PMCID for 41780488, storing abstract only.
+2026-06-28 23:42:38,335 - INFO - Storing abstract for 10.1016/j.parkreldis.2026.108260...
+2026-06-28 23:42:38,507 - INFO - Full text already ingested or unavailable, skipping.
+2026-06-28 23:42:38,507 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:42:38,507 - INFO - No PMCID for 41778714, storing abstract only.
+2026-06-28 23:42:38,567 - INFO - Storing abstract for 10.4103/NRR.NRR-D-25-01867...
+2026-06-28 23:42:38,771 - INFO - Full text already ingested or unavailable, skipping.
+2026-06-28 23:42:38,771 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:42:39,135 - INFO - Downloading PMC13067576 as tgz from PMC OA API
+2026-06-28 23:42:39,136 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/9e/71/PMC13067576.tar.gz
+2026-06-28 23:42:39,594 - WARNING - Tarball fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/9e/71/PMC13067576.tar.gz
+2026-06-28 23:42:39,594 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_package/9e/71/PMC13067576.tar.gz
+2026-06-28 23:42:41,130 - INFO - Extracted PDF from tarball, saved to downloads/PMC13067576.pdf
+2026-06-28 23:42:41,135 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-28 23:42:41,205 - INFO - Going to convert document batch...
+2026-06-28 23:42:41,205 - INFO - Initializing pipeline for StandardPdfPipeline with options hash 80a8a1322ca5ef46817c7adbf875fff6
+2026-06-28 23:42:41,212 - INFO - Loading plugin 'docling_defaults'
+2026-06-28 23:42:41,214 - INFO - Registered picture descriptions: ['picture_description_vlm_engine', 'vlm', 'api']
+2026-06-28 23:42:41,220 - INFO - Loading plugin 'docling_defaults'
+2026-06-28 23:42:41,229 - INFO - Registered ocr engines: ['auto', 'easyocr', 'kserve_v2_ocr', 'ocrmac', 'rapidocr', 'tesserocr', 'tesseract']
+2026-06-28 23:42:42,012 - INFO - Auto OCR model selected ocrmac.
+2026-06-28 23:42:42,018 - INFO - Loading plugin 'docling_defaults'
+2026-06-28 23:42:42,022 - INFO - Registered layout engines: ['layout_object_detection', 'docling_layout_default', 'docling_experimental_table_crops_layout']
+2026-06-28 23:42:42,033 - INFO - Accelerator device: 'mps'
+2026-06-28 23:42:42,176 - INFO - HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-layout-heron/revision/main "HTTP/1.1 200 OK"
+2026-06-28 23:42:42,801 - INFO - Loading plugin 'docling_defaults'
+2026-06-28 23:42:42,803 - INFO - Registered table structure engines: ['docling_tableformer', 'docling_tableformer_v2']
+2026-06-28 23:42:42,933 - INFO - HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-models/revision/v2.3.0 "HTTP/1.1 200 OK"
+2026-06-28 23:42:43,174 - INFO - Accelerator device: 'mps'
+2026-06-28 23:42:43,881 - INFO - Processing document PMC13067576.pdf
+2026-06-28 23:42:55,867 - INFO - Finished converting document PMC13067576.pdf in 14.73 sec.
+2026-06-28 23:42:55,935 - INFO - Deleted temporary PDF: downloads/PMC13067576.pdf
+2026-06-28 23:42:55,998 - INFO - Storing abstract for 10.1186/s13293-026-00865-1...
+2026-06-28 23:42:56,709 - INFO - Storing full text from results/PMC13067576.md...
+2026-06-28 23:43:00,040 - INFO - Successfully stored 10.1186/s13293-026-00865-1.
+2026-06-28 23:43:00,040 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:43:00,594 - INFO - Downloading PMC12939763 as tgz from PMC OA API
+2026-06-28 23:43:00,594 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/08/ef/PMC12939763.tar.gz
+2026-06-28 23:43:02,249 - WARNING - Tarball fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/08/ef/PMC12939763.tar.gz
+2026-06-28 23:43:02,250 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_package/08/ef/PMC12939763.tar.gz
+2026-06-28 23:43:08,783 - INFO - Extracted PDF from tarball, saved to downloads/PMC12939763.pdf
+2026-06-28 23:43:08,785 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-28 23:43:08,789 - INFO - Going to convert document batch...
+2026-06-28 23:43:08,790 - INFO - Processing document PMC12939763.pdf
+2026-06-28 23:43:22,028 - INFO - Finished converting document PMC12939763.pdf in 13.24 sec.
+2026-06-28 23:43:22,098 - INFO - Deleted temporary PDF: downloads/PMC12939763.pdf
+2026-06-28 23:43:22,176 - INFO - Storing abstract for 10.3390/diagnostics16040550...
+2026-06-28 23:43:22,464 - INFO - Storing full text from results/PMC12939763.md...
+2026-06-28 23:43:26,056 - INFO - Successfully stored 10.3390/diagnostics16040550.
+2026-06-28 23:43:26,056 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:43:26,400 - INFO - Downloading PMC12939130 as tgz from PMC OA API
+2026-06-28 23:43:26,401 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/c6/e8/PMC12939130.tar.gz
+2026-06-28 23:43:26,734 - WARNING - Tarball fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/c6/e8/PMC12939130.tar.gz
+2026-06-28 23:43:26,735 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_package/c6/e8/PMC12939130.tar.gz
+2026-06-28 23:43:27,531 - INFO - Extracted PDF from tarball, saved to downloads/PMC12939130.pdf
+2026-06-28 23:43:27,532 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-28 23:43:27,534 - INFO - Going to convert document batch...
+2026-06-28 23:43:27,535 - INFO - Processing document PMC12939130.pdf
+2026-06-28 23:43:39,841 - INFO - Finished converting document PMC12939130.pdf in 12.31 sec.
+2026-06-28 23:43:39,889 - INFO - Deleted temporary PDF: downloads/PMC12939130.pdf
+2026-06-28 23:43:39,954 - INFO - Storing abstract for 10.3390/brainsci16020175...
+2026-06-28 23:43:40,193 - INFO - Storing full text from results/PMC12939130.md...
+2026-06-28 23:43:44,336 - INFO - Successfully stored 10.3390/brainsci16020175.
+2026-06-28 23:43:44,336 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:43:44,336 - INFO - No PMCID for 41744388, storing abstract only.
+2026-06-28 23:43:44,394 - INFO - Storing abstract for 10.1177/1877718X261420669...
+2026-06-28 23:43:44,658 - INFO - Full text already ingested or unavailable, skipping.
+2026-06-28 23:43:44,658 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:43:45,046 - INFO - Downloading PMC12927845 as pdf from PMC OA API
+2026-06-28 23:43:45,046 - INFO - Downloading PDF from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/6e/72/NDT-22-566720.PMC12927845.pdf
+2026-06-28 23:43:45,377 - WARNING - PDF fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/6e/72/NDT-22-566720.PMC12927845.pdf
+2026-06-28 23:43:45,377 - INFO - Downloading PDF from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_pdf/6e/72/NDT-22-566720.PMC12927845.pdf
+2026-06-28 23:43:46,018 - INFO - Saved to downloads/PMC12927845.pdf
+2026-06-28 23:43:46,021 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-28 23:43:46,025 - INFO - Going to convert document batch...
+2026-06-28 23:43:46,027 - INFO - Processing document PMC12927845.pdf
+2026-06-28 23:43:54,195 - INFO - Finished converting document PMC12927845.pdf in 8.18 sec.
+2026-06-28 23:43:54,224 - INFO - Deleted temporary PDF: downloads/PMC12927845.pdf
+2026-06-28 23:43:54,289 - INFO - Storing abstract for 10.2147/NDT.S566720...
+2026-06-28 23:43:54,602 - INFO - Storing full text from results/PMC12927845.md...
+2026-06-28 23:43:57,474 - INFO - Successfully stored 10.2147/NDT.S566720.
+2026-06-28 23:43:57,474 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:43:57,834 - INFO - Downloading PMC12984378 as tgz from PMC OA API
+2026-06-28 23:43:57,835 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/b9/da/PMC12984378.tar.gz
+2026-06-28 23:43:58,157 - WARNING - Tarball fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/b9/da/PMC12984378.tar.gz
+2026-06-28 23:43:58,157 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_package/b9/da/PMC12984378.tar.gz
+2026-06-28 23:43:59,035 - INFO - Extracted PDF from tarball, saved to downloads/PMC12984378.pdf
+2026-06-28 23:43:59,038 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-28 23:43:59,040 - INFO - Going to convert document batch...
+2026-06-28 23:43:59,041 - INFO - Processing document PMC12984378.pdf
+2026-06-28 23:44:15,083 - INFO - Finished converting document PMC12984378.pdf in 16.05 sec.
+2026-06-28 23:44:15,136 - INFO - Deleted temporary PDF: downloads/PMC12984378.pdf
+2026-06-28 23:44:15,196 - INFO - Storing abstract for 10.3390/ijms27052120...
+2026-06-28 23:44:15,464 - INFO - Storing full text from results/PMC12984378.md...
+2026-06-28 23:44:20,896 - INFO - Successfully stored 10.3390/ijms27052120.
+2026-06-28 23:44:20,897 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:44:21,255 - INFO - Downloading PMC13083427 as tgz from PMC OA API
+2026-06-28 23:44:21,255 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/80/a5/PMC13083427.tar.gz
+2026-06-28 23:44:21,586 - WARNING - Tarball fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/80/a5/PMC13083427.tar.gz
+2026-06-28 23:44:21,586 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_package/80/a5/PMC13083427.tar.gz
+2026-06-28 23:44:22,627 - INFO - Extracted PDF from tarball, saved to downloads/PMC13083427.pdf
+2026-06-28 23:44:22,632 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-28 23:44:22,642 - INFO - Going to convert document batch...
+2026-06-28 23:44:22,643 - INFO - Processing document PMC13083427.pdf
+2026-06-28 23:44:41,608 - INFO - Finished converting document PMC13083427.pdf in 18.98 sec.
+2026-06-28 23:44:41,676 - INFO - Deleted temporary PDF: downloads/PMC13083427.pdf
+2026-06-28 23:44:41,744 - INFO - Storing abstract for 10.1007/s10787-026-02152-2...
+2026-06-28 23:44:41,978 - INFO - Storing full text from results/PMC13083427.md...
+2026-06-28 23:44:49,326 - INFO - Successfully stored 10.1007/s10787-026-02152-2.
+2026-06-28 23:44:49,327 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:44:49,695 - INFO - Downloading PMC12971341 as pdf from PMC OA API
+2026-06-28 23:44:49,699 - INFO - Downloading PDF from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/20/ac/qims-16-03-201.PMC12971341.pdf
+2026-06-28 23:44:50,043 - WARNING - PDF fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/20/ac/qims-16-03-201.PMC12971341.pdf
+2026-06-28 23:44:50,043 - INFO - Downloading PDF from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_pdf/20/ac/qims-16-03-201.PMC12971341.pdf
+2026-06-28 23:44:50,824 - INFO - Saved to downloads/PMC12971341.pdf
+2026-06-28 23:44:50,829 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-28 23:44:50,836 - INFO - Going to convert document batch...
+2026-06-28 23:44:50,838 - INFO - Processing document PMC12971341.pdf
+2026-06-28 23:45:15,216 - INFO - Finished converting document PMC12971341.pdf in 24.39 sec.
+2026-06-28 23:45:15,294 - INFO - Deleted temporary PDF: downloads/PMC12971341.pdf
+2026-06-28 23:45:15,362 - INFO - Storing abstract for 10.21037/qims-2025-2070...
+2026-06-28 23:45:15,863 - INFO - Storing full text from results/PMC12971341.md...
+2026-06-28 23:45:23,410 - INFO - Successfully stored 10.21037/qims-2025-2070.
+2026-06-28 23:45:23,411 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:45:23,412 - INFO - No PMCID for 41814734, storing abstract only.
+2026-06-28 23:45:23,470 - INFO - Storing abstract for 10.19540/j.cnki.cjcmm.20251011.704...
+2026-06-28 23:45:23,693 - INFO - Full text already ingested or unavailable, skipping.
+2026-06-28 23:45:23,694 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:45:24,069 - INFO - Downloading PMC12926348 as tgz from PMC OA API
+2026-06-28 23:45:24,070 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/96/e8/PMC12926348.tar.gz
+2026-06-28 23:45:24,416 - WARNING - Tarball fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/96/e8/PMC12926348.tar.gz
+2026-06-28 23:45:24,416 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_package/96/e8/PMC12926348.tar.gz
+2026-06-28 23:45:25,914 - INFO - Extracted PDF from tarball, saved to downloads/PMC12926348.pdf
+2026-06-28 23:45:25,920 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-28 23:45:25,930 - INFO - Going to convert document batch...
+2026-06-28 23:45:25,932 - INFO - Processing document PMC12926348.pdf
+2026-06-28 23:45:40,186 - INFO - Finished converting document PMC12926348.pdf in 14.27 sec.
+2026-06-28 23:45:40,235 - INFO - Deleted temporary PDF: downloads/PMC12926348.pdf
+2026-06-28 23:45:40,298 - INFO - Storing abstract for 10.3389/fnagi.2026.1743479...
+2026-06-28 23:45:40,641 - INFO - Storing full text from results/PMC12926348.md...
+2026-06-28 23:45:46,752 - INFO - Successfully stored 10.3389/fnagi.2026.1743479.
+2026-06-28 23:45:46,752 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:45:46,753 - INFO - No PMCID for 41730497, storing abstract only.
+2026-06-28 23:45:46,810 - INFO - Storing abstract for 10.1016/j.neuroscience.2026.02.036...
+2026-06-28 23:45:47,026 - INFO - Full text already ingested or unavailable, skipping.
+2026-06-28 23:45:47,026 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:45:47,386 - INFO - Downloading PMC13004688 as pdf from PMC OA API
+2026-06-28 23:45:47,386 - INFO - Downloading PDF from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/bc/0f/41591_2026_Article_4212.PMC13004688.pdf
+2026-06-28 23:45:47,725 - WARNING - PDF fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/bc/0f/41591_2026_Article_4212.PMC13004688.pdf
+2026-06-28 23:45:47,725 - INFO - Downloading PDF from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_pdf/bc/0f/41591_2026_Article_4212.PMC13004688.pdf
+2026-06-28 23:45:49,257 - INFO - Saved to downloads/PMC13004688.pdf
+2026-06-28 23:45:49,266 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-28 23:45:49,321 - INFO - Going to convert document batch...
+2026-06-28 23:45:49,323 - INFO - Processing document PMC13004688.pdf
+2026-06-28 23:46:25,696 - INFO - Finished converting document PMC13004688.pdf in 36.44 sec.
+2026-06-28 23:46:25,801 - INFO - Deleted temporary PDF: downloads/PMC13004688.pdf
+2026-06-28 23:46:25,881 - INFO - Storing abstract for 10.1038/s41591-026-04212-0...
+2026-06-28 23:46:26,164 - INFO - Storing full text from results/PMC13004688.md...
+2026-06-28 23:46:34,761 - INFO - Successfully stored 10.1038/s41591-026-04212-0.
+2026-06-28 23:46:34,763 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:46:35,133 - WARNING - No downloadable format found for PMC12997559
+2026-06-28 23:46:35,133 - INFO - Trying direct PMC PDF endpoint for PMC12997559
+2026-06-28 23:46:35,133 - INFO - Trying Europe PMC PDF URL: https://europepmc.org/backend/ptpmcrender.fcgi?accid=PMC12997559&blobtype=pdf
+2026-06-28 23:46:35,311 - ERROR - Europe PMC PDF failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-06-28 23:46:35,311 - INFO - PMC OA API failed, trying Unpaywall for DOI 10.1152/jn.00424.2025
+2026-06-28 23:46:35,986 - WARNING - No PDF URL found in Unpaywall for DOI 10.1152/jn.00424.2025
+2026-06-28 23:46:35,986 - ERROR - All download methods failed for PMC12997559
+2026-06-28 23:46:35,986 - WARNING - Download failed for PMC12997559, storing abstract only.
+2026-06-28 23:46:36,051 - INFO - Storing abstract for 10.1152/jn.00424.2025...
+2026-06-28 23:46:36,345 - INFO - Full text already ingested or unavailable, skipping.
+2026-06-28 23:46:36,345 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:46:36,697 - INFO - Downloading PMC13013584 as pdf from PMC OA API
+2026-06-28 23:46:36,697 - INFO - Downloading PDF from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/d5/2d/41531_2026_Article_1286.PMC13013584.pdf
+2026-06-28 23:46:37,038 - WARNING - PDF fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/d5/2d/41531_2026_Article_1286.PMC13013584.pdf
+2026-06-28 23:46:37,038 - INFO - Downloading PDF from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_pdf/d5/2d/41531_2026_Article_1286.PMC13013584.pdf
+2026-06-28 23:46:37,962 - INFO - Saved to downloads/PMC13013584.pdf
+2026-06-28 23:46:37,965 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-28 23:46:37,981 - INFO - Going to convert document batch...
+2026-06-28 23:46:37,982 - INFO - Processing document PMC13013584.pdf
+2026-06-28 23:46:46,604 - INFO - Finished converting document PMC13013584.pdf in 8.64 sec.
+2026-06-28 23:46:46,640 - INFO - Deleted temporary PDF: downloads/PMC13013584.pdf
+2026-06-28 23:46:46,708 - INFO - Storing abstract for 10.1038/s41531-026-01286-y...
+2026-06-28 23:46:46,928 - INFO - Storing full text from results/PMC13013584.md...
+2026-06-28 23:46:51,214 - INFO - Successfully stored 10.1038/s41531-026-01286-y.
+2026-06-28 23:46:51,215 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:46:51,578 - INFO - Downloading PMC12904197 as pdf from PMC OA API
+2026-06-28 23:46:51,578 - INFO - Downloading PDF from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/25/0f/sciadv.adz4733.PMC12904197.pdf
+2026-06-28 23:46:51,909 - WARNING - PDF fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/25/0f/sciadv.adz4733.PMC12904197.pdf
+2026-06-28 23:46:51,909 - INFO - Downloading PDF from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_pdf/25/0f/sciadv.adz4733.PMC12904197.pdf
+2026-06-28 23:46:52,938 - INFO - Saved to downloads/PMC12904197.pdf
+2026-06-28 23:46:52,941 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-28 23:46:52,949 - INFO - Going to convert document batch...
+2026-06-28 23:46:52,950 - INFO - Processing document PMC12904197.pdf
+2026-06-28 23:47:04,695 - INFO - Finished converting document PMC12904197.pdf in 11.76 sec.
+2026-06-28 23:47:04,736 - INFO - Deleted temporary PDF: downloads/PMC12904197.pdf
+2026-06-28 23:47:04,802 - INFO - Storing abstract for 10.1126/sciadv.adz4733...
+2026-06-28 23:47:05,026 - INFO - Storing full text from results/PMC12904197.md...
+2026-06-28 23:47:09,708 - INFO - Successfully stored 10.1126/sciadv.adz4733.
+2026-06-28 23:47:09,709 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:47:10,071 - INFO - Downloading PMC12898416 as tgz from PMC OA API
+2026-06-28 23:47:10,071 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/f1/b2/PMC12898416.tar.gz
+2026-06-28 23:47:10,406 - WARNING - Tarball fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/f1/b2/PMC12898416.tar.gz
+2026-06-28 23:47:10,406 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_package/f1/b2/PMC12898416.tar.gz
+2026-06-28 23:47:11,302 - INFO - Extracted PDF from tarball, saved to downloads/PMC12898416.pdf
+2026-06-28 23:47:11,304 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-28 23:47:11,307 - INFO - Going to convert document batch...
+2026-06-28 23:47:11,308 - INFO - Processing document PMC12898416.pdf
+2026-06-28 23:47:26,546 - INFO - Finished converting document PMC12898416.pdf in 15.24 sec.
+2026-06-28 23:47:26,605 - INFO - Deleted temporary PDF: downloads/PMC12898416.pdf
+2026-06-28 23:47:26,666 - INFO - Storing abstract for 10.3390/jcm15031006...
+2026-06-28 23:47:27,105 - INFO - Storing full text from results/PMC12898416.md...
+2026-06-28 23:47:33,362 - INFO - Successfully stored 10.3390/jcm15031006.
+2026-06-28 23:47:33,363 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:47:33,721 - INFO - Downloading PMC12896428 as tgz from PMC OA API
+2026-06-28 23:47:33,722 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/35/db/PMC12896428.tar.gz
+2026-06-28 23:47:34,065 - WARNING - Tarball fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/35/db/PMC12896428.tar.gz
+2026-06-28 23:47:34,065 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_package/35/db/PMC12896428.tar.gz
+2026-06-28 23:47:35,738 - INFO - Extracted PDF from tarball, saved to downloads/PMC12896428.pdf
+2026-06-28 23:47:35,743 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-28 23:47:35,761 - INFO - Going to convert document batch...
+2026-06-28 23:47:35,761 - INFO - Processing document PMC12896428.pdf
+2026-06-28 23:48:33,559 - INFO - Finished converting document PMC12896428.pdf in 57.82 sec.
+2026-06-28 23:48:33,777 - INFO - Deleted temporary PDF: downloads/PMC12896428.pdf
+2026-06-28 23:48:33,851 - INFO - Storing abstract for 10.3390/cells15030288...
+2026-06-28 23:48:34,092 - INFO - Storing full text from results/PMC12896428.md...
+2026-06-28 23:48:50,465 - INFO - Successfully stored 10.3390/cells15030288.
+2026-06-28 23:48:50,466 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:48:50,467 - INFO - No PMCID for 41673341, storing abstract only.
+2026-06-28 23:48:50,535 - INFO - Storing abstract for 10.1007/s11682-026-01066-5...
+2026-06-28 23:48:50,704 - INFO - Full text already ingested or unavailable, skipping.
+2026-06-28 23:48:50,704 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:48:51,056 - INFO - Downloading PMC13005014 as pdf from PMC OA API
+2026-06-28 23:48:51,057 - INFO - Downloading PDF from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/69/1e/41531_2026_Article_1291.PMC13005014.pdf
+2026-06-28 23:48:51,409 - WARNING - PDF fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/69/1e/41531_2026_Article_1291.PMC13005014.pdf
+2026-06-28 23:48:51,410 - INFO - Downloading PDF from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_pdf/69/1e/41531_2026_Article_1291.PMC13005014.pdf
+2026-06-28 23:48:52,195 - INFO - Saved to downloads/PMC13005014.pdf
+2026-06-28 23:48:52,199 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-28 23:48:52,215 - INFO - Going to convert document batch...
+2026-06-28 23:48:52,217 - INFO - Processing document PMC13005014.pdf
+2026-06-28 23:49:04,398 - INFO - Finished converting document PMC13005014.pdf in 12.20 sec.
+2026-06-28 23:49:04,442 - INFO - Deleted temporary PDF: downloads/PMC13005014.pdf
+2026-06-28 23:49:04,509 - INFO - Storing abstract for 10.1038/s41531-026-01291-1...
+2026-06-28 23:49:04,768 - INFO - Storing full text from results/PMC13005014.md...
+2026-06-28 23:49:11,264 - INFO - Successfully stored 10.1038/s41531-026-01291-1.
+2026-06-28 23:49:11,264 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:49:11,616 - INFO - Downloading PMC12892403 as tgz from PMC OA API
+2026-06-28 23:49:11,616 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/5e/29/PMC12892403.tar.gz
+2026-06-28 23:49:11,950 - WARNING - Tarball fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/5e/29/PMC12892403.tar.gz
+2026-06-28 23:49:11,950 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_package/5e/29/PMC12892403.tar.gz
+2026-06-28 23:49:13,797 - INFO - Extracted PDF from tarball, saved to downloads/PMC12892403.pdf
+2026-06-28 23:49:13,804 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-28 23:49:13,816 - INFO - Going to convert document batch...
+2026-06-28 23:49:13,818 - INFO - Processing document PMC12892403.pdf
+2026-06-28 23:49:27,500 - INFO - Finished converting document PMC12892403.pdf in 13.70 sec.
+2026-06-28 23:49:27,551 - INFO - Deleted temporary PDF: downloads/PMC12892403.pdf
+2026-06-28 23:49:27,619 - INFO - Storing abstract for 10.1002/cns.70787...
+2026-06-28 23:49:27,888 - INFO - Storing full text from results/PMC12892403.md...
+2026-06-28 23:49:32,873 - INFO - Successfully stored 10.1002/cns.70787.
+2026-06-28 23:49:32,873 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:49:33,220 - INFO - Downloading PMC12891262 as pdf from PMC OA API
+2026-06-28 23:49:33,221 - INFO - Downloading PDF from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/da/99/415_2026_Article_13666.PMC12891262.pdf
+2026-06-28 23:49:33,552 - WARNING - PDF fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/da/99/415_2026_Article_13666.PMC12891262.pdf
+2026-06-28 23:49:33,552 - INFO - Downloading PDF from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_pdf/da/99/415_2026_Article_13666.PMC12891262.pdf
+2026-06-28 23:49:34,476 - INFO - Saved to downloads/PMC12891262.pdf
+2026-06-28 23:49:34,481 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-28 23:49:34,504 - INFO - Going to convert document batch...
+2026-06-28 23:49:34,506 - INFO - Processing document PMC12891262.pdf
+2026-06-28 23:49:42,534 - INFO - Finished converting document PMC12891262.pdf in 8.06 sec.
+2026-06-28 23:49:42,566 - INFO - Deleted temporary PDF: downloads/PMC12891262.pdf
+2026-06-28 23:49:42,627 - INFO - Storing abstract for 10.1007/s00415-026-13666-8...
+2026-06-28 23:49:42,833 - INFO - Storing full text from results/PMC12891262.md...
+2026-06-28 23:49:47,754 - INFO - Successfully stored 10.1007/s00415-026-13666-8.
+2026-06-28 23:49:47,754 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:49:48,326 - INFO - Downloading PMC12873708 as tgz from PMC OA API
+2026-06-28 23:49:48,326 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/ab/3e/PMC12873708.tar.gz
+2026-06-28 23:49:48,912 - WARNING - Tarball fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/ab/3e/PMC12873708.tar.gz
+2026-06-28 23:49:48,912 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_package/ab/3e/PMC12873708.tar.gz
+2026-06-28 23:49:49,799 - INFO - Extracted PDF from tarball, saved to downloads/PMC12873708.pdf
+2026-06-28 23:49:49,801 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-28 23:49:49,810 - INFO - Going to convert document batch...
+2026-06-28 23:49:49,810 - INFO - Processing document PMC12873708.pdf
+2026-06-28 23:49:58,154 - INFO - Finished converting document PMC12873708.pdf in 8.35 sec.
+2026-06-28 23:49:58,186 - INFO - Deleted temporary PDF: downloads/PMC12873708.pdf
+2026-06-28 23:49:58,264 - INFO - Storing abstract for 10.3389/fneur.2025.1702050...
+2026-06-28 23:49:58,776 - INFO - Storing full text from results/PMC12873708.md...
+2026-06-28 23:50:00,685 - INFO - Successfully stored 10.3389/fneur.2025.1702050.
+2026-06-28 23:50:00,686 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:50:00,686 - INFO - No PMCID for 41654200, storing abstract only.
+2026-06-28 23:50:00,744 - INFO - Storing abstract for 10.1016/j.nbd.2026.107301...
+2026-06-28 23:50:00,928 - INFO - Full text already ingested or unavailable, skipping.
+2026-06-28 23:50:00,928 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:50:01,274 - INFO - Downloading PMC12869688 as tgz from PMC OA API
+2026-06-28 23:50:01,274 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/d4/e6/PMC12869688.tar.gz
+2026-06-28 23:50:01,614 - WARNING - Tarball fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/d4/e6/PMC12869688.tar.gz
+2026-06-28 23:50:01,614 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_package/d4/e6/PMC12869688.tar.gz
+2026-06-28 23:50:02,729 - INFO - Extracted PDF from tarball, saved to downloads/PMC12869688.pdf
+2026-06-28 23:50:02,732 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-28 23:50:02,737 - INFO - Going to convert document batch...
+2026-06-28 23:50:02,737 - INFO - Processing document PMC12869688.pdf
+2026-06-28 23:50:17,745 - INFO - Finished converting document PMC12869688.pdf in 15.02 sec.
+2026-06-28 23:50:17,781 - INFO - Deleted temporary PDF: downloads/PMC12869688.pdf
+2026-06-28 23:50:17,843 - INFO - Storing abstract for 10.21203/rs.3.rs-8239383/v1...
+2026-06-28 23:50:18,038 - INFO - Storing full text from results/PMC12869688.md...
+2026-06-28 23:50:21,717 - INFO - Successfully stored 10.21203/rs.3.rs-8239383/v1.
+2026-06-28 23:50:21,717 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:50:21,717 - INFO - No PMCID for 41633447, storing abstract only.
+2026-06-28 23:50:21,791 - INFO - Storing abstract for 10.1016/j.ajpath.2026.01.003...
+2026-06-28 23:50:21,950 - INFO - Full text already ingested or unavailable, skipping.
+2026-06-28 23:50:21,951 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:50:21,951 - INFO - No PMCID for 41622469, storing abstract only.
+2026-06-28 23:50:22,009 - INFO - Storing abstract for 10.4103/NRR.NRR-D-25-00711...
+2026-06-28 23:50:22,175 - INFO - Full text already ingested or unavailable, skipping.
+2026-06-28 23:50:22,175 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:50:22,533 - INFO - Downloading PMC12963478 as pdf from PMC OA API
+2026-06-28 23:50:22,533 - INFO - Downloading PDF from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/e6/fb/41531_2026_Article_1273.PMC12963478.pdf
+2026-06-28 23:50:22,864 - WARNING - PDF fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/e6/fb/41531_2026_Article_1273.PMC12963478.pdf
+2026-06-28 23:50:22,864 - INFO - Downloading PDF from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_pdf/e6/fb/41531_2026_Article_1273.PMC12963478.pdf
+2026-06-28 23:50:23,747 - INFO - Saved to downloads/PMC12963478.pdf
+2026-06-28 23:50:23,749 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-28 23:50:23,763 - INFO - Going to convert document batch...
+2026-06-28 23:50:23,764 - INFO - Processing document PMC12963478.pdf
+2026-06-28 23:50:36,249 - INFO - Finished converting document PMC12963478.pdf in 12.50 sec.
+2026-06-28 23:50:36,299 - INFO - Deleted temporary PDF: downloads/PMC12963478.pdf
+2026-06-28 23:50:36,361 - INFO - Storing abstract for 10.1038/s41531-026-01273-3...
+2026-06-28 23:50:36,589 - INFO - Storing full text from results/PMC12963478.md...
+2026-06-28 23:50:41,407 - INFO - Successfully stored 10.1038/s41531-026-01273-3.
+2026-06-28 23:50:41,408 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:50:41,408 - INFO - No PMCID for 41619527, storing abstract only.
+2026-06-28 23:50:41,465 - INFO - Storing abstract for 10.1016/j.parkreldis.2026.108205...
+2026-06-28 23:50:41,680 - INFO - Full text already ingested or unavailable, skipping.
+2026-06-28 23:50:41,680 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:50:41,680 - INFO - No PMCID for 41606412, storing abstract only.
+2026-06-28 23:50:41,739 - INFO - Storing abstract for 10.1007/s12035-026-05707-0...
+2026-06-28 23:50:41,939 - INFO - Full text already ingested or unavailable, skipping.
+2026-06-28 23:50:41,940 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:50:41,940 - INFO - No PMCID for 41603647, storing abstract only.
+2026-06-28 23:50:41,998 - INFO - Storing abstract for 10.1002/mds.70186...
+2026-06-28 23:50:42,208 - INFO - Full text already ingested or unavailable, skipping.
+2026-06-28 23:50:42,208 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:50:42,209 - INFO - No PMCID for 41603617, storing abstract only.
+2026-06-28 23:50:42,267 - INFO - Storing abstract for 10.1002/mds.70197...
+2026-06-28 23:50:42,457 - INFO - Full text already ingested or unavailable, skipping.
+2026-06-28 23:50:42,457 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:50:42,798 - INFO - Downloading PMC12842032 as tgz from PMC OA API
+2026-06-28 23:50:42,798 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/8a/5d/PMC12842032.tar.gz
+2026-06-28 23:50:43,146 - WARNING - Tarball fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/8a/5d/PMC12842032.tar.gz
+2026-06-28 23:50:43,147 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_package/8a/5d/PMC12842032.tar.gz
+2026-06-28 23:50:44,054 - INFO - Extracted PDF from tarball, saved to downloads/PMC12842032.pdf
+2026-06-28 23:50:44,057 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-28 23:50:44,060 - INFO - Going to convert document batch...
+2026-06-28 23:50:44,061 - INFO - Processing document PMC12842032.pdf
+2026-06-28 23:50:56,050 - INFO - Finished converting document PMC12842032.pdf in 12.00 sec.
+2026-06-28 23:50:56,099 - INFO - Deleted temporary PDF: downloads/PMC12842032.pdf
+2026-06-28 23:50:56,166 - INFO - Storing abstract for 10.3390/jcm15020492...
+2026-06-28 23:50:56,437 - INFO - Storing full text from results/PMC12842032.md...
+2026-06-28 23:50:59,084 - INFO - Successfully stored 10.3390/jcm15020492.
+2026-06-28 23:50:59,084 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:50:59,430 - INFO - Downloading PMC12838655 as tgz from PMC OA API
+2026-06-28 23:50:59,430 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/1d/80/PMC12838655.tar.gz
+2026-06-28 23:50:59,770 - WARNING - Tarball fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/1d/80/PMC12838655.tar.gz
+2026-06-28 23:50:59,770 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_package/1d/80/PMC12838655.tar.gz
+2026-06-28 23:51:00,866 - INFO - Extracted PDF from tarball, saved to downloads/PMC12838655.pdf
+2026-06-28 23:51:00,870 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-28 23:51:00,877 - INFO - Going to convert document batch...
+2026-06-28 23:51:00,878 - INFO - Processing document PMC12838655.pdf
+2026-06-28 23:51:17,410 - INFO - Finished converting document PMC12838655.pdf in 16.54 sec.
+2026-06-28 23:51:17,466 - INFO - Deleted temporary PDF: downloads/PMC12838655.pdf
+2026-06-28 23:51:17,530 - INFO - Storing abstract for 10.3390/biom16010061...
+2026-06-28 23:51:17,771 - INFO - Storing full text from results/PMC12838655.md...
+2026-06-28 23:51:24,831 - INFO - Successfully stored 10.3390/biom16010061.
+2026-06-28 23:51:24,832 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:51:25,185 - INFO - Downloading PMC12909943 as pdf from PMC OA API
+2026-06-28 23:51:25,186 - INFO - Downloading PDF from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/f5/58/41531_2026_Article_1264.PMC12909943.pdf
+2026-06-28 23:51:25,526 - WARNING - PDF fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/f5/58/41531_2026_Article_1264.PMC12909943.pdf
+2026-06-28 23:51:25,526 - INFO - Downloading PDF from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_pdf/f5/58/41531_2026_Article_1264.PMC12909943.pdf
+2026-06-28 23:51:26,316 - INFO - Saved to downloads/PMC12909943.pdf
+2026-06-28 23:51:26,319 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-28 23:51:26,333 - INFO - Going to convert document batch...
+2026-06-28 23:51:26,334 - INFO - Processing document PMC12909943.pdf
+2026-06-28 23:51:34,372 - INFO - Finished converting document PMC12909943.pdf in 8.05 sec.
+2026-06-28 23:51:34,405 - INFO - Deleted temporary PDF: downloads/PMC12909943.pdf
+2026-06-28 23:51:34,472 - INFO - Storing abstract for 10.1038/s41531-026-01264-4...
+2026-06-28 23:51:34,874 - INFO - Storing full text from results/PMC12909943.md...
+2026-06-28 23:51:39,122 - INFO - Successfully stored 10.1038/s41531-026-01264-4.
+2026-06-28 23:51:39,122 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:51:39,122 - INFO - No PMCID for 41571558, storing abstract only.
+2026-06-28 23:51:39,184 - INFO - Storing abstract for 10.1016/j.acra.2025.12.025...
+2026-06-28 23:51:39,365 - INFO - Full text already ingested or unavailable, skipping.
+2026-06-28 23:51:39,365 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:51:39,365 - INFO - No PMCID for 41549883, storing abstract only.
+2026-06-28 23:51:39,425 - INFO - Storing abstract for 10.1002/mdc3.70530...
+2026-06-28 23:51:39,548 - INFO - Full text already ingested or unavailable, skipping.
+2026-06-28 23:51:39,548 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:51:39,896 - INFO - Downloading PMC12891709 as pdf from PMC OA API
+2026-06-28 23:51:39,896 - INFO - Downloading PDF from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/4b/9b/41598_2026_Article_36435.PMC12891709.pdf
+2026-06-28 23:51:40,218 - WARNING - PDF fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/4b/9b/41598_2026_Article_36435.PMC12891709.pdf
+2026-06-28 23:51:40,218 - INFO - Downloading PDF from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_pdf/4b/9b/41598_2026_Article_36435.PMC12891709.pdf
+2026-06-28 23:51:41,142 - INFO - Saved to downloads/PMC12891709.pdf
+2026-06-28 23:51:41,145 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-28 23:51:41,163 - INFO - Going to convert document batch...
+2026-06-28 23:51:41,164 - INFO - Processing document PMC12891709.pdf
+2026-06-28 23:51:49,269 - INFO - Finished converting document PMC12891709.pdf in 8.13 sec.
+2026-06-28 23:51:49,330 - INFO - Deleted temporary PDF: downloads/PMC12891709.pdf
+2026-06-28 23:51:49,391 - INFO - Storing abstract for 10.1038/s41598-026-36435-z...
+2026-06-28 23:51:49,611 - INFO - Storing full text from results/PMC12891709.md...
+2026-06-28 23:51:51,819 - INFO - Successfully stored 10.1038/s41598-026-36435-z.
+2026-06-28 23:51:51,820 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:51:52,173 - INFO - Downloading PMC12820131 as tgz from PMC OA API
+2026-06-28 23:51:52,174 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/3e/4f/PMC12820131.tar.gz
+2026-06-28 23:51:52,507 - WARNING - Tarball fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/3e/4f/PMC12820131.tar.gz
+2026-06-28 23:51:52,507 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_package/3e/4f/PMC12820131.tar.gz
+2026-06-28 23:51:53,552 - INFO - Extracted PDF from tarball, saved to downloads/PMC12820131.pdf
+2026-06-28 23:51:53,553 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-28 23:51:53,565 - INFO - Going to convert document batch...
+2026-06-28 23:51:53,565 - INFO - Processing document PMC12820131.pdf
+2026-06-28 23:52:04,107 - INFO - Finished converting document PMC12820131.pdf in 10.55 sec.
+2026-06-28 23:52:04,144 - INFO - Deleted temporary PDF: downloads/PMC12820131.pdf
+2026-06-28 23:52:04,207 - INFO - Storing abstract for 10.1038/s41531-025-01233-3...
+2026-06-28 23:52:04,444 - INFO - Storing full text from results/PMC12820131.md...
+2026-06-28 23:52:09,342 - INFO - Successfully stored 10.1038/s41531-025-01233-3.
+2026-06-28 23:52:09,343 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:52:09,689 - INFO - Downloading PMC12909848 as pdf from PMC OA API
+2026-06-28 23:52:09,690 - INFO - Downloading PDF from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/ef/97/41531_2026_Article_1262.PMC12909848.pdf
+2026-06-28 23:52:10,013 - WARNING - PDF fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/ef/97/41531_2026_Article_1262.PMC12909848.pdf
+2026-06-28 23:52:10,013 - INFO - Downloading PDF from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_pdf/ef/97/41531_2026_Article_1262.PMC12909848.pdf
+2026-06-28 23:52:10,993 - INFO - Saved to downloads/PMC12909848.pdf
+2026-06-28 23:52:10,997 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-28 23:52:11,014 - INFO - Going to convert document batch...
+2026-06-28 23:52:11,015 - INFO - Processing document PMC12909848.pdf
+2026-06-28 23:52:20,728 - INFO - Finished converting document PMC12909848.pdf in 9.73 sec.
+2026-06-28 23:52:20,766 - INFO - Deleted temporary PDF: downloads/PMC12909848.pdf
+2026-06-28 23:52:20,833 - INFO - Storing abstract for 10.1038/s41531-026-01262-6...
+2026-06-28 23:52:21,061 - INFO - Storing full text from results/PMC12909848.md...
+2026-06-28 23:52:24,564 - INFO - Successfully stored 10.1038/s41531-026-01262-6.
+2026-06-28 23:52:24,565 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:52:24,565 - INFO - No PMCID for 41525793, storing abstract only.
+2026-06-28 23:52:24,623 - INFO - Storing abstract for 10.1093/brain/awag014...
+2026-06-28 23:52:24,847 - INFO - Full text already ingested or unavailable, skipping.
+2026-06-28 23:52:24,847 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:52:25,197 - INFO - Downloading PMC12802056 as pdf from PMC OA API
+2026-06-28 23:52:25,197 - INFO - Downloading PDF from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/14/d9/jcn-22-6.PMC12802056.pdf
+2026-06-28 23:52:26,137 - WARNING - PDF fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/14/d9/jcn-22-6.PMC12802056.pdf
+2026-06-28 23:52:26,137 - INFO - Downloading PDF from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_pdf/14/d9/jcn-22-6.PMC12802056.pdf
+2026-06-28 23:52:27,031 - INFO - Saved to downloads/PMC12802056.pdf
+2026-06-28 23:52:27,033 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-28 23:52:27,039 - INFO - Going to convert document batch...
+2026-06-28 23:52:27,040 - INFO - Processing document PMC12802056.pdf
+2026-06-28 23:52:34,821 - INFO - Finished converting document PMC12802056.pdf in 7.79 sec.
+2026-06-28 23:52:34,852 - INFO - Deleted temporary PDF: downloads/PMC12802056.pdf
+2026-06-28 23:52:34,918 - INFO - Storing abstract for 10.3988/jcn.2025.0629...
+2026-06-28 23:52:35,155 - INFO - Storing full text from results/PMC12802056.md...
+2026-06-28 23:52:37,540 - INFO - Successfully stored 10.3988/jcn.2025.0629.
+2026-06-28 23:52:37,541 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:52:37,893 - INFO - Downloading PMC12786970 as tgz from PMC OA API
+2026-06-28 23:52:37,893 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/53/a6/PMC12786970.tar.gz
+2026-06-28 23:52:38,247 - WARNING - Tarball fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/53/a6/PMC12786970.tar.gz
+2026-06-28 23:52:38,248 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_package/53/a6/PMC12786970.tar.gz
+2026-06-28 23:52:39,116 - INFO - Extracted PDF from tarball, saved to downloads/PMC12786970.pdf
+2026-06-28 23:52:39,118 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-28 23:52:39,121 - INFO - Going to convert document batch...
+2026-06-28 23:52:39,122 - INFO - Processing document PMC12786970.pdf
+2026-06-28 23:53:01,560 - INFO - Finished converting document PMC12786970.pdf in 22.44 sec.
+2026-06-28 23:53:01,686 - INFO - Deleted temporary PDF: downloads/PMC12786970.pdf
+2026-06-28 23:53:01,761 - INFO - Storing abstract for 10.3390/ijms27010486...
+2026-06-28 23:53:02,054 - INFO - Storing full text from results/PMC12786970.md...
+2026-06-28 23:53:12,494 - INFO - Successfully stored 10.3390/ijms27010486.
+2026-06-28 23:53:12,495 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:53:12,850 - INFO - Downloading PMC12819914 as pdf from PMC OA API
+2026-06-28 23:53:12,851 - INFO - Downloading PDF from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/bd/60/18_2025_Article_6003.PMC12819914.pdf
+2026-06-28 23:53:13,190 - WARNING - PDF fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/bd/60/18_2025_Article_6003.PMC12819914.pdf
+2026-06-28 23:53:13,191 - INFO - Downloading PDF from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_pdf/bd/60/18_2025_Article_6003.PMC12819914.pdf
+2026-06-28 23:53:15,227 - INFO - Saved to downloads/PMC12819914.pdf
+2026-06-28 23:53:15,235 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-28 23:53:15,269 - INFO - Going to convert document batch...
+2026-06-28 23:53:15,271 - INFO - Processing document PMC12819914.pdf
+2026-06-28 23:53:38,771 - INFO - Finished converting document PMC12819914.pdf in 23.54 sec.
+2026-06-28 23:53:38,837 - INFO - Deleted temporary PDF: downloads/PMC12819914.pdf
+2026-06-28 23:53:38,902 - INFO - Storing abstract for 10.1007/s00018-025-06003-1...
+2026-06-28 23:53:39,220 - INFO - Storing full text from results/PMC12819914.md...
+2026-06-28 23:53:45,304 - INFO - Successfully stored 10.1007/s00018-025-06003-1.
+2026-06-28 23:53:45,305 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:53:45,870 - INFO - Downloading PMC12765053 as pdf from PMC OA API
+2026-06-28 23:53:45,871 - INFO - Downloading PDF from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/c7/f5/main.PMC12765053.pdf
+2026-06-28 23:53:46,453 - WARNING - PDF fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/c7/f5/main.PMC12765053.pdf
+2026-06-28 23:53:46,453 - INFO - Downloading PDF from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_pdf/c7/f5/main.PMC12765053.pdf
+2026-06-28 23:53:47,499 - INFO - Saved to downloads/PMC12765053.pdf
+2026-06-28 23:53:47,504 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-28 23:53:47,516 - INFO - Going to convert document batch...
+2026-06-28 23:53:47,518 - INFO - Processing document PMC12765053.pdf
+2026-06-28 23:53:57,558 - INFO - Finished converting document PMC12765053.pdf in 10.06 sec.
+2026-06-28 23:53:57,597 - INFO - Deleted temporary PDF: downloads/PMC12765053.pdf
+2026-06-28 23:53:57,663 - INFO - Storing abstract for 10.1016/j.ynirp.2025.100311...
+2026-06-28 23:53:57,932 - INFO - Storing full text from results/PMC12765053.md...
+2026-06-28 23:54:03,872 - INFO - Successfully stored 10.1016/j.ynirp.2025.100311.
+2026-06-28 23:54:03,873 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:54:03,873 - INFO - No PMCID for 41484429, storing abstract only.
+2026-06-28 23:54:03,931 - INFO - Storing abstract for 10.1007/s00702-025-03097-6...
+2026-06-28 23:54:04,175 - INFO - Full text already ingested or unavailable, skipping.
+2026-06-28 23:54:04,176 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:54:04,530 - INFO - Downloading PMC12753937 as tgz from PMC OA API
+2026-06-28 23:54:04,531 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/91/5b/PMC12753937.tar.gz
+2026-06-28 23:54:04,867 - WARNING - Tarball fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/91/5b/PMC12753937.tar.gz
+2026-06-28 23:54:04,868 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_package/91/5b/PMC12753937.tar.gz
+2026-06-28 23:54:05,655 - INFO - Extracted PDF from tarball, saved to downloads/PMC12753937.pdf
+2026-06-28 23:54:05,661 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-28 23:54:05,673 - INFO - Going to convert document batch...
+2026-06-28 23:54:05,674 - INFO - Processing document PMC12753937.pdf
+2026-06-28 23:54:24,368 - INFO - Finished converting document PMC12753937.pdf in 18.71 sec.
+2026-06-28 23:54:24,418 - INFO - Deleted temporary PDF: downloads/PMC12753937.pdf
+2026-06-28 23:54:24,485 - INFO - Storing abstract for 10.3389/fnagi.2025.1713899...
+2026-06-28 23:54:24,794 - INFO - Storing full text from results/PMC12753937.md...
+2026-06-28 23:54:36,428 - INFO - Successfully stored 10.3389/fnagi.2025.1713899.
+2026-06-28 23:54:36,430 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:54:36,787 - INFO - Downloading PMC12754217 as tgz from PMC OA API
+2026-06-28 23:54:36,787 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/b7/7a/PMC12754217.tar.gz
+2026-06-28 23:54:37,121 - WARNING - Tarball fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/b7/7a/PMC12754217.tar.gz
+2026-06-28 23:54:37,121 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_package/b7/7a/PMC12754217.tar.gz
+2026-06-28 23:54:37,889 - INFO - Extracted PDF from tarball, saved to downloads/PMC12754217.pdf
+2026-06-28 23:54:37,893 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-28 23:54:37,901 - INFO - Going to convert document batch...
+2026-06-28 23:54:37,903 - INFO - Processing document PMC12754217.pdf
+2026-06-28 23:54:44,757 - INFO - Finished converting document PMC12754217.pdf in 6.87 sec.
+2026-06-28 23:54:44,781 - INFO - Deleted temporary PDF: downloads/PMC12754217.pdf
+2026-06-28 23:54:44,845 - INFO - Storing abstract for 10.1016/j.prdoa.2025.100411...
+2026-06-28 23:54:45,141 - INFO - Storing full text from results/PMC12754217.md...
+2026-06-28 23:54:48,167 - INFO - Successfully stored 10.1016/j.prdoa.2025.100411.
+2026-06-28 23:54:48,168 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:54:48,168 - INFO - No PMCID for 41467326, storing abstract only.
+2026-06-28 23:54:48,227 - INFO - Storing abstract for 10.1002/mds.70153...
+2026-06-28 23:54:48,429 - INFO - Full text already ingested or unavailable, skipping.
+2026-06-28 23:54:48,429 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:54:48,775 - INFO - Downloading PMC12729909 as tgz from PMC OA API
+2026-06-28 23:54:48,776 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/93/90/PMC12729909.tar.gz
+2026-06-28 23:54:49,109 - WARNING - Tarball fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/93/90/PMC12729909.tar.gz
+2026-06-28 23:54:49,110 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_package/93/90/PMC12729909.tar.gz
+2026-06-28 23:54:50,168 - INFO - Extracted PDF from tarball, saved to downloads/PMC12729909.pdf
+2026-06-28 23:54:50,171 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-28 23:54:50,175 - INFO - Going to convert document batch...
+2026-06-28 23:54:50,176 - INFO - Processing document PMC12729909.pdf
+2026-06-28 23:55:02,784 - INFO - Finished converting document PMC12729909.pdf in 12.62 sec.
+2026-06-28 23:55:02,833 - INFO - Deleted temporary PDF: downloads/PMC12729909.pdf
+2026-06-28 23:55:02,895 - INFO - Storing abstract for 10.3390/antiox14121429...
+2026-06-28 23:55:03,160 - INFO - Storing full text from results/PMC12729909.md...
+2026-06-28 23:55:06,831 - INFO - Successfully stored 10.3390/antiox14121429.
+2026-06-28 23:55:06,831 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:55:07,178 - INFO - Downloading PMC12955899 as tgz from PMC OA API
+2026-06-28 23:55:07,178 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/04/00/PMC12955899.tar.gz
+2026-06-28 23:55:07,638 - WARNING - Tarball fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/04/00/PMC12955899.tar.gz
+2026-06-28 23:55:07,638 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_package/04/00/PMC12955899.tar.gz
+2026-06-28 23:55:10,143 - INFO - Extracted PDF from tarball, saved to downloads/PMC12955899.pdf
+2026-06-28 23:55:10,149 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-28 23:55:10,161 - INFO - Going to convert document batch...
+2026-06-28 23:55:10,162 - INFO - Processing document PMC12955899.pdf
+2026-06-28 23:55:41,493 - INFO - Finished converting document PMC12955899.pdf in 31.35 sec.
+2026-06-28 23:55:41,572 - INFO - Deleted temporary PDF: downloads/PMC12955899.pdf
+2026-06-28 23:55:41,666 - INFO - Storing abstract for 10.1002/advs.202515138...
+2026-06-28 23:55:41,905 - INFO - Storing full text from results/PMC12955899.md...
+2026-06-28 23:55:50,285 - INFO - Successfully stored 10.1002/advs.202515138.
+2026-06-28 23:55:50,286 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:55:50,647 - INFO - Downloading PMC12731173 as tgz from PMC OA API
+2026-06-28 23:55:50,648 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/45/0d/PMC12731173.tar.gz
+2026-06-28 23:55:50,985 - WARNING - Tarball fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/45/0d/PMC12731173.tar.gz
+2026-06-28 23:55:50,986 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_package/45/0d/PMC12731173.tar.gz
+2026-06-28 23:55:52,022 - INFO - Extracted PDF from tarball, saved to downloads/PMC12731173.pdf
+2026-06-28 23:55:52,025 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-28 23:55:52,031 - INFO - Going to convert document batch...
+2026-06-28 23:55:52,032 - INFO - Processing document PMC12731173.pdf
+2026-06-28 23:56:21,629 - INFO - Finished converting document PMC12731173.pdf in 29.61 sec.
+2026-06-28 23:56:21,722 - INFO - Deleted temporary PDF: downloads/PMC12731173.pdf
+2026-06-28 23:56:21,795 - INFO - Storing abstract for 10.3390/brainsci15121260...
+2026-06-28 23:56:22,068 - INFO - Storing full text from results/PMC12731173.md...
+2026-06-28 23:56:33,605 - INFO - Successfully stored 10.3390/brainsci15121260.
+2026-06-28 23:56:33,606 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:56:34,174 - INFO - Downloading PMC12712803 as tgz from PMC OA API
+2026-06-28 23:56:34,174 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/61/e0/PMC12712803.tar.gz
+2026-06-28 23:56:34,732 - WARNING - Tarball fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/61/e0/PMC12712803.tar.gz
+2026-06-28 23:56:34,732 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_package/61/e0/PMC12712803.tar.gz
+2026-06-28 23:56:35,807 - INFO - Extracted PDF from tarball, saved to downloads/PMC12712803.pdf
+2026-06-28 23:56:35,810 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-28 23:56:35,818 - INFO - Going to convert document batch...
+2026-06-28 23:56:35,819 - INFO - Processing document PMC12712803.pdf
+2026-06-28 23:56:46,256 - INFO - Finished converting document PMC12712803.pdf in 10.45 sec.
+2026-06-28 23:56:46,290 - INFO - Deleted temporary PDF: downloads/PMC12712803.pdf
+2026-06-28 23:56:46,352 - INFO - Storing abstract for 10.3389/fnins.2025.1695541...
+2026-06-28 23:56:46,624 - INFO - Storing full text from results/PMC12712803.md...
+2026-06-28 23:56:51,085 - INFO - Successfully stored 10.3389/fnins.2025.1695541.
+2026-06-28 23:56:51,085 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:56:51,443 - INFO - Downloading PMC12708609 as tgz from PMC OA API
+2026-06-28 23:56:51,444 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/f9/f2/PMC12708609.tar.gz
+2026-06-28 23:56:51,780 - WARNING - Tarball fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/f9/f2/PMC12708609.tar.gz
+2026-06-28 23:56:51,780 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_package/f9/f2/PMC12708609.tar.gz
+2026-06-28 23:56:52,469 - INFO - Extracted PDF from tarball, saved to downloads/PMC12708609.pdf
+2026-06-28 23:56:52,472 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-28 23:56:52,480 - INFO - Going to convert document batch...
+2026-06-28 23:56:52,481 - INFO - Processing document PMC12708609.pdf
+2026-06-28 23:56:59,492 - INFO - Finished converting document PMC12708609.pdf in 7.02 sec.
+2026-06-28 23:56:59,518 - INFO - Deleted temporary PDF: downloads/PMC12708609.pdf
+2026-06-28 23:56:59,584 - INFO - Storing abstract for 10.3389/fnagi.2025.1695806...
+2026-06-28 23:56:59,943 - INFO - Storing full text from results/PMC12708609.md...
+2026-06-28 23:57:03,366 - INFO - Successfully stored 10.3389/fnagi.2025.1695806.
+2026-06-28 23:57:03,367 - INFO - Successfully ran ETL pipeline.
+2026-06-28 23:57:03,724 - INFO - Downloading PMC12711994 as pdf from PMC OA API
+2026-06-28 23:57:03,725 - INFO - Downloading PDF from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/91/f0/41522_2025_Article_855.PMC12711994.pdf
+2026-06-28 23:57:04,055 - WARNING - PDF fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/91/f0/41522_2025_Article_855.PMC12711994.pdf
+2026-06-28 23:57:04,055 - INFO - Downloading PDF from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_pdf/91/f0/41522_2025_Article_855.PMC12711994.pdf
+2026-06-28 23:57:06,317 - INFO - Saved to downloads/PMC12711994.pdf
+2026-06-28 23:57:06,323 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-28 23:57:06,366 - INFO - Going to convert document batch...
+2026-06-28 23:57:06,368 - INFO - Processing document PMC12711994.pdf

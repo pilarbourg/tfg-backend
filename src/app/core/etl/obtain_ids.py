@@ -16,7 +16,7 @@ logging.basicConfig(
 
 UNPAYWALL_EMAIL = os.getenv("UNPAYWALL_EMAIL")
 
-query = "(Parkinson's Disease OR Parkinson) AND (metabolite OR metabolomics)"
+query = "Parkinson AND (metabolite OR metabolomics)"
 
 def validate_doi(doi: str | None) -> bool:
     return bool(doi and doi.startswith("10."))

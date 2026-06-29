@@ -1,20 +1,9 @@
-"""
-Uses the Desikan-Killiany atlas (aparc) to split both hemispheres
-of the fsaverage surface into individually named .obj files.
-
-dependencies: uv pip install nilearn nibabel numpy requests
-"""
-
 import json
 import os
 import requests
 import numpy as np
-
-try:
-    import nibabel as nib
-    from nilearn import datasets
-except ImportError:
-    raise SystemExit("Run: uv pip install nilearn nibabel numpy requests")
+import nibabel as nib
+from nilearn import datasets
 
 OUTPUT_DIR   = "data/brain_regions"
 ANNOT_DIR    = os.path.expanduser("~/nilearn_data/fsaverage_annot")
@@ -26,23 +15,18 @@ ANNOT_URLS = {
 }
 
 PARKINSONS_RELEVANT = {
-    "caudate", "putamen", "pallidum",
     "precentral",
     "postcentral",
     "superiorfrontal", "rostralmiddlefrontal",
     "isthmuscingulate", "posteriorcingulate",
-    "hippocampus", "entorhinal", "parahippocampal",
+    "entorhinal", "parahippocampal",
     "insula",
     "superiortemporal", "middletemporal",
     "inferiorparietal", "supramarginal",
 }
 
 def download_fsaverage():
-    print("Loading fsaverage GIFTI surfaces via nilearn...")
-    fs = datasets.fetch_surf_fsaverage("fsaverage")
-    print("Surfaces ready.")
-    return fs
-
+    return datasets.fetch_surf_fsaverage("fsaverage")
 
 def download_annotations():
     os.makedirs(ANNOT_DIR, exist_ok=True)
@@ -51,34 +35,25 @@ def download_annotations():
     for hemi, url in ANNOT_URLS.items():
         out_path = os.path.join(ANNOT_DIR, f"{hemi}.aparc.annot")
         if os.path.exists(out_path):
-            print(f"  Annotation already cached: {out_path}")
             annot_paths[hemi] = out_path
             continue
 
-        print(f"  Downloading {hemi}.aparc.annot ...")
-        res = requests.get(url, timeout=30)
-        if res.status_code != 200:
-            print(f"  GitHub fetch failed ({res.status_code}), trying nilearn fetcher...")
-            fs5 = datasets.fetch_surf_fsaverage("fsaverage5")
-            nilearn_annot = os.path.join(
-                os.path.expanduser("~/nilearn_data"),
-                "fsaverage5", f"{hemi}.aparc.annot"
-            )
-            if os.path.exists(nilearn_annot):
-                import shutil
-                shutil.copy(nilearn_annot, out_path)
-            else:
-                raise FileNotFoundError(
-                    f"Could not download {hemi}.aparc.annot.\n"
-                    f"Please manually download from:\n"
-                    f"https://github.com/nilearn/nilearn/tree/main/nilearn/data/fsaverage"
-                )
-        else:
-            with open(out_path, "wb") as f:
-                f.write(res.content)
-            print(f"  Saved → {out_path}")
+        try:
+            res = requests.get(url, timeout=30)
+            if res.status_code == 200:
+                with open(out_path, "wb") as f:
+                    f.write(res.content)
+                annot_paths[hemi] = out_path
+                continue
+        except requests.RequestException:
+            pass
 
-        annot_paths[hemi] = out_path
+        destrieux = datasets.fetch_atlas_surf_destrieux()
+
+        raise FileNotFoundError(
+            f"Could not download {hemi}.aparc.annot.\n"
+            f"Please manually download from {url} and place it in {out_path}"
+        )
 
     return annot_paths
 
@@ -103,14 +78,9 @@ def write_obj(filepath: str, vertices: np.ndarray, faces: np.ndarray):
 
 
 def extract_regions(hemi: str, fsaverage, annot_paths: dict) -> list:
-    print(f"\n── Processing {hemi} hemisphere ──")
-
     hemi_long = "left" if hemi == "lh" else "right"
     surf_path = fsaverage[f"pial_{hemi_long}"]
     annot_path = annot_paths[hemi]
-
-    print(f"  Surface:    {surf_path}")
-    print(f"  Annotation: {annot_path}")
 
     coords, faces = load_gifti_surface(surf_path)
     labels, ctab, region_names = nib.freesurfer.read_annot(annot_path)
@@ -119,13 +89,6 @@ def extract_regions(hemi: str, fsaverage, annot_paths: dict) -> list:
         r.decode("utf-8") if isinstance(r, bytes) else r
         for r in region_names
     ]
-
-    print(f"  {len(region_names)} regions, {len(coords)} vertices, {len(faces)} faces")
-
-    region_names = [r.decode("utf-8") if isinstance(r, bytes) else r
-                    for r in region_names]
-
-    print(f"  Found {len(region_names)} regions, {len(coords)} vertices")
 
     region_info_list = []
 
@@ -143,7 +106,6 @@ def extract_regions(hemi: str, fsaverage, annot_paths: dict) -> list:
         region_faces_global = faces[face_mask]
 
         if len(region_faces_global) == 0:
-            print(f"  ⚠ No faces for {hemi}_{region_name}, skipping")
             continue
 
         unique_verts, inverse = np.unique(region_faces_global, return_inverse=True)
@@ -165,17 +127,21 @@ def extract_regions(hemi: str, fsaverage, annot_paths: dict) -> list:
             "vertex_count":     int(len(unique_verts)),
             "face_count":       int(len(local_faces)),
             "parkinsons_relevant": is_parkinsons,
+            "source":           "cortical"
         })
-
-        marker = "★" if is_parkinsons else " "
-        print(f"  {marker} {hemi}_{region_name:<30} "
-              f"{len(unique_verts):>6} verts  {len(local_faces):>6} faces  → {filename}")
 
     return region_info_list
 
 
 def write_mapping(all_regions: list):
-    mapping = {}
+    out_path = os.path.join(OUTPUT_DIR, "mapping.json")
+    
+    if os.path.exists(out_path):
+        with open(out_path, "r", encoding="utf-8") as f:
+            mapping = json.load(f)
+    else:
+        mapping = {}
+
     for r in all_regions:
         mapping[r["id"]] = {
             "hemisphere":          r["hemisphere"],
@@ -184,14 +150,13 @@ def write_mapping(all_regions: list):
             "vertex_count":        r["vertex_count"],
             "face_count":          r["face_count"],
             "parkinsons_relevant": r["parkinsons_relevant"],
+            "source":              r["source"],
             "metabolites":         [],
         }
 
-    out_path = os.path.join(OUTPUT_DIR, "mapping.json")
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(mapping, f, indent=2, ensure_ascii=False)
 
-    print(f"\n mapping.json saved → {out_path}")
     return out_path
 
 
@@ -207,11 +172,4 @@ if __name__ == "__main__":
         all_regions.extend(regions)
 
     mapping_path = write_mapping(all_regions)
-
-    total      = len(all_regions)
-    parkinsons = sum(1 for r in all_regions if r["parkinsons_relevant"])
-    print(f"\n{'─'*55}")
-    print(f"Done.  {total} region OBJ files written to {OUTPUT_DIR}/")
-    print(f"       {parkinsons} regions flagged as Parkinson's-relevant (★)")
-    print(f"       mapping.json ready for React + RAG pipeline")
-    print(f"{'─'*55}")
+    print(f"Cortical extraction complete. Mapping saved to {mapping_path}")

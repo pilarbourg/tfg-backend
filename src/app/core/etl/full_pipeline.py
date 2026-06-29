@@ -57,19 +57,24 @@ def run_etl_pipeline(paper: ResearchPaper, conn: connection) -> None:
 
 def run_pipeline() -> None:
     """
-    Orchestrates the full ETL pipeline across all papers in the metadata index.
-    Opens a single database connection, filters papers with full text available,
-    and runs the extract, transform, and load steps for each one.
+    Full ETL pipeline.
     """
-        
     conn = get_db_connection()
     try:
-      with open("data/metadata_validation.json", "r") as f:
-        metadata = json.load(f)
+        with open("data/metadata_index.json", "r") as f:
+            metadata = json.load(f)
 
-      for entry in metadata:
+        for entry in metadata:
+            pmcid = entry.get("pmcid")
+            
+            if pmcid and os.path.exists(f"results/PMC{pmcid}.md"):
+                entry["has_full_text"] = True
+            else:
+                entry["has_full_text"] = False
+
             paper = ResearchPaper(**entry)
             run_etl_pipeline(paper, conn)
+            
     finally:
         conn.close()
 

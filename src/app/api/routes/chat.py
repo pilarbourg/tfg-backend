@@ -20,7 +20,7 @@ async def chat_endpoint(request: ChatRequest):
     """
     def generate_stream():
         try:
-            chunks, context_string = get_context(request.query, target_table="research_papers")
+            chunks, context_string = get_context(request.query)
             sources = [
                 {"title": c["meta"]["title"], "url": c["meta"]["url"]}
                 for c in chunks
@@ -49,8 +49,7 @@ async def atlas_describe(request: ChatRequest):
     """
     def generate_stream():
         try:
-            chunks, context_string = get_context(request.query, target_table="research_papers")
-            # Inside your validation runner function:
+            chunks, context_string = get_context(request.query)
             sources = [
                 {"title": c["meta"]["title"], "url": c["meta"]["url"]}
                 for c in chunks

@@ -1,6 +1,6 @@
 import json
 from pathlib import Path
-from app.core.rag.retrieval import perform_search_with_rerank_hybrid
+from app.core.rag.retrieval import hybrid_search
 from app.core.rag.generation import get_atlas_stream
 
 SCRIPT_DIR = Path(__file__).resolve().parent
@@ -12,7 +12,7 @@ with open(DATASET_PATH) as f:
 results = []
 for q in questions:
     query = q["sample_query"]
-    chunks = perform_search_with_rerank_hybrid(query)
+    chunks = hybrid_search(query)
     context_text = "\n".join(f"DOI: {c['meta']['url']}\nContent: {c['text']}" for c in chunks)
     answer = "".join(c.content for c in get_atlas_stream(query, context_text))
     results.append({

@@ -20,9 +20,9 @@ EMBEDDING_MODEL.max_seq_length = 512
 
 TEXT_SPLITTER = RecursiveCharacterTextSplitter.from_huggingface_tokenizer(
     tokenizer=EMBEDDING_MODEL.tokenizer,
-    chunk_size=512,
-    chunk_overlap=96,
-    separators=["\n\n", "\n|", "\n", ". ", " ", ""]
+    chunk_size=336,
+    chunk_overlap=112,
+    separators=["\n\n", "\n", "|", "-", "_", ". ", " ", ""]
 )
 
 def _already_ingested(source_id: str, conn: connection) -> bool:
@@ -43,7 +43,7 @@ def _already_ingested(source_id: str, conn: connection) -> bool:
     """
     with conn.cursor() as cur:
         cur.execute(
-            "SELECT 1 FROM validation_papers WHERE source_url = %s LIMIT 1",
+            "SELECT 1 FROM limited_papers WHERE source_url = %s LIMIT 1",
             (source_id,)
         )
         
@@ -83,7 +83,7 @@ def _store_chunks(title: str, text: str, source_id: str, pmid: str, pmcid: str |
             execute_values(
                 cur,
                 """
-                INSERT INTO validation_papers
+                INSERT INTO limited_papers
                 (title, source_url, pmid, pmcid, content, embedding)
                 VALUES %s
                 """,

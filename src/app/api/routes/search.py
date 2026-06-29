@@ -1,41 +1,30 @@
-import json
 import logging
-from fastapi import APIRouter, Depends, HTTPException
-from fastapi.responses import StreamingResponse
-from psycopg2.extensions import connection
-from pydantic import BaseModel
+from fastapi import APIRouter, Depends, Query
+from psycopg2.extras import RealDictCursor
 from app.api.dependencies import get_db
-from app.core.etl.obtain_ids import fetch_paper_metadata, get_pmcid_from_pmid, get_pmid_from_pmcid
-from app.core.etl.full_pipeline import run_etl_pipeline
-from app.core.schemas.research_paper import ResearchPaper
 
-router = APIRouter(prefix="/library", tags=["library"])
+router = APIRouter()
 
 @router.get("/search")
-def search_metabolite_mentions(conn: connection = Depends(get_db)):
-    """
-    Returns top-10 articles which mention the given metabolite.
-    """
-    with conn.cursor() as cur:
+def search_metabolite_mentions(
+    query: str = Query(...), 
+    limit: int = 10, 
+    conn = Depends(get_db)
+):
+    with conn.cursor(cursor_factory=RealDictCursor) as cur:
         cur.execute("""
-            SELECT COUNT(DISTINCT REPLACE(source_url, '_abs', ''))
+            SELECT DISTINCT ON (pmid)
+                pmid,
+                REPLACE(title, '(Abstract)', '') AS title,
+                REPLACE(source_url, '_abs', '') AS source_url,
+                content,
+                LEFT(content, 300) || '...' AS snippet,
+                ts_rank(to_tsvector('english', title || ' ' || content), websearch_to_tsquery('english', %s)) AS score
             FROM research_papers
-        """)
-        total_papers = cur.fetchone()[0]
-
-        cur.execute("""
-            SELECT COUNT(DISTINCT source_url)
-            FROM research_papers
-            WHERE source_url NOT LIKE '%_abs'
-        """)
-        full_text_count = cur.fetchone()[0]
-
-        cur.execute("SELECT COUNT(*) FROM research_papers")
-        total_chunks = cur.fetchone()[0]
-
-    return {
-        "total_papers": total_papers,
-        "full_text_count": full_text_count,
-        "abstract_only": total_papers - full_text_count,
-        "total_chunks": total_chunks,
-    }
+            WHERE to_tsvector('english', title || ' ' || content) @@ websearch_to_tsquery('english', %s)
+            ORDER BY pmid, score DESC
+            LIMIT %s;
+        """, (query, query, limit))
+        
+        return {"results": cur.fetchall()}
+    
