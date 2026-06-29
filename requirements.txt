@@ -7,7 +7,6 @@ annotated-types==0.7.0
 antlr4-python3-runtime==4.9.3
 anyio==4.13.0
 appdirs==1.4.4
-appnope==0.1.4
 asttokens==3.0.1
 attrs==26.1.0
 backcall==0.2.0
@@ -136,7 +135,6 @@ nest-asyncio==1.6.0
 networkx==3.6.1
 numexpr==2.14.1
 numpy==1.26.4
-ocrmac==1.0.1
 ollama==0.6.2
 omegaconf==2.3.0
 onnxruntime==1.24.4
@@ -185,11 +183,6 @@ pyee==13.0.1
 Pygments==2.20.0
 pylatexenc==2.10
 PyMuPDF==1.27.2.2
-pyobjc-core==12.1
-pyobjc-framework-Cocoa==12.1
-pyobjc-framework-CoreML==12.1
-pyobjc-framework-Quartz==12.1
-pyobjc-framework-Vision==12.1
 pyparsing==3.3.2
 pypdfium2==5.7.0
 pysbd==0.3.4
