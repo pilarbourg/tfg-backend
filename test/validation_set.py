@@ -1,4 +1,4 @@
-from app.core.etl.obtain_ids import fetch_paper_metadata, get_pmcid_from_pmid
+from src.app.core.etl.obtain_ids import fetch_paper_metadata, get_pmcid_from_pmid
 import json, time
 
 VALIDATION_PMIDS = [
@@ -22,5 +22,5 @@ for pmid in VALIDATION_PMIDS:
         metadata.append(entry)
         time.sleep(0.4)
 
-with open("data/metadata_validation.json", "w") as f:
+with open("../src/data/metadata_validation.json", "w") as f:
     json.dump(metadata, f, indent=4, ensure_ascii=False)
