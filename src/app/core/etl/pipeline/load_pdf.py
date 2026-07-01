@@ -43,7 +43,7 @@ def _already_ingested(source_id: str, conn: connection) -> bool:
     """
     with conn.cursor() as cur:
         cur.execute(
-            "SELECT 1 FROM limited_papers WHERE source_url = %s LIMIT 1",
+            "SELECT 1 FROM limited_validation_papers WHERE source_url = %s LIMIT 1",
             (source_id,)
         )
         
@@ -83,7 +83,7 @@ def _store_chunks(title: str, text: str, source_id: str, pmid: str, pmcid: str |
             execute_values(
                 cur,
                 """
-                INSERT INTO limited_papers
+                INSERT INTO limited_validation_papers
                 (title, source_url, pmid, pmcid, content, embedding)
                 VALUES %s
                 """,

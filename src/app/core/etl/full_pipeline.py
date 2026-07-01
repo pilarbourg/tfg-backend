@@ -61,7 +61,7 @@ def run_pipeline() -> None:
     """
     conn = get_db_connection()
     try:
-        with open("data/metadata_index.json", "r") as f:
+        with open("data/metadata_validation.json", "r") as f:
             metadata = json.load(f)
 
         for entry in metadata:

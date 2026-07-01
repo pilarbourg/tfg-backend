@@ -2179,3 +2179,306 @@
 2026-06-28 23:57:06,323 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
 2026-06-28 23:57:06,366 - INFO - Going to convert document batch...
 2026-06-28 23:57:06,368 - INFO - Processing document PMC12711994.pdf
+2026-06-29 19:24:49,398 - INFO - NumExpr defaulting to 10 threads.
+2026-06-29 19:24:57,363 - INFO - No device provided, using mps
+2026-06-29 19:24:57,558 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-29 19:24:57,559 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-06-29 19:24:57,570 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/modules.json "HTTP/1.1 200 OK"
+2026-06-29 19:24:57,699 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-29 19:24:57,709 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-06-29 19:24:57,710 - INFO - Loading SentenceTransformer model from pritamdeka/S-PubMedBert-MS-MARCO.
+2026-06-29 19:24:57,826 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-29 19:24:57,836 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-06-29 19:24:57,964 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-06-29 19:24:57,975 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/README.md "HTTP/1.1 200 OK"
+2026-06-29 19:24:58,098 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-29 19:24:58,108 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/modules.json "HTTP/1.1 200 OK"
+2026-06-29 19:24:58,244 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-29 19:24:58,255 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-06-29 19:24:58,400 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-06-29 19:24:58,548 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-29 19:24:58,557 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-06-29 19:24:58,723 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-06-29 19:24:58,884 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO "HTTP/1.1 200 OK"
+2026-06-29 19:24:59,023 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/commits/main "HTTP/1.1 200 OK"
+2026-06-29 19:24:59,114 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-06-29 19:24:59,159 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/discussions?p=0 "HTTP/1.1 200 OK"
+2026-06-29 19:24:59,237 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-06-29 19:24:59,294 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/commits/refs%2Fpr%2F10 "HTTP/1.1 200 OK"
+2026-06-29 19:24:59,384 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-06-29 19:24:59,419 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/refs%2Fpr%2F10/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-06-29 19:24:59,530 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-06-29 19:24:59,559 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/refs%2Fpr%2F10/model.safetensors "HTTP/1.1 302 Found"
+2026-06-29 19:24:59,659 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-29 19:24:59,671 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-06-29 19:24:59,796 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-29 19:24:59,808 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-06-29 19:24:59,948 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-29 19:24:59,959 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-06-29 19:25:00,082 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-29 19:25:00,099 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-06-29 19:25:00,231 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-06-29 19:25:00,361 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-06-29 19:25:00,538 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-29 19:25:00,548 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-06-29 19:25:00,675 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO "HTTP/1.1 200 OK"
+2026-06-29 19:25:01,894 - INFO - PMC10731845 already processed, skipping.
+2026-06-29 19:25:01,894 - INFO - PMC11378289 already processed, skipping.
+2026-06-29 19:25:01,894 - INFO - PMC12082280 already processed, skipping.
+2026-06-29 19:25:01,894 - INFO - PMC9360421 already processed, skipping.
+2026-06-29 19:25:01,894 - INFO - PMC12894904 already processed, skipping.
+2026-06-29 19:25:01,894 - INFO - PMC10454467 already processed, skipping.
+2026-06-29 19:25:01,894 - INFO - PMC13009158 already processed, skipping.
+2026-06-29 19:25:01,894 - INFO - PMC6772170 already processed, skipping.
+2026-06-29 19:25:01,894 - INFO - PMC5791797 already processed, skipping.
+2026-06-29 19:25:01,894 - INFO - PMC8453505 already processed, skipping.
+2026-06-29 19:25:31,821 - INFO - NumExpr defaulting to 10 threads.
+2026-06-29 19:25:38,754 - INFO - No device provided, using mps
+2026-06-29 19:25:38,912 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-29 19:25:38,920 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/modules.json "HTTP/1.1 200 OK"
+2026-06-29 19:25:39,041 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-29 19:25:39,052 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-06-29 19:25:39,054 - INFO - Loading SentenceTransformer model from pritamdeka/S-PubMedBert-MS-MARCO.
+2026-06-29 19:25:39,183 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-29 19:25:39,196 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-06-29 19:25:39,323 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-06-29 19:25:39,325 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-06-29 19:25:39,348 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/README.md "HTTP/1.1 200 OK"
+2026-06-29 19:25:39,478 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-29 19:25:39,488 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/modules.json "HTTP/1.1 200 OK"
+2026-06-29 19:25:39,614 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-29 19:25:39,625 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-06-29 19:25:39,911 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-06-29 19:25:40,032 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-29 19:25:40,042 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-06-29 19:25:40,214 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-06-29 19:25:40,357 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO "HTTP/1.1 200 OK"
+2026-06-29 19:25:40,513 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/commits/main "HTTP/1.1 200 OK"
+2026-06-29 19:25:40,573 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-06-29 19:25:40,648 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/discussions?p=0 "HTTP/1.1 200 OK"
+2026-06-29 19:25:40,697 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-06-29 19:25:40,784 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/commits/refs%2Fpr%2F10 "HTTP/1.1 200 OK"
+2026-06-29 19:25:40,824 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-06-29 19:25:40,916 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/refs%2Fpr%2F10/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-06-29 19:25:40,979 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-06-29 19:25:41,043 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/refs%2Fpr%2F10/model.safetensors "HTTP/1.1 302 Found"
+2026-06-29 19:25:41,107 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-29 19:25:41,117 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-06-29 19:25:41,241 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-29 19:25:41,250 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-06-29 19:25:41,390 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-29 19:25:41,401 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-06-29 19:25:41,524 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-29 19:25:41,534 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-06-29 19:25:41,666 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-06-29 19:25:41,800 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-06-29 19:25:41,954 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-29 19:25:41,965 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-06-29 19:25:42,094 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO "HTTP/1.1 200 OK"
+2026-06-29 19:25:42,951 - INFO - PMC10731845 already processed, skipping.
+2026-06-29 19:25:42,952 - INFO - PMC11378289 already processed, skipping.
+2026-06-29 19:25:42,952 - INFO - PMC12082280 already processed, skipping.
+2026-06-29 19:25:42,952 - INFO - PMC9360421 already processed, skipping.
+2026-06-29 19:25:42,952 - INFO - PMC12894904 already processed, skipping.
+2026-06-29 19:25:42,952 - INFO - PMC10454467 already processed, skipping.
+2026-06-29 19:25:42,952 - INFO - PMC13009158 already processed, skipping.
+2026-06-29 19:25:42,953 - INFO - PMC6772170 already processed, skipping.
+2026-06-29 19:25:42,953 - INFO - PMC5791797 already processed, skipping.
+2026-06-29 19:25:42,953 - INFO - PMC8453505 already processed, skipping.
+2026-06-29 19:28:22,990 - INFO - NumExpr defaulting to 10 threads.
+2026-06-29 19:28:30,337 - INFO - No device provided, using mps
+2026-06-29 19:28:30,842 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-29 19:28:30,844 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-06-29 19:28:30,852 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/modules.json "HTTP/1.1 200 OK"
+2026-06-29 19:28:31,019 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-29 19:28:31,029 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-06-29 19:28:31,032 - INFO - Loading SentenceTransformer model from pritamdeka/S-PubMedBert-MS-MARCO.
+2026-06-29 19:28:31,197 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-29 19:28:31,206 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-06-29 19:28:31,375 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-06-29 19:28:31,386 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/README.md "HTTP/1.1 200 OK"
+2026-06-29 19:28:31,518 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-29 19:28:31,527 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/modules.json "HTTP/1.1 200 OK"
+2026-06-29 19:28:31,649 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-29 19:28:31,659 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-06-29 19:28:31,783 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-06-29 19:28:31,912 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-29 19:28:31,922 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-06-29 19:28:32,083 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-06-29 19:28:32,296 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO "HTTP/1.1 200 OK"
+2026-06-29 19:28:32,441 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/commits/main "HTTP/1.1 200 OK"
+2026-06-29 19:28:32,521 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-06-29 19:28:32,590 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/discussions?p=0 "HTTP/1.1 200 OK"
+2026-06-29 19:28:32,675 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-06-29 19:28:32,724 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/commits/refs%2Fpr%2F10 "HTTP/1.1 200 OK"
+2026-06-29 19:28:32,796 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-06-29 19:28:32,844 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/refs%2Fpr%2F10/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-06-29 19:28:32,920 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-06-29 19:28:32,982 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/refs%2Fpr%2F10/model.safetensors "HTTP/1.1 302 Found"
+2026-06-29 19:28:33,042 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-29 19:28:33,051 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-06-29 19:28:33,179 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-29 19:28:33,240 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-06-29 19:28:33,371 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-29 19:28:33,380 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/config.json "HTTP/1.1 200 OK"
+2026-06-29 19:28:33,530 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-29 19:28:33,542 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-06-29 19:28:33,674 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-06-29 19:28:33,802 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-06-29 19:28:33,968 - INFO - HTTP Request: HEAD https://huggingface.co/pritamdeka/S-PubMedBert-MS-MARCO/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-29 19:28:33,977 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/pritamdeka/S-PubMedBert-MS-MARCO/96786c7024f95c5aac7f2b9a18086c7b97b23036/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-06-29 19:28:34,107 - INFO - HTTP Request: GET https://huggingface.co/api/models/pritamdeka/S-PubMedBert-MS-MARCO "HTTP/1.1 200 OK"
+2026-06-29 19:28:35,918 - INFO - Downloading PMC10731845 as tgz from PMC OA API
+2026-06-29 19:28:35,919 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/2a/82/PMC10731845.tar.gz
+2026-06-29 19:28:36,488 - WARNING - Tarball fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/2a/82/PMC10731845.tar.gz
+2026-06-29 19:28:36,488 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_package/2a/82/PMC10731845.tar.gz
+2026-06-29 19:28:48,318 - INFO - Extracted PDF from tarball, saved to downloads/PMC10731845.pdf
+2026-06-29 19:28:48,321 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-29 19:28:48,394 - INFO - Going to convert document batch...
+2026-06-29 19:28:48,395 - INFO - Initializing pipeline for StandardPdfPipeline with options hash 80a8a1322ca5ef46817c7adbf875fff6
+2026-06-29 19:28:48,412 - INFO - Loading plugin 'docling_defaults'
+2026-06-29 19:28:48,415 - INFO - Registered picture descriptions: ['picture_description_vlm_engine', 'vlm', 'api']
+2026-06-29 19:28:48,421 - INFO - Loading plugin 'docling_defaults'
+2026-06-29 19:28:48,431 - INFO - Registered ocr engines: ['auto', 'easyocr', 'kserve_v2_ocr', 'ocrmac', 'rapidocr', 'tesserocr', 'tesseract']
+2026-06-29 19:28:49,775 - INFO - Auto OCR model selected ocrmac.
+2026-06-29 19:28:49,783 - INFO - Loading plugin 'docling_defaults'
+2026-06-29 19:28:49,787 - INFO - Registered layout engines: ['layout_object_detection', 'docling_layout_default', 'docling_experimental_table_crops_layout']
+2026-06-29 19:28:49,799 - INFO - Accelerator device: 'mps'
+2026-06-29 19:28:49,940 - INFO - HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-layout-heron/revision/main "HTTP/1.1 200 OK"
+2026-06-29 19:28:50,740 - INFO - Loading plugin 'docling_defaults'
+2026-06-29 19:28:50,742 - INFO - Registered table structure engines: ['docling_tableformer', 'docling_tableformer_v2']
+2026-06-29 19:28:50,885 - INFO - HTTP Request: GET https://huggingface.co/api/models/docling-project/docling-models/revision/v2.3.0 "HTTP/1.1 200 OK"
+2026-06-29 19:28:51,565 - INFO - Accelerator device: 'mps'
+2026-06-29 19:28:52,202 - INFO - Processing document PMC10731845.pdf
+2026-06-29 19:29:26,497 - INFO - Finished converting document PMC10731845.pdf in 38.18 sec.
+2026-06-29 19:29:26,704 - INFO - Deleted temporary PDF: downloads/PMC10731845.pdf
+2026-06-29 19:29:26,740 - INFO - Storing abstract for 10.1186/s13024-023-00694-5...
+2026-06-29 19:29:27,330 - INFO - Storing full text from results/PMC10731845.md...
+2026-06-29 19:29:35,202 - INFO - Successfully stored 10.1186/s13024-023-00694-5.
+2026-06-29 19:29:35,203 - INFO - Successfully ran ETL pipeline.
+2026-06-29 19:29:35,558 - INFO - Downloading PMC11378289 as tgz from PMC OA API
+2026-06-29 19:29:35,559 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/19/1a/PMC11378289.tar.gz
+2026-06-29 19:29:35,891 - WARNING - Tarball fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/19/1a/PMC11378289.tar.gz
+2026-06-29 19:29:35,891 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_package/19/1a/PMC11378289.tar.gz
+2026-06-29 19:29:37,171 - INFO - Extracted PDF from tarball, saved to downloads/PMC11378289.pdf
+2026-06-29 19:29:37,174 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-29 19:29:37,184 - INFO - Going to convert document batch...
+2026-06-29 19:29:37,185 - INFO - Processing document PMC11378289.pdf
+2026-06-29 19:29:51,163 - INFO - Finished converting document PMC11378289.pdf in 13.99 sec.
+2026-06-29 19:29:51,215 - INFO - Deleted temporary PDF: downloads/PMC11378289.pdf
+2026-06-29 19:29:51,293 - INFO - Storing abstract for 10.1021/acschemneuro.4c00355...
+2026-06-29 19:29:51,530 - INFO - Storing full text from results/PMC11378289.md...
+2026-06-29 19:30:00,791 - INFO - Successfully stored 10.1021/acschemneuro.4c00355.
+2026-06-29 19:30:00,792 - INFO - Successfully ran ETL pipeline.
+2026-06-29 19:30:01,158 - INFO - Downloading PMC12082280 as tgz from PMC OA API
+2026-06-29 19:30:01,159 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/88/1d/PMC12082280.tar.gz
+2026-06-29 19:30:01,500 - WARNING - Tarball fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/88/1d/PMC12082280.tar.gz
+2026-06-29 19:30:01,500 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_package/88/1d/PMC12082280.tar.gz
+2026-06-29 19:30:02,299 - INFO - Extracted PDF from tarball, saved to downloads/PMC12082280.pdf
+2026-06-29 19:30:02,303 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-29 19:30:02,307 - INFO - Going to convert document batch...
+2026-06-29 19:30:02,309 - INFO - Processing document PMC12082280.pdf
+2026-06-29 19:30:15,400 - INFO - Finished converting document PMC12082280.pdf in 13.10 sec.
+2026-06-29 19:30:15,447 - INFO - Deleted temporary PDF: downloads/PMC12082280.pdf
+2026-06-29 19:30:15,509 - INFO - Storing abstract for 10.1111/cns.70424...
+2026-06-29 19:30:15,755 - INFO - Storing full text from results/PMC12082280.md...
+2026-06-29 19:30:20,950 - INFO - Successfully stored 10.1111/cns.70424.
+2026-06-29 19:30:20,950 - INFO - Successfully ran ETL pipeline.
+2026-06-29 19:30:21,306 - INFO - Downloading PMC9360421 as tgz from PMC OA API
+2026-06-29 19:30:21,307 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/2a/6d/PMC9360421.tar.gz
+2026-06-29 19:30:21,639 - WARNING - Tarball fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/2a/6d/PMC9360421.tar.gz
+2026-06-29 19:30:21,639 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_package/2a/6d/PMC9360421.tar.gz
+2026-06-29 19:30:22,438 - INFO - Extracted PDF from tarball, saved to downloads/PMC9360421.pdf
+2026-06-29 19:30:22,440 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-29 19:30:22,445 - INFO - Going to convert document batch...
+2026-06-29 19:30:22,446 - INFO - Processing document PMC9360421.pdf
+2026-06-29 19:30:31,197 - INFO - Finished converting document PMC9360421.pdf in 8.76 sec.
+2026-06-29 19:30:31,232 - INFO - Deleted temporary PDF: downloads/PMC9360421.pdf
+2026-06-29 19:30:31,301 - INFO - Storing abstract for 10.3389/fnagi.2022.927625...
+2026-06-29 19:30:31,548 - INFO - Storing full text from results/PMC9360421.md...
+2026-06-29 19:30:35,920 - INFO - Successfully stored 10.3389/fnagi.2022.927625.
+2026-06-29 19:30:35,921 - INFO - Successfully ran ETL pipeline.
+2026-06-29 19:30:36,284 - INFO - Downloading PMC12894904 as pdf from PMC OA API
+2026-06-29 19:30:36,285 - INFO - Downloading PDF from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/2a/80/41598_2026_Article_36756.PMC12894904.pdf
+2026-06-29 19:30:36,618 - WARNING - PDF fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/2a/80/41598_2026_Article_36756.PMC12894904.pdf
+2026-06-29 19:30:36,618 - INFO - Downloading PDF from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_pdf/2a/80/41598_2026_Article_36756.PMC12894904.pdf
+2026-06-29 19:30:37,627 - INFO - Saved to downloads/PMC12894904.pdf
+2026-06-29 19:30:37,632 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-29 19:30:37,647 - INFO - Going to convert document batch...
+2026-06-29 19:30:37,649 - INFO - Processing document PMC12894904.pdf
+2026-06-29 19:30:58,881 - INFO - Finished converting document PMC12894904.pdf in 21.25 sec.
+2026-06-29 19:30:58,951 - INFO - Deleted temporary PDF: downloads/PMC12894904.pdf
+2026-06-29 19:30:59,016 - INFO - Storing abstract for 10.1038/s41598-026-36756-z...
+2026-06-29 19:30:59,514 - INFO - Storing full text from results/PMC12894904.md...
+2026-06-29 19:31:08,096 - INFO - Successfully stored 10.1038/s41598-026-36756-z.
+2026-06-29 19:31:08,097 - INFO - Successfully ran ETL pipeline.
+2026-06-29 19:31:08,484 - INFO - Downloading PMC10454467 as tgz from PMC OA API
+2026-06-29 19:31:08,484 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/4f/86/PMC10454467.tar.gz
+2026-06-29 19:31:08,829 - WARNING - Tarball fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/4f/86/PMC10454467.tar.gz
+2026-06-29 19:31:08,830 - INFO - Downloading tarball from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_package/4f/86/PMC10454467.tar.gz
+2026-06-29 19:31:09,748 - INFO - Extracted PDF from tarball, saved to downloads/PMC10454467.pdf
+2026-06-29 19:31:09,753 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-29 19:31:09,762 - INFO - Going to convert document batch...
+2026-06-29 19:31:09,763 - INFO - Processing document PMC10454467.pdf
+2026-06-29 19:31:16,691 - INFO - Finished converting document PMC10454467.pdf in 6.94 sec.
+2026-06-29 19:31:16,721 - INFO - Deleted temporary PDF: downloads/PMC10454467.pdf
+2026-06-29 19:31:16,785 - INFO - Storing abstract for 10.3390/ijms241612849...
+2026-06-29 19:31:16,991 - INFO - Storing full text from results/PMC10454467.md...
+2026-06-29 19:31:18,579 - INFO - Successfully stored 10.3390/ijms241612849.
+2026-06-29 19:31:18,580 - INFO - Successfully ran ETL pipeline.
+2026-06-29 19:31:18,936 - INFO - Downloading PMC13009158 as pdf from PMC OA API
+2026-06-29 19:31:18,936 - INFO - Downloading PDF from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/20/f7/41598_2025_Article_30521.PMC13009158.pdf
+2026-06-29 19:31:19,274 - WARNING - PDF fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/20/f7/41598_2025_Article_30521.PMC13009158.pdf
+2026-06-29 19:31:19,274 - INFO - Downloading PDF from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_pdf/20/f7/41598_2025_Article_30521.PMC13009158.pdf
+2026-06-29 19:31:20,159 - INFO - Saved to downloads/PMC13009158.pdf
+2026-06-29 19:31:20,162 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-29 19:31:20,176 - INFO - Going to convert document batch...
+2026-06-29 19:31:20,176 - INFO - Processing document PMC13009158.pdf
+2026-06-29 19:31:31,745 - INFO - Finished converting document PMC13009158.pdf in 11.59 sec.
+2026-06-29 19:31:31,790 - INFO - Deleted temporary PDF: downloads/PMC13009158.pdf
+2026-06-29 19:31:31,851 - INFO - Storing abstract for 10.1038/s41598-025-30521-4...
+2026-06-29 19:31:32,138 - INFO - Storing full text from results/PMC13009158.md...
+2026-06-29 19:31:35,497 - INFO - Successfully stored 10.1038/s41598-025-30521-4.
+2026-06-29 19:31:35,497 - INFO - Successfully ran ETL pipeline.
+2026-06-29 19:31:35,844 - INFO - Downloading PMC6772170 as pdf from PMC OA API
+2026-06-29 19:31:35,844 - INFO - Downloading PDF from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/77/69/ANA-86-251.PMC6772170.pdf
+2026-06-29 19:31:36,172 - WARNING - PDF fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/77/69/ANA-86-251.PMC6772170.pdf
+2026-06-29 19:31:36,172 - INFO - Downloading PDF from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_pdf/77/69/ANA-86-251.PMC6772170.pdf
+2026-06-29 19:31:37,027 - INFO - Saved to downloads/PMC6772170.pdf
+2026-06-29 19:31:37,029 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-29 19:31:37,032 - INFO - Going to convert document batch...
+2026-06-29 19:31:37,033 - INFO - Processing document PMC6772170.pdf
+2026-06-29 19:31:50,912 - INFO - Finished converting document PMC6772170.pdf in 13.88 sec.
+2026-06-29 19:31:50,974 - INFO - Deleted temporary PDF: downloads/PMC6772170.pdf
+2026-06-29 19:31:51,045 - INFO - Storing abstract for 10.1002/ana.25516...
+2026-06-29 19:31:51,344 - INFO - Storing full text from results/PMC6772170.md...
+2026-06-29 19:32:00,779 - INFO - Successfully stored 10.1002/ana.25516.
+2026-06-29 19:32:00,780 - INFO - Successfully ran ETL pipeline.
+2026-06-29 19:32:01,142 - INFO - Downloading PMC5791797 as pdf from PMC OA API
+2026-06-29 19:32:01,143 - INFO - Downloading PDF from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/6e/a9/NEUROLOGY2017821272.PMC5791797.pdf
+2026-06-29 19:32:01,542 - WARNING - PDF fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/6e/a9/NEUROLOGY2017821272.PMC5791797.pdf
+2026-06-29 19:32:01,542 - INFO - Downloading PDF from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_pdf/6e/a9/NEUROLOGY2017821272.PMC5791797.pdf
+2026-06-29 19:32:02,205 - INFO - Saved to downloads/PMC5791797.pdf
+2026-06-29 19:32:02,208 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-29 19:32:02,212 - INFO - Going to convert document batch...
+2026-06-29 19:32:02,213 - INFO - Processing document PMC5791797.pdf
+2026-06-29 19:32:11,771 - INFO - Finished converting document PMC5791797.pdf in 9.57 sec.
+2026-06-29 19:32:11,812 - INFO - Deleted temporary PDF: downloads/PMC5791797.pdf
+2026-06-29 19:32:11,878 - INFO - Storing abstract for 10.1212/WNL.0000000000004888...
+2026-06-29 19:32:12,116 - INFO - Storing full text from results/PMC5791797.md...
+2026-06-29 19:32:16,383 - INFO - Successfully stored 10.1212/WNL.0000000000004888.
+2026-06-29 19:32:16,383 - INFO - Successfully ran ETL pipeline.
+2026-06-29 19:32:16,721 - INFO - Downloading PMC8453505 as pdf from PMC OA API
+2026-06-29 19:32:16,721 - INFO - Downloading PDF from https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/67/e3/MDS-36-1972.PMC8453505.pdf
+2026-06-29 19:32:17,055 - WARNING - PDF fetch returned status 404 for https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/67/e3/MDS-36-1972.PMC8453505.pdf
+2026-06-29 19:32:17,055 - INFO - Downloading PDF from https://ftp.ncbi.nlm.nih.gov/pub/pmc/deprecated/oa_pdf/67/e3/MDS-36-1972.PMC8453505.pdf
+2026-06-29 19:32:17,615 - INFO - Saved to downloads/PMC8453505.pdf
+2026-06-29 19:32:17,617 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+2026-06-29 19:32:17,619 - INFO - Going to convert document batch...
+2026-06-29 19:32:17,620 - INFO - Processing document PMC8453505.pdf
+2026-06-29 19:32:25,840 - INFO - Finished converting document PMC8453505.pdf in 8.22 sec.
+2026-06-29 19:32:25,869 - INFO - Deleted temporary PDF: downloads/PMC8453505.pdf
+2026-06-29 19:32:25,934 - INFO - Storing abstract for 10.1002/mds.28608...
+2026-06-29 19:32:26,312 - INFO - Storing full text from results/PMC8453505.md...
+2026-06-29 19:32:30,477 - INFO - Successfully stored 10.1002/mds.28608.
+2026-06-29 19:32:30,478 - INFO - Successfully ran ETL pipeline.

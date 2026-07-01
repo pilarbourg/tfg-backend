@@ -12,7 +12,7 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-with open("/Users/pilarbourg/Desktop/tfg-pipeline/src/rag_results.json") as f:
+with open("/Users/pilarbourg/Desktop/tfg-pipeline/src/limited_rag_results.json") as f:
     samples = json.load(f)
 
 judge = ChatOpenAI(
@@ -28,14 +28,11 @@ run_config = RunConfig(timeout=600, max_retries=3, max_wait=120, max_workers=1)
 
 result = evaluate(
     dataset=EvaluationDataset.from_list(samples),
-    metrics=[ResponseRelevancy()],
+    metrics=[ContextRecall()],
     #  ContextPrecision(), ContextRecall(), Faithfulness(), ResponseRelevancy()
     llm=LangchainLLMWrapper(judge),
     embeddings=LangchainEmbeddingsWrapper(embeddings),
     run_config=run_config,
 )
 
-print(f"Number of questions evaluated: {len(samples)}")
-print(f"Number of rows in result: {len(result.to_pandas())}")
-print(result)
-result.to_pandas().to_csv("ragas_results.csv", index=False)
+result.to_pandas().to_csv("limited_ragas_results.csv", index=False)

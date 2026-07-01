@@ -22,5 +22,5 @@ for q in questions:
         "reference": q["expected_output"],
     })
 
-with open("rag_results.json", "w") as f:
+with open("limited_rag_results.json", "w") as f:
     json.dump(results, f, indent=2)
