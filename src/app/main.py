@@ -2,7 +2,6 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.api.routes.chat import router as chat_router
 from app.api.routes.dashboard import router as dashboard_router
-from app.api.routes.library import router as library_router
 from app.api.routes.auth import router as auth_router
 from app.api.routes.search import router as search_router
 
@@ -21,6 +20,5 @@ app.add_middleware(
 
 app.include_router(chat_router, prefix="/api", tags=["RAG Chat Engine"])
 app.include_router(dashboard_router, prefix="/api", tags=["Dashboard Analytics"])
-app.include_router(library_router, prefix="/api", tags=["Document Library"])
 app.include_router(auth_router, prefix="/api", tags=["Authentication"])
 app.include_router(search_router, prefix="/api", tags=["Authentication"])

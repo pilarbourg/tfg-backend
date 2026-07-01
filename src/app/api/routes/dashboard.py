@@ -8,56 +8,39 @@ router = APIRouter(prefix="/dashboard", tags=["dashboard"])
 @router.get("/stats")
 def get_dashboard_stats(conn: connection = Depends(get_db)):
     """
-    Returns corpus statistics including paper counts, chunk distribution,
-    publisher breakdown, and recently ingested documents.
+    Returns knowledge base statistics including paper counts, chunk distribution,
+    and recently ingested documents.
     """
     with conn.cursor() as cur:
 
         cur.execute("""
             SELECT COUNT(DISTINCT REPLACE(source_url, '_abs', ''))
-            FROM research_papers
+            FROM limited_papers
         """)
         total_papers = cur.fetchone()[0]
 
         cur.execute("""
             SELECT COUNT(DISTINCT source_url)
-            FROM research_papers
+            FROM limited_papers
             WHERE source_url NOT LIKE '%_abs'
         """)
         full_text_count = cur.fetchone()[0]
 
         abstract_only = total_papers - full_text_count
 
-        cur.execute("SELECT COUNT(*) FROM research_papers")
+        cur.execute("SELECT COUNT(*) FROM limited_papers")
         total_chunks = cur.fetchone()[0]
 
         cur.execute("""
             SELECT ROUND(AVG(chunk_count))
             FROM (
                 SELECT source_url, COUNT(*) as chunk_count
-                FROM research_papers
+                FROM limited_papers
                 WHERE source_url NOT LIKE '%_abs'
                 GROUP BY source_url
             ) sub
         """)
         avg_chunks = cur.fetchone()[0] or 0
-
-        cur.execute("""
-            SELECT
-                SPLIT_PART(
-                    REPLACE(source_url, '_abs', ''),
-                    '/', 1
-                ) as publisher,
-                COUNT(DISTINCT REPLACE(source_url, '_abs', '')) as count
-            FROM research_papers
-            GROUP BY publisher
-            ORDER BY count DESC
-            LIMIT 8
-        """)
-        publishers = [
-            {"publisher": row[0], "count": row[1]}
-            for row in cur.fetchall()
-        ]
 
         cur.execute("""
             SELECT
@@ -70,7 +53,7 @@ def get_dashboard_stats(conn: connection = Depends(get_db)):
                 COUNT(*) as papers
             FROM (
                 SELECT source_url, COUNT(*) as chunk_count
-                FROM research_papers
+                FROM limited_papers
                 WHERE source_url NOT LIKE '%_abs'
                 GROUP BY source_url
             ) sub
@@ -88,7 +71,7 @@ def get_dashboard_stats(conn: connection = Depends(get_db)):
                 REPLACE(source_url, '_abs', '') as doi,
                 MAX(ingested_at) as ingested_at,
                 COUNT(*) as chunk_count
-            FROM research_papers
+            FROM limited_papers
             GROUP BY title, doi
             ORDER BY MAX(ingested_at) DESC
             LIMIT 50
@@ -109,7 +92,6 @@ def get_dashboard_stats(conn: connection = Depends(get_db)):
         "abstract_only": abstract_only,
         "total_chunks": total_chunks,
         "avg_chunks_per_paper": int(avg_chunks),
-        "publishers": publishers,
         "chunk_distribution": chunk_dist,
         "recent_docs": recent_docs,
     }
@@ -127,7 +109,7 @@ def get_keywords(conn: connection = Depends(get_db)):
                 SELECT regexp_split_to_table(
                     lower(content), '[^a-z]+'
                 ) as word
-                FROM research_papers
+                FROM limited_papers
                 LIMIT 10000
             ) words
             WHERE length(word) > 5
@@ -159,25 +141,3 @@ def get_keywords(conn: connection = Depends(get_db)):
             for row in cur.fetchall()
         ]
     return {"keywords": keywords}
-
-
-@router.get("/status")
-def get_server_status(conn: connection = Depends(get_db)):
-    """
-    Returns the health status of the backend, database, and LLM model.
-    """
-    import ollama as ollama_client
-
-    try:
-        models = ollama_client.list()
-        ollama_model = any(
-            "llama3" in m["name"] for m in models.get("models", [])
-        )
-    except Exception:
-        ollama_model = False
-
-    return {
-        "fastapi_backend": True,
-        "database_connection": True,
-        "ollama_model": ollama_model,
-    }

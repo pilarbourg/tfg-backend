@@ -1,7 +1,6 @@
 import json
 from app.core.rag.retrieval import keyword_search, vector_search
 
-# Test set: (metabolite name, source DOI, naming type)
 test_set = [
     # Caffeine (Fujimaki 2018, PMID 29298852)
     ("Caffeine", "10.1212/WNL.0000000000004888", "common"),
