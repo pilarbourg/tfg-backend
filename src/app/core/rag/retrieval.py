@@ -15,7 +15,7 @@ def vector_search(query, top_k=50):
     query_vector = embedding_model.encode(query).tolist()
     sql = f"""
         SELECT title, source_url, content, 1 - (embedding <=> %s::vector) AS similarity
-        FROM limited_validation_papers
+        FROM limited_papers
         ORDER BY similarity DESC
         LIMIT %s;
     """
@@ -29,7 +29,7 @@ def keyword_search(query, top_k=20):
     sql = f"""
         SELECT content, source_url, title,
                ts_rank_cd(to_tsvector('english', content), plainto_tsquery('english', %s)) AS rank
-        FROM limited_validation_papers
+        FROM limited_papers
         WHERE to_tsvector('english', content) @@ plainto_tsquery('english', %s)
         ORDER BY rank DESC
         LIMIT %s;

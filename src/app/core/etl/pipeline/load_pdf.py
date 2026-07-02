@@ -83,7 +83,7 @@ def _store_chunks(title: str, text: str, source_id: str, pmid: str, pmcid: str |
             execute_values(
                 cur,
                 """
-                INSERT INTO limited_validation_papers
+                INSERT INTO limited_papers
                 (title, source_url, pmid, pmcid, content, embedding)
                 VALUES %s
                 """,
